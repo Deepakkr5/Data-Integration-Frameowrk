@@ -1,0 +1,8 @@
+{
+    "editor.unicodeHighlight.allowedCharacters": {
+        "dev": true
+    },
+    "chat.instructionsFilesLocations": {
+        "dev": true
+    }
+}
