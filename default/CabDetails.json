@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1762711504021,
+    "description" : "CabDetails",
+    "identifier" : "CabDetails",
+    "lastModifiedTimestamp" : 1762711504021,
+    "name" : "CabDetails",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
