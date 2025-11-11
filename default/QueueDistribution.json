@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1762842351050,
+    "description" : "Queue Distribution Details",
+    "identifier" : "QueueDistribution",
+    "lastModifiedTimestamp" : 1762842351050,
+    "name" : "Queue_Distribution",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
