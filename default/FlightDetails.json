@@ -688,6 +688,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "6c38c21f-019a-1000-08dc-a806f0cbed53",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "7b85e0f0-00c8-3d24-93f4-d8cdf243a933",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "Response" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "61263f41-019a-1000-ea6a-f500f739e8bc",
+        "name" : "InvokeHTTP",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 84
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "67dc77aa-019a-1000-2098-2af091ba4f2c",
         "name" : "ReplaceText",
         "type" : "PROCESSOR"
@@ -740,6 +770,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 82
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "6c398ffa-019a-1000-a5fd-ecacda4b082f",
+        "name" : "PutFile",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "fb2fe4a0-090d-3464-a537-6ef4f462ece2",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "6c38c21f-019a-1000-08dc-a806f0cbed53",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 85
     } ],
     "controllerServices" : [ {
       "bulletinLevel" : "WARN",
@@ -2191,7 +2251,7 @@
         "schema-name" : "${schema.name}",
         "starting-field-strategy" : "ROOT_NODE",
         "schema-access-strategy" : "schema-text-property",
-        "schema-text" : "{\n  \"type\": \"record\",\n  \"name\": \"FlightInfo\",\n  \"fields\": [\n    { \"name\": \"flt_no\",        \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"flt_type\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"type_aircraft\", \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"air_code\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"src_airpt\",     \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"dst_airpt\",     \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"stand_no\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"bag_belt\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"gate_no\",       \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"runway_no\",     \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"sch_dep\",       \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"est_dep\",       \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"sch_arr\",       \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"est_arr\",       \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"chk_time\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"chk_cntr\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"running_status\",\"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"term_no\",       \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"bag_cnt\",       \"type\": [\"null\",\"int\"], \"default\": null },\n    { \"name\": \"pax_cnt\",       \"type\": [\"null\",\"int\"], \"default\": null },\n    { \"name\": \"trns_pax\",      \"type\": [\"null\",\"int\"], \"default\": null },\n    { \"name\": \"trnt_pax\",      \"type\": [\"null\",\"int\"], \"default\": null },\n    { \"name\": \"first_bag_time\",\"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"last_bag_time\", \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"traffic_type\",  \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"crt_date\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"mod_date\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"start_time\",    \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"end_time\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"tsat\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"asat\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"tobt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"aobt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"eldt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"aldt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"eibt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"aibt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"actual_time\",   \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"schedule_time\", \"type\": [\"null\",\"string\"], \"default\": null }\n  ]\n}",
+        "schema-text" : "{\n  \"type\": \"record\",\n  \"name\": \"FlightInfo\",\n  \"fields\": [\n    { \"name\": \"flt_no\",        \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"flt_type\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"type_aircraft\", \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"air_code\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"src_airpt\",     \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"dst_airpt\",     \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"stand_no\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"bag_belt\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"gate_no\",       \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"runway_no\",     \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"sch_dep\",       \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"est_dep\",       \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"sch_arr\",       \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"est_arr\",       \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"chk_time\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"chk_cntr\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"running_status\",\"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"term_no\",       \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"bag_cnt\",       \"type\": [\"null\",\"int\"], \"default\": null },\n    { \"name\": \"pax_cnt\",       \"type\": [\"null\",\"int\"], \"default\": null },\n    { \"name\": \"trns_pax\",      \"type\": [\"null\",\"int\"], \"default\": null },\n    { \"name\": \"trnt_pax\",      \"type\": [\"null\",\"int\"], \"default\": null },\n    { \"name\": \"first_bag_time\",\"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"last_bag_time\", \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"traffic_type\",  \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"start_time\",    \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"end_time\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"tsat\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"asat\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"tobt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"aobt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"eldt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"aldt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"eibt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"aibt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"actual_time\",   \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"schedule_time\", \"type\": [\"null\",\"string\"], \"default\": null }\n  ]\n}",
         "Allow Comments" : "false"
       },
       "propertyDescriptors" : {
@@ -3915,7 +3975,7 @@
       },
       "properties" : {
         "Script Engine" : "Groovy",
-        "Script Body" : "import groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.text.SimpleDateFormat\nimport java.util.Calendar\nimport org.apache.nifi.processor.io.StreamCallback\nimport java.util.UUID\n\nflowFile = session.get()\nif (!flowFile) return\n\ndef sdf = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\")\n\n// Prepare start and end of day\ndef cal = Calendar.getInstance()\ncal.set(Calendar.HOUR_OF_DAY, 0)\ncal.set(Calendar.MINUTE, 0)\ncal.set(Calendar.SECOND, 1)\ncal.set(Calendar.MILLISECOND, 0)\ndef startOfDay = sdf.format(cal.time)\n\ncal.set(Calendar.HOUR_OF_DAY, 23)\ncal.set(Calendar.MINUTE, 59)\ncal.set(Calendar.SECOND, 59)\ncal.set(Calendar.MILLISECOND, 0)\ndef endOfDay = sdf.format(cal.time)\n\n// Helper function to convert epoch → date string\ndef parseEpoch = { val ->\n    if (val == null) return null\n    try {\n        return sdf.format(new Date(val as long))\n    } catch (Exception e) {\n        return null\n    }\n}\n\ndef nowStr = sdf.format(new Date())\n\nflowFile = session.write(flowFile, { inputStream, outputStream ->\n    def jsonText = inputStream.text\n    def slurper = new JsonSlurper()\n    def data = slurper.parseText(jsonText)\n\n    // Wrap single object in list\n    if (!(data instanceof List)) {\n        data = [data]\n    }\n\n    def records = []\n\n    data.each { flight ->\n        def standArrival = flight.stand\n        def belt = flight.belt\n        def boardingGate = flight.boardingGates\n\n        def isDep = flight.movementIndicator?.toLowerCase() == 'departure'\n        def scheduleTime = parseEpoch(flight.scheduledTime)\n        def compositeKey = \"${flight.id ?: UUID.randomUUID()}_${scheduleTime}_${flight.flightNo ?: ''}\"\n\n        def record = [\n            flt_no        : flight.flightNo ?: null,\n            flt_type      : flight.movementIndicator ?: null,\n            type_aircraft : flight.aircraftType ?: null,\n            air_code      : flight.airlineCode ?: null,\n            src_airpt     : flight.origin ?: null,\n            dst_airpt     : flight.destination ?: null,\n            stand_no      : standArrival ? standArrival.slotId : null,\n            bag_belt      : belt ? belt.beltId : null,\n            gate_no       : boardingGate ? boardingGate.gateId : null,\n            runway_no     : flight.runway ?: null,\n            sch_dep       : isDep ? parseEpoch(flight.scheduledTime) : null,\n            est_dep       : isDep ? parseEpoch(flight.estimatedTime) : null,\n            sch_arr       : null,\n            est_arr       : null,\n            chk_time      : flight.checkinTime ?: null,\n            chk_cntr      : flight.checkinCounter ?: null,\n            running_status: flight.operationalStatus ?: null,\n            term_no       : flight.terminal ?: null,\n            bag_cnt       : flight.bagCount ?: null,\n            pax_cnt       : flight.passengerCount ?: null,\n            trns_pax      : flight.transferPassenger ?: null,\n            trnt_pax      : flight.transitPassenger ?: null,\n            first_bag_time: parseEpoch(flight.firstBagTimestamp),\n            last_bag_time : parseEpoch(flight.lastBagTimestamp),\n            traffic_type  : flight.trafficType ?: null,\n            crt_date      : nowStr,\n            mod_date      : nowStr,\n            start_time    : startOfDay,\n            end_time      : endOfDay,\n            tsat          : parseEpoch(flight.tsat),\n            asat          : parseEpoch(flight.asat),\n            tobt          : parseEpoch(flight.targetOffBlockTime),\n            aobt          : parseEpoch(flight.actual_onblock_timestamp),\n            eldt          : parseEpoch(flight.eldt),\n            aldt          : parseEpoch(flight.aldt),\n            eibt          : parseEpoch(flight.eibt),\n            aibt          : parseEpoch(flight.aibt),\n            actual_time   : parseEpoch(flight.actualTime),\n            schedule_time : parseEpoch(flight.scheduledTime),\n            primary_key   : compositeKey\n        ]\n\n        records << record\n    }\n\n    outputStream.write(JsonOutput.toJson(records).getBytes(\"UTF-8\"))\n} as StreamCallback)\n\nflowFile = session.putAttribute(flowFile, 'mime.type', 'application/json')\nsession.transfer(flowFile, REL_SUCCESS)"
+        "Script Body" : "import groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.text.SimpleDateFormat\nimport java.util.Calendar\nimport org.apache.nifi.processor.io.StreamCallback\nimport java.util.UUID\n\nflowFile = session.get()\nif (!flowFile) return\n\ndef sdf = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\")\n\n// Prepare start and end of day\ndef cal = Calendar.getInstance()\ncal.set(Calendar.HOUR_OF_DAY, 0)\ncal.set(Calendar.MINUTE, 0)\ncal.set(Calendar.SECOND, 1)\ncal.set(Calendar.MILLISECOND, 0)\ndef startOfDay = sdf.format(cal.time)\n\ncal.set(Calendar.HOUR_OF_DAY, 23)\ncal.set(Calendar.MINUTE, 59)\ncal.set(Calendar.SECOND, 59)\ncal.set(Calendar.MILLISECOND, 0)\ndef endOfDay = sdf.format(cal.time)\n\n// Helper function to convert epoch → date string\ndef parseEpoch = { val ->\n    if (val == null) return null\n    try {\n        return sdf.format(new Date(val as long))\n    } catch (Exception e) {\n        return null\n    }\n}\n\ndef nowStr = sdf.format(new Date())\n\nflowFile = session.write(flowFile, { inputStream, outputStream ->\n    def jsonText = inputStream.text\n    def slurper = new JsonSlurper()\n    def data = slurper.parseText(jsonText)\n\n    // Wrap single object in list\n    if (!(data instanceof List)) {\n        data = [data]\n    }\n\n    def records = []\n\n    data.each { flight ->\n        // def standArrival = flight.stand.departure : null\n\t\tdef standArrival = flight.stand? flight.stand.departure : null\n        // def belt = flight.belt\n        // def boardingGate = flight.boardingGates.departure1\n\t\tdef boardingGate = flight.boardingGates? flight.boardingGates.departure1 : null\n\n        def isDep = flight.movementIndicator?.toLowerCase() == 'departure'\n        def scheduleTime = parseEpoch(flight.scheduledTime)\n        def compositeKey = \"${flight.id ?: UUID.randomUUID()}_${scheduleTime}_${flight.flightNo ?: ''}\"\n\n        def record = [\n            flt_no        : flight.flightNo ?: null,\n            flt_type      : flight.movementIndicator ?: null,\n            type_aircraft : flight.aircraftType ?: null,\n            air_code      : flight.airlineCode ?: null,\n            src_airpt     : flight.origin ?: null,\n            dst_airpt     : flight.destination ?: null,\n            stand_no      : standArrival ? standArrival.slotId : null,\n            bag_belt      : flight.belt ?: null,\n            gate_no       : boardingGate ? boardingGate.gtd1 : null,\n            runway_no     : flight.runway ?: null,\n            sch_dep       : isDep ? parseEpoch(flight.scheduledTime) : null,\n            est_dep       : isDep ? parseEpoch(flight.estimatedTime) : null,\n            sch_arr       : null,\n            est_arr       : null,\n            chk_time      : flight.checkinTime ?: null,\n            chk_cntr      : flight.checkinCounter ?: null,\n            running_status: flight.operationalStatus ?: null,\n            term_no       : flight.terminal ?: null,\n            bag_cnt       : flight.bagCount ?: null,\n            pax_cnt       : flight.passengerCount ?: null,\n            trns_pax      : flight.transferPassenger ?: null,\n            trnt_pax      : flight.transitPassenger ?: null,\n            first_bag_time: parseEpoch(flight.firstBagTimestamp),\n            last_bag_time : parseEpoch(flight.lastBagTimestamp),\n            traffic_type  : flight.trafficType ?: null,\n            start_time    : startOfDay,\n            end_time      : endOfDay,\n            tsat          : parseEpoch(flight.tsat),\n            asat          : parseEpoch(flight.asat),\n            tobt          : parseEpoch(flight.targetOffBlockTime),\n            aobt          : parseEpoch(flight.actual_onblock_timestamp),\n            eldt          : parseEpoch(flight.eldt),\n            aldt          : parseEpoch(flight.aldt),\n            eibt          : parseEpoch(flight.eibt),\n            aibt          : parseEpoch(flight.aibt),\n            actual_time   : parseEpoch(flight.actualTime),\n            schedule_time : parseEpoch(flight.scheduledTime),\n\t\t\tterm_no \t  : '1',\n            primary_key   : compositeKey\n        ]\n\n        records << record\n    }\n\n    outputStream.write(JsonOutput.toJson(records).getBytes(\"UTF-8\"))\n} as StreamCallback)\n\nflowFile = session.putAttribute(flowFile, 'mime.type', 'application/json')\nsession.transfer(flowFile, REL_SUCCESS)"
       },
       "propertyDescriptors" : {
         "Script File" : {
@@ -3983,7 +4043,7 @@
       "name" : "LogAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 1864.0,
+        "x" : 1328.0,
         "y" : 864.0
       },
       "properties" : {
@@ -4744,7 +4804,7 @@
       "name" : "ExtractText",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 776.0,
+        "x" : 792.0,
         "y" : -568.0
       },
       "properties" : {
@@ -4928,7 +4988,7 @@
       },
       "properties" : {
         "Script Engine" : "Groovy",
-        "Script Body" : "import groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.text.SimpleDateFormat\nimport java.util.Calendar\nimport org.apache.nifi.processor.io.StreamCallback\n\nflowFile = session.get()\nif (!flowFile) return\n\nflowFile = session.write(flowFile, new StreamCallback() {\n    void process(java.io.InputStream inputStream, java.io.OutputStream outputStream) {\n        def jsonText = inputStream.text\n        def slurper = new JsonSlurper()\n        def data = slurper.parseText(jsonText)\n\n        // Wrap single object in a list if needed\n        if (!(data instanceof List)) {\n            data = [data]\n        }\n\n        def records = []\n        def sdf = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\")\n\n        // Current timestamp for crt_date/mod_date\n        def nowStr = sdf.format(new Date())\n\n        // Helper to parse epoch timestamps to formatted string\n        def parseEpoch = { val ->\n            if (val == null) return null\n            try {\n                return sdf.format(new Date(val as long))\n            } catch (Exception e) {\n                return null\n            }\n        }\n\n        data.each { flight ->\n            def standArrival = flight.stand\n            def belt = flight.belt\n            def boardingGate = flight.boardingGates?.arrival1\n\n            def isArrival = flight.movementIndicator?.toLowerCase() == 'arrival'\n            def scheduleTime = parseEpoch(flight.scheduledTime)\n\n            // Set start/end time based on movement type\n            def cal = Calendar.getInstance()\n            cal.set(Calendar.HOUR_OF_DAY, 0)\n            cal.set(Calendar.MINUTE, 0)\n            cal.set(Calendar.SECOND, isArrival ? 1 : 0)\n            cal.set(Calendar.MILLISECOND, 0)\n            def startOfDay = sdf.format(cal.time)\n\n            cal.set(Calendar.HOUR_OF_DAY, 23)\n            cal.set(Calendar.MINUTE, 59)\n            cal.set(Calendar.SECOND, 59)\n            cal.set(Calendar.MILLISECOND, 0)\n            def endOfDay = sdf.format(cal.time)\n\n            def record = [\n                flt_no        : flight.flightNo ?: null,\n                flt_type      : flight.movementIndicator ?: null,\n                type_aircraft : flight.aircraftType ?: null,\n                air_code      : flight.airlineCode ?: null,\n                src_airpt     : flight.origin ?: null,\n                dst_airpt     : flight.destination ?: null,\n                stand_no      : standArrival?standArrival.slotId:null,\n                bag_belt      : belt?belt.beltId:null,\n                gate_no       : boardingGate?.gateId ?: null,\n                runway_no     : flight.runway ?: null,\n                sch_dep       : isArrival ? null : parseEpoch(flight.scheduledTime),\n                est_dep       : isArrival ? null : parseEpoch(flight.estimatedTime),\n                sch_arr       : isArrival ? parseEpoch(flight.scheduledTime) : null,\n                est_arr       : isArrival ? parseEpoch(flight.estimatedTime) : null,\n                chk_time      : flight.checkinTime ?: null,\n                chk_cntr      : flight.checkinCounter ?: null,\n                running_status: flight.operationalStatus ?: null,\n                term_no       : flight.terminal ?: null,\n                bag_cnt       : flight.bagCount ?: null,\n                pax_cnt       : flight.passengerCount ?: null,\n                trns_pax      : flight.transferPassenger ?: null,\n                trnt_pax      : flight.transitPassenger ?: null,\n                first_bag_time: parseEpoch(flight.firstBagTimestamp),\n                last_bag_time : parseEpoch(flight.lastBagTimestamp),\n                traffic_type  : flight.trafficType ?: null,\n                crt_date      : nowStr,\n                mod_date      : nowStr,\n                start_time    : startOfDay,\n                end_time      : endOfDay,\n                tsat          : parseEpoch(flight.tsat),\n                asat          : parseEpoch(flight.asat),\n                tobt          : parseEpoch(flight.targetOffBlockTime),\n                aobt          : parseEpoch(flight.actual_onblock_timestamp),\n                eldt          : parseEpoch(flight.eldt),\n                aldt          : parseEpoch(flight.aldt),\n                eibt          : parseEpoch(flight.eibt),\n                aibt          : parseEpoch(flight.aibt),\n                actual_time   : parseEpoch(flight.actualTime),\n                schedule_time : parseEpoch(flight.scheduledTime)\n            ]\n\n            records << record\n        }\n\n        outputStream.write(JsonOutput.toJson(records).getBytes(\"UTF-8\"))\n    }\n})\n\nflowFile = session.putAttribute(flowFile, 'mime.type', 'application/json')\nsession.transfer(flowFile, REL_SUCCESS)"
+        "Script Body" : "import groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.text.SimpleDateFormat\nimport java.util.Calendar\nimport org.apache.nifi.processor.io.StreamCallback\n\nflowFile = session.get()\nif (!flowFile) return\n\nflowFile = session.write(flowFile, new StreamCallback() {\n    void process(java.io.InputStream inputStream, java.io.OutputStream outputStream) {\n        def jsonText = inputStream.text\n        def slurper = new JsonSlurper()\n        def data = slurper.parseText(jsonText)\n\n        // Wrap single object in a list if needed\n        if (!(data instanceof List)) {\n            data = [data]\n        }\n\n        def records = []\n        def sdf = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\")\n\n        // Current timestamp for crt_date/mod_date\n        def nowStr = sdf.format(new Date())\n\n        // Helper to parse epoch timestamps to formatted string\n        def parseEpoch = { val ->\n            if (val == null) return null\n            try {\n                return sdf.format(new Date(val as long))\n            } catch (Exception e) {\n                return null\n            }\n        }\n\n        data.each { flight ->\n            // def standArrival = flight.stand\n\t\t\tdef standArrival = flight.stand? flight.stand.arrival : null\n            def belt = flight.belt\n            // def boardingGate = flight.boardingGates?.arrival1\n\t\t\tdef boardingGate = flight.boardingGates? flight.boardingGates.arrival1 : null\n\n            def isArrival = flight.movementIndicator?.toLowerCase() == 'arrival'\n            def scheduleTime = parseEpoch(flight.scheduledTime)\n\n            // Set start/end time based on movement type\n            def cal = Calendar.getInstance()\n            cal.set(Calendar.HOUR_OF_DAY, 0)\n            cal.set(Calendar.MINUTE, 0)\n            cal.set(Calendar.SECOND, isArrival ? 1 : 0)\n            cal.set(Calendar.MILLISECOND, 0)\n            def startOfDay = sdf.format(cal.time)\n\n            cal.set(Calendar.HOUR_OF_DAY, 23)\n            cal.set(Calendar.MINUTE, 59)\n            cal.set(Calendar.SECOND, 59)\n            cal.set(Calendar.MILLISECOND, 0)\n            def endOfDay = sdf.format(cal.time)\n\n            def record = [\n                flt_no        : flight.flightNo ?: null,\n                flt_type      : flight.movementIndicator ?: null,\n                type_aircraft : flight.aircraftType ?: null,\n                air_code      : flight.airlineCode ?: null,\n                src_airpt     : flight.origin ?: null,\n                dst_airpt     : flight.destination ?: null,\n                stand_no      : standArrival?standArrival.slotId:null,\n                bag_belt      : belt?belt.beltId:null,\n                gate_no       : boardingGate?.gateId ?: null,\n                runway_no     : flight.runway ?: null,\n                sch_dep       : isArrival ? null : parseEpoch(flight.scheduledTime),\n                est_dep       : isArrival ? null : parseEpoch(flight.estimatedTime),\n                sch_arr       : isArrival ? parseEpoch(flight.scheduledTime) : null,\n                est_arr       : isArrival ? parseEpoch(flight.estimatedTime) : null,\n                chk_time      : flight.checkinTime ?: null,\n                chk_cntr      : flight.checkinCounter ?: null,\n                running_status: flight.operationalStatus ?: null,\n                term_no       : flight.terminal ?: null,\n                bag_cnt       : flight.bagCount ?: null,\n                pax_cnt       : flight.passengerCount ?: null,\n                trns_pax      : flight.transferPassenger ?: null,\n                trnt_pax      : flight.transitPassenger ?: null,\n                first_bag_time: parseEpoch(flight.firstBagTimestamp),\n                last_bag_time : parseEpoch(flight.lastBagTimestamp),\n                traffic_type  : flight.trafficType ?: null,\n                start_time    : startOfDay,\n                end_time      : endOfDay,\n                tsat          : parseEpoch(flight.tsat),\n                asat          : parseEpoch(flight.asat),\n                tobt          : parseEpoch(flight.targetOffBlockTime),\n                aobt          : parseEpoch(flight.actual_onblock_timestamp),\n                eldt          : parseEpoch(flight.eldt),\n                aldt          : parseEpoch(flight.aldt),\n                eibt          : parseEpoch(flight.eibt),\n                aibt          : parseEpoch(flight.aibt),\n                actual_time   : parseEpoch(flight.actualTime),\n                schedule_time : parseEpoch(flight.scheduledTime),\n                term_no \t  : '1'\n            ]\n\n            records << record\n        }\n\n        outputStream.write(JsonOutput.toJson(records).getBytes(\"UTF-8\"))\n    }\n})\n\nflowFile = session.putAttribute(flowFile, 'mime.type', 'application/json')\nsession.transfer(flowFile, REL_SUCCESS)"
       },
       "propertyDescriptors" : {
         "Script File" : {
@@ -5000,7 +5060,7 @@
         "y" : -120.0
       },
       "properties" : {
-        "filename" : "flight_details_api_${now():format(\"yyyyMMdd_HHmmss\")}.json",
+        "filename" : "flight_details_arrival_${now():format(\"yyyyMMdd_HHmmss\")}.json",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100"
       },
@@ -5501,7 +5561,7 @@
       "name" : "GetFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 792.0,
+        "x" : 800.0,
         "y" : -816.0
       },
       "properties" : {
@@ -5957,8 +6017,8 @@
       "name" : "SplitJson",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 216.0,
-        "y" : 248.0
+        "x" : 200.0,
+        "y" : 256.0
       },
       "properties" : {
         "Max String Length" : "20 MB",
@@ -7069,6 +7129,173 @@
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "6c38c21f-019a-1000-08dc-a806f0cbed53",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 792.0,
+        "y" : -80.0
+      },
+      "properties" : {
+        "filename" : "flight_details_Depature_${now():format(\"yyyyMMdd_HHmmss\")}.json",
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "filename" : {
+          "displayName" : "filename",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "filename",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "6c398ffa-019a-1000-a5fd-ecacda4b082f",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutFile",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 800.0,
+        "y" : 104.0
+      },
+      "properties" : {
+        "Create Missing Directories" : "true",
+        "Directory" : "/opt/nifi/nifi-current/data/output/flight_list/",
+        "Conflict Resolution Strategy" : "fail"
+      },
+      "propertyDescriptors" : {
+        "Group" : {
+          "displayName" : "Group",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Group",
+          "sensitive" : false
+        },
+        "Owner" : {
+          "displayName" : "Owner",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Owner",
+          "sensitive" : false
+        },
+        "Create Missing Directories" : {
+          "displayName" : "Create Missing Directories",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Create Missing Directories",
+          "sensitive" : false
+        },
+        "Permissions" : {
+          "displayName" : "Permissions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Permissions",
+          "sensitive" : false
+        },
+        "Maximum File Count" : {
+          "displayName" : "Maximum File Count",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Maximum File Count",
+          "sensitive" : false
+        },
+        "Last Modified Time" : {
+          "displayName" : "Last Modified Time",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Last Modified Time",
+          "sensitive" : false
+        },
+        "Directory" : {
+          "displayName" : "Directory",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Directory",
+          "sensitive" : false
+        },
+        "Conflict Resolution Strategy" : {
+          "displayName" : "Conflict Resolution Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Conflict Resolution Strategy",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutFile",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
         "version" : "2.6.0"
@@ -7187,6 +7414,6 @@
   "snapshotMetadata" : {
     "author" : "admin",
     "flowIdentifier" : "FlightDetails",
-    "timestamp" : 1762701233751
+    "timestamp" : 1762841239466
   }
 }
