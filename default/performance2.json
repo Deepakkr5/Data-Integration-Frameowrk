@@ -2537,7 +2537,7 @@
       "retryCount" : 10,
       "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "120 sec",
+      "schedulingPeriod" : "300 sec",
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.GetFile",
@@ -2565,7 +2565,7 @@
         "y" : 664.0
       },
       "properties" : {
-        "filename" : "performance_analysis_${now():format(\"yyyyMMdd_HHmmss\")}.json",
+        "filename" : "performance_analysis_${now():format(\"yyyyMMdd_HHmmss\")}_${UUID()}.json",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100"
       },
@@ -3191,6 +3191,6 @@
   "snapshotMetadata" : {
     "author" : "admin",
     "flowIdentifier" : "performance2",
-    "timestamp" : 1762703573049
+    "timestamp" : 1762841571427
   }
 }
