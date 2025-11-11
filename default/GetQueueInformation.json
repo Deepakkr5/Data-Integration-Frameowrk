@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1762842644976,
+    "description" : "Get_Queue_Information Details",
+    "identifier" : "GetQueueInformation",
+    "lastModifiedTimestamp" : 1762842644976,
+    "name" : "Get_Queue_Information",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
