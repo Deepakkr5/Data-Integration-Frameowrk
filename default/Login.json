@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1762841907389,
+    "description" : "Generates new cred every 24 hours",
+    "identifier" : "Login",
+    "lastModifiedTimestamp" : 1762841907389,
+    "name" : "Login",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
