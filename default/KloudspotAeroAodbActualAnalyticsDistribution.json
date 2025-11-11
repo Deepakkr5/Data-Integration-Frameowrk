@@ -959,7 +959,7 @@
         "schema-name" : "${schema.name}",
         "starting-field-strategy" : "ROOT_NODE",
         "schema-access-strategy" : "schema-text-property",
-        "schema-text" : "{\n  \"type\": \"record\",\n  \"name\": \"forecast_pax_distribution\",\n  \"fields\": [\n    {\"name\": \"start_time\", \"type\":[\"null\",\"string\"],\"default\":null},\n    {\"name\": \"end_time\", \"type\":[\"null\",\"string\"],\"default\":null},\n    {\"name\": \"hour\", \"type\":[\"null\",\"string\"],\"default\":null},\n    {\"name\": \"location_id\", \"type\":[\"null\",\"string\"],\"default\":null},\n    {\"name\": \"domestic\", \"type\":[\"null\",\"boolean\"],\"default\":null},\n    {\"name\": \"created_at\", \"type\":[\"null\",\"string\"],\"default\":null}\n  ]\n}",
+        "schema-text" : "{\n  \"type\": \"record\",\n  \"name\": \"forecast_pax_distribution\",\n  \"fields\": [\n    {\"name\": \"start_time\", \"type\": [\"null\", \"string\"], \"default\": null},\n    {\"name\": \"end_time\", \"type\": [\"null\", \"string\"], \"default\": null},\n    {\"name\": \"hour\", \"type\": [\"null\", \"string\"], \"default\": null},\n    {\"name\": \"entry_sum\", \"type\": [\"null\", \"long\"], \"default\": null},\n    {\"name\": \"location_id\", \"type\": [\"null\", \"string\"], \"default\": null},\n    {\"name\": \"domestic\", \"type\": [\"null\", \"boolean\"], \"default\": null},\n    {\"name\": \"created_at\", \"type\": [\"null\", \"string\"], \"default\": null}\n  ]\n}",
         "Allow Comments" : "false"
       },
       "propertyDescriptors" : {
@@ -2154,7 +2154,8 @@
         "put-db-record-schema-name" : "flight_service",
         "put-db-record-unmatched-column-behavior" : "Ignore Unmatched Columns",
         "put-db-record-catalog-name" : "aerowise_mbapp",
-        "put-db-record-statement-type" : "INSERT",
+        "put-db-record-statement-type" : "UPSERT",
+        "put-db-record-update-keys" : "start_time,location_id",
         "put-db-record-quoted-identifiers" : "false",
         "put-db-record-unmatched-field-behavior" : "Ignore Unmatched Fields",
         "put-db-record-max-batch-size" : "1000",
@@ -2678,6 +2679,6 @@
   "snapshotMetadata" : {
     "author" : "admin",
     "flowIdentifier" : "KloudspotAeroAodbActualAnalyticsDistribution",
-    "timestamp" : 1762850276769
+    "timestamp" : 1762851510417
   }
 }
