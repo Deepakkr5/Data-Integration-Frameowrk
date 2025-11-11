@@ -959,7 +959,7 @@
         "schema-name" : "${schema.name}",
         "starting-field-strategy" : "ROOT_NODE",
         "schema-access-strategy" : "schema-text-property",
-        "schema-text" : "{\n  \"type\": \"record\",\n  \"name\": \"forecast_pax_distribution\",\n  \"fields\": [\n    { \"name\": \"hour\", \"type\": [\"null\", \"string\"], \"default\": null },\n    { \"name\": \"entry_sum\", \"type\": [\"null\", \"long\"], \"default\": null },\n    { \"name\": \"location_id\", \"type\": [\"null\", \"string\"], \"default\": null },\n    { \"name\": \"start_time\", \"type\": [\"null\", \"string\"], \"default\": null },\n    { \"name\": \"end_time\", \"type\": [\"null\", \"string\"], \"default\": null },\n    { \"name\": \"domestic\", \"type\": [\"null\", \"boolean\"], \"default\": null },\n    { \"name\": \"created_at\", \"type\": [\"null\", \"string\"], \"default\": null }\n  ]\n}",
+        "schema-text" : "{\n  \"type\": \"record\",\n  \"name\": \"forecast_pax_distribution\",\n  \"fields\": [\n    {\"name\": \"start_time\", \"type\":[\"null\",\"string\"],\"default\":null},\n    {\"name\": \"end_time\", \"type\":[\"null\",\"string\"],\"default\":null},\n    {\"name\": \"hour\", \"type\":[\"null\",\"string\"],\"default\":null},\n    {\"name\": \"location_id\", \"type\":[\"null\",\"string\"],\"default\":null},\n    {\"name\": \"domestic\", \"type\":[\"null\",\"boolean\"],\"default\":null},\n    {\"name\": \"created_at\", \"type\":[\"null\",\"string\"],\"default\":null}\n  ]\n}",
         "Allow Comments" : "false"
       },
       "propertyDescriptors" : {
@@ -1288,8 +1288,8 @@
       "name" : "PutFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -368.0,
-        "y" : 952.0
+        "x" : -504.0,
+        "y" : 528.0
       },
       "properties" : {
         "Create Missing Directories" : "true",
@@ -1623,7 +1623,7 @@
         "Request Multipart Form-Data Filename Enabled" : "true",
         "Request Chunked Transfer-Encoding Enabled" : "false",
         "HTTP/2 Disabled" : "False",
-        "Connection Timeout" : "5 secs",
+        "Connection Timeout" : "30 secs",
         "Response Cookie Strategy" : "ACCEPT_ALL",
         "Authorization" : "Bearer ${bearer.token}",
         "Socket Read Timeout" : "15 secs",
@@ -2161,14 +2161,14 @@
         "database-session-autocommit" : "false",
         "table-schema-cache-size" : "100",
         "put-db-record-quoted-table-identifiers" : "false",
-        "put-db-record-translate-field-names" : "true",
+        "put-db-record-translate-field-names" : "false",
         "put-db-record-dcbp-service" : "6356afbb-019a-1000-1655-1397b863a710",
         "put-db-record-query-timeout" : "0 seconds",
         "Column Name Translation Strategy" : "REMOVE_UNDERSCORE",
         "rollback-on-failure" : "false",
         "put-db-record-binary-format" : "UTF-8",
         "db-type" : "PostgreSQL",
-        "put-db-record-table-name" : "forecast_pax_distribution",
+        "put-db-record-table-name" : "actual_pax_distribution",
         "put-db-record-record-reader" : "8ba0f753-d076-3d9c-be24-c3b30369b21e"
       },
       "propertyDescriptors" : {
@@ -2617,7 +2617,7 @@
       },
       "properties" : {
         "Script Engine" : "Groovy",
-        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\nimport java.time.Instant\nimport java.time.ZoneOffset\nimport java.time.format.DateTimeFormatter\n\ndef flowFile = session.get()\nif (!flowFile) return\n\nflowFile = session.write(flowFile, { inputStream, outputStream ->\n\n    // Read the FlowFile content\n    def jsonText = inputStream.getText('UTF-8')\n    def data = new JsonSlurper().parseText(jsonText)\n\n    def transformed = []\n\n    // Formatter for timestamps\n    def formatter = DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\").withZone(ZoneOffset.UTC)\n    def now = Instant.now()\n\n    data.each { record ->\n        def hourMillis = record.startTime\n        def startTime = Instant.ofEpochMilli(hourMillis)\n        def endTime = startTime.plusSeconds(3600) // +1 hour\n\n        record.stats.each { stat ->\n            def entrySum = stat.entryStats?.sum ?: 0\n            def locationId = stat.locationid\n\n            // Build primary key\n            def primaryKey = \"${hourMillis}_${locationId}\"\n\n            transformed << [\n                hour         : hourMillis,\n                entry_sum    : entrySum,\n                location_id  : locationId,\n                primary_key  : primaryKey,\n                start_time   : formatter.format(startTime),\n                end_time     : formatter.format(endTime),\n                created_at   : formatter.format(now),\n                updated_at   : formatter.format(now)\n            ]\n        }\n    }\n\n    // Write transformed JSON\n    outputStream.write(JsonOutput.prettyPrint(JsonOutput.toJson(transformed)).getBytes(StandardCharsets.UTF_8))\n\n} as StreamCallback)\n\nsession.transfer(flowFile, REL_SUCCESS)"
+        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\nimport java.time.Instant\nimport java.time.ZoneOffset\nimport java.time.format.DateTimeFormatter\n\ndef flowFile = session.get()\nif (!flowFile) return\n\nflowFile = session.write(flowFile, { inputStream, outputStream ->\n\n    // Read incoming JSON content\n    def jsonText = inputStream.getText('UTF-8')\n    def data = new JsonSlurper().parseText(jsonText)\n\n    def transformed = []\n    def formatter = DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\").withZone(ZoneOffset.UTC)\n    def now = Instant.now()\n\n    data.each { record ->\n        def hourMillis = record.startTime\n        def startTime = Instant.ofEpochMilli(hourMillis)\n        def endTime = startTime.plusSeconds(3600) // +1 hour\n\n        record.stats.each { stat ->\n            def entrySum = stat.entryStats?.sum ?: 0\n            def locationId = stat.locationid\n\n            transformed << [\n                hour        : formatter.format(startTime),   // store readable hour\n                entry_sum   : entrySum,\n                location_id : locationId,\n                start_time  : formatter.format(startTime),\n                end_time    : formatter.format(endTime),\n                created_at  : formatter.format(now)\n            ]\n        }\n    }\n\n    // Output transformed JSON\n    outputStream.write(JsonOutput.prettyPrint(JsonOutput.toJson(transformed))\n        .getBytes(StandardCharsets.UTF_8))\n\n} as StreamCallback)\n\nsession.transfer(flowFile, REL_SUCCESS)"
       },
       "propertyDescriptors" : {
         "Script File" : {
@@ -2678,6 +2678,6 @@
   "snapshotMetadata" : {
     "author" : "admin",
     "flowIdentifier" : "KloudspotAeroAodbActualAnalyticsDistribution",
-    "timestamp" : 1762842996898
+    "timestamp" : 1762850276769
   }
 }
