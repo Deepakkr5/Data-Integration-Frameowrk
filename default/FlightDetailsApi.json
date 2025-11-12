@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1762933595719,
+    "description" : "FlightDetailsApiIntegration",
+    "identifier" : "FlightDetailsApi",
+    "lastModifiedTimestamp" : 1762933595719,
+    "name" : "FlightDetailsApi",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
