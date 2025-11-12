@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1762933088814,
+    "description" : "LocationApiIntegration",
+    "identifier" : "LocationApi",
+    "lastModifiedTimestamp" : 1762933088814,
+    "name" : "LocationApi",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
