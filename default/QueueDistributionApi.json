@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1762933263092,
+    "description" : "QueueDistributionApiIntegration",
+    "identifier" : "QueueDistributionApi",
+    "lastModifiedTimestamp" : 1762933263092,
+    "name" : "QueueDistributionApi",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
