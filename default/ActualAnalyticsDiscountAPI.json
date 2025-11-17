@@ -2345,7 +2345,7 @@
       },
       "properties" : {
         "Create Missing Directories" : "true",
-        "Directory" : "/output/actual_analytics_distribution",
+        "Directory" : "output/actual_analytics_distribution",
         "Conflict Resolution Strategy" : "fail"
       },
       "propertyDescriptors" : {
@@ -3329,6 +3329,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "ActualAnalyticsDiscountAPI",
-    "timestamp" : 1763382932036
+    "timestamp" : 1763397089928
   }
 }
