@@ -3475,7 +3475,7 @@
         "y" : 504.0
       },
       "properties" : {
-        "filename" : "${UUID()}.json",
+        "filename" : "queue_distribution_api_${now():format(\"yyyyMMdd_HHmmss_SSS\")}_${UUID()}.json",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100"
       },
@@ -7606,6 +7606,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "QueueDistributionAPI",
-    "timestamp" : 1763282371397
+    "timestamp" : 1763382918361
   }
 }
