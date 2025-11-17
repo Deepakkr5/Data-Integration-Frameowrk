@@ -4563,7 +4563,7 @@
         "y" : -80.0
       },
       "properties" : {
-        "filename" : "flight_details_Depature_${now():format(\"yyyyMMdd_HHmmss\")}.json",
+        "filename" : "flight_details_depature_${now():format(\"yyyyMMdd_HHmmss_SSS\")}_${UUID()}.json",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100"
       },
@@ -5471,7 +5471,7 @@
         "y" : -16.0
       },
       "properties" : {
-        "filename" : "flight_details_arrival_${now():format(\"yyyyMMdd_HHmmss\")}.json",
+        "filename" : "flight_details_arrival_${now():format(\"yyyyMMdd_HHmmss_SSS\")}_${UUID()}.json",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100"
       },
@@ -6736,6 +6736,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "FlightListAPI",
-    "timestamp" : 1763356842717
+    "timestamp" : 1763382878302
   }
 }
