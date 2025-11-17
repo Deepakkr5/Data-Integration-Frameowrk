@@ -1224,7 +1224,7 @@
       },
       "properties" : {
         "Create Missing Directories" : "true",
-        "Directory" : "/output/get_queue",
+        "Directory" : "output/get_queue",
         "Conflict Resolution Strategy" : "fail"
       },
       "propertyDescriptors" : {
@@ -2617,6 +2617,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "QueueAPI",
-    "timestamp" : 1763382890899
+    "timestamp" : 1763397029310
   }
 }
