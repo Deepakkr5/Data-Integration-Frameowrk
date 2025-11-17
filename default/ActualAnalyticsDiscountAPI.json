@@ -1976,7 +1976,7 @@
         "y" : 512.0
       },
       "properties" : {
-        "filename" : "Forecast_actual_${now():format(\"yyyyMMdd_HHmmss\")}.json",
+        "filename" : "forecast_actual_${now():format(\"yyyyMMdd_HHmmss_SSS\")}_${UUID()}.json",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100"
       },
@@ -3329,6 +3329,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "ActualAnalyticsDiscountAPI",
-    "timestamp" : 1763282702407
+    "timestamp" : 1763382932036
   }
 }
