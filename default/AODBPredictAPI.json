@@ -1622,7 +1622,7 @@
         "y" : 360.0
       },
       "properties" : {
-        "filename" : "Forecast_actual_${now():format(\"yyyyMMdd_HHmmss\")}.json",
+        "filename" : "forecast_predict_${now():format(\"yyyyMMdd_HHmmss_SSS\")}_${UUID()}.json",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100"
       },
@@ -3222,6 +3222,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "AODBPredictAPI",
-    "timestamp" : 1763282619939
+    "timestamp" : 1763384496941
   }
 }
