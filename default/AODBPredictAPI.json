@@ -2084,7 +2084,7 @@
       },
       "properties" : {
         "Create Missing Directories" : "true",
-        "Directory" : "/opt/nifi/nifi-current/data/output/",
+        "Directory" : "output/forecast_predict",
         "Conflict Resolution Strategy" : "fail"
       },
       "propertyDescriptors" : {
@@ -3222,6 +3222,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "AODBPredictAPI",
-    "timestamp" : 1763384496941
+    "timestamp" : 1763397044163
   }
 }
