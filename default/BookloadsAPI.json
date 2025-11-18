@@ -439,36 +439,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "95f11f3c-019a-1000-d945-cb22105737b7",
-        "name" : "ExtractText",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "95f11f49-019a-1000-c415-e138ef5ecc15",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "success" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "95f11f38-019a-1000-83ae-e563cf687b10",
-        "name" : "GetFile",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 149
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "95f11f39-019a-1000-006f-b8db281aa321",
         "name" : "JoltTransformJSON",
         "type" : "PROCESSOR"
@@ -491,36 +461,6 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 166
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "95f11f3e-019a-1000-768e-96b1af964399",
-        "name" : "UpdateAttribute",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "95f11f4b-019a-1000-6b94-1b965945bf71",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "matched" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "95f11f3c-019a-1000-d945-cb22105737b7",
-        "name" : "ExtractText",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 150
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -709,6 +649,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "96b780cc-019a-1000-d2f5-ecb8ba397158",
+        "name" : "PutFile",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "96b780ce-019a-1000-7e62-4d9aa7de6168",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "96b780cd-019a-1000-2bf9-c0fe8697b27c",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 186
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "8d813bb7-019a-1000-ea13-db37e77f626f",
         "name" : "LogAttribute",
         "type" : "PROCESSOR"
@@ -731,6 +701,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 179
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "96b780cd-019a-1000-2bf9-c0fe8697b27c",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "b4dc95e4-1d87-3389-8142-95a8d24c1491",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "Response" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "95f11f37-019a-1000-f20b-377ba7824111",
+        "name" : "Default_ML_Simulation_InvokeHTTP",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 188
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -851,6 +851,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 181
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "95f11f3e-019a-1000-768e-96b1af964399",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "e2cb5f8d-c411-32aa-ada5-2a813e472188",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "matched" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "8d6a1d90-019a-1000-c153-60b5435ae73a",
+        "name" : "ExtractText",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 187
     } ],
     "controllerServices" : [ {
       "bulletinLevel" : "WARN",
@@ -4070,8 +4100,8 @@
       "name" : "JoltTransformJSON",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 14728.0,
-        "y" : 328.0
+        "x" : 12888.0,
+        "y" : 696.0
       },
       "properties" : {
         "JSON Source" : "FLOW_FILE",
@@ -4182,8 +4212,8 @@
       "name" : "JoltTransformJSON",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 14392.0,
-        "y" : 688.0
+        "x" : 12552.0,
+        "y" : 1056.0
       },
       "properties" : {
         "JSON Source" : "FLOW_FILE",
@@ -4294,8 +4324,8 @@
       "name" : "SplitJson",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 15064.0,
-        "y" : 664.0
+        "x" : 13224.0,
+        "y" : 1032.0
       },
       "properties" : {
         "Max String Length" : "20 MB",
@@ -4532,8 +4562,8 @@
       "name" : "Default_ML_Simulation_InvokeHTTP",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 13872.0,
-        "y" : 328.0
+        "x" : 12896.0,
+        "y" : 344.0
       },
       "properties" : {
         "Request Content-Encoding" : "DISABLED",
@@ -4861,40 +4891,37 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 13888.0,
-        "y" : -216.0
+        "x" : 12912.0,
+        "y" : -200.0
       },
       "properties" : {
-        "Authorization" : "Bearer ${bearer.token}",
-        "start_time" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:01\")}",
+        "distributionType" : "daily",
+        "movementIndicator" : "Departure",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "api_url" : "https://ghial-prd.ghialapoc.in/advanced/api/v1/airport/bookloads/bookloadsStats",
         "datetimerange-fromTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:01\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
         "end_time" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd\")} 23:59:59",
+        "trafficType" : "Domestic",
+        "datetimerange-toTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
+        "Authorization" : "Bearer ${bearer.token}",
+        "start_time" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:01\")}",
         "location" : "[\"6687c2b4a406546ac5a1f7cb\", \"6687c3b3a406546ac5a1f7e9\", \"668cf208767c2d4c35965376\"]",
-        "datetimerange-toTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}"
+        "timestampField" : "schedule"
       },
       "propertyDescriptors" : {
-        "Authorization" : {
-          "displayName" : "Authorization",
+        "distributionType" : {
+          "displayName" : "distributionType",
           "dynamic" : true,
           "identifiesControllerService" : false,
-          "name" : "Authorization",
+          "name" : "distributionType",
           "sensitive" : false
         },
-        "start_time" : {
-          "displayName" : "start_time",
+        "movementIndicator" : {
+          "displayName" : "movementIndicator",
           "dynamic" : true,
           "identifiesControllerService" : false,
-          "name" : "start_time",
-          "sensitive" : false
-        },
-        "Delete Attributes Expression" : {
-          "displayName" : "Delete Attributes Expression",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Delete Attributes Expression",
+          "name" : "movementIndicator",
           "sensitive" : false
         },
         "Store State" : {
@@ -4932,11 +4959,11 @@
           "name" : "end_time",
           "sensitive" : false
         },
-        "location" : {
-          "displayName" : "location",
+        "trafficType" : {
+          "displayName" : "trafficType",
           "dynamic" : true,
           "identifiesControllerService" : false,
-          "name" : "location",
+          "name" : "trafficType",
           "sensitive" : false
         },
         "Stateful Variables Initial Value" : {
@@ -4951,6 +4978,41 @@
           "dynamic" : true,
           "identifiesControllerService" : false,
           "name" : "datetimerange-toTime",
+          "sensitive" : false
+        },
+        "Authorization" : {
+          "displayName" : "Authorization",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "Authorization",
+          "sensitive" : false
+        },
+        "start_time" : {
+          "displayName" : "start_time",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "start_time",
+          "sensitive" : false
+        },
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "location" : {
+          "displayName" : "location",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "location",
+          "sensitive" : false
+        },
+        "timestampField" : {
+          "displayName" : "timestampField",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "timestampField",
           "sensitive" : false
         }
       },
@@ -4982,12 +5044,12 @@
       "name" : "ReplaceText",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 13880.0,
-        "y" : 48.0
+        "x" : 12904.0,
+        "y" : 64.0
       },
       "properties" : {
         "Regular Expression" : "(?s)(^.*$)",
-        "Replacement Value" : "{\n  \"startTime\": \"${datetimerange-fromTime}\",\n  \"endTime\": \"${datetimerange-toTime}\",\n  \"distributionType\": \"daily\",\n  \"movementIndicator\": \"Departure\",\n  \"trafficType\": \"Domestic\",\n  \"timestampField\": \"schedule\"\n}",
+        "Replacement Value" : "{\n  \"startTime\": \"${datetimerange-fromTime}\",\n  \"endTime\": \"${datetimerange-toTime}\",\n  \"distributionType\": \"${distributionType}\",\n  \"movementIndicator\": \"${movementIndicator}\",\n  \"trafficType\": \"${trafficType}\",\n  \"timestampField\": \"${timestampField}\"\n}",
         "Evaluation Mode" : "Entire text",
         "Line-by-Line Evaluation Mode" : "All",
         "Character Set" : "UTF-8",
@@ -5215,8 +5277,8 @@
       "name" : "LogAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 15064.0,
-        "y" : 1448.0
+        "x" : 13224.0,
+        "y" : 1816.0
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -5326,8 +5388,8 @@
       "name" : "PutDatabaseRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 14384.0,
-        "y" : 1208.0
+        "x" : 12544.0,
+        "y" : 1576.0
       },
       "properties" : {
         "put-db-record-allow-multiple-statements" : "false",
@@ -5570,8 +5632,8 @@
       "name" : "LogAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 14392.0,
-        "y" : 1456.0
+        "x" : 12552.0,
+        "y" : 1824.0
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -5681,12 +5743,12 @@
       "name" : "ExecuteScript",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 15064.0,
-        "y" : 952.0
+        "x" : 13224.0,
+        "y" : 1320.0
       },
       "properties" : {
         "Script Engine" : "Groovy",
-        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\nimport java.time.*\nimport java.time.format.DateTimeFormatter\nimport java.time.Instant\nimport java.time.ZoneId\n\nflowFile = session.get()\nif(!flowFile) return\n\nflowFile = session.write(flowFile, { inputStream, outputStream ->\n\n    def text = inputStream.getText(\"UTF-8\")\n    def json = new JsonSlurper().parseText(text)\n\n    // --- READ ATTRIBUTES ---\n    def startTimeAttr = flowFile.getAttribute(\"datetimerange-fromTime\")?.trim()\n    def endTimeAttr   = flowFile.getAttribute(\"datetimerange-toTime\")?.trim()\n\n\t// Convert epoch string → yyyy-MM-dd HH:mm:ss in Asia/Kolkata timezone\n\tdef toISTDateTime = { epochStr ->\n\t\ttry {\n\t\t\tdef epoch = Long.parseLong(epochStr)\n\t\t\tif (epoch < 1000000000000L) {\n\t\t\t\tepoch *= 1000L\n\t\t\t}\n\t\t\tdef zoned = Instant.ofEpochMilli(epoch).atZone(ZoneId.of(\"Asia/Kolkata\"))\n\t\t\treturn zoned.format(DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\"))\n\t\t} catch (Exception e) {\n\t\t\treturn epochStr\n\t\t}\n\t}\n\t\t\t\t\t\t\t\t\n\tdef formattedStartTime = toISTDateTime(startTimeAttr)\n\tdef formattedEndTime = toISTDateTime(endTimeAttr)\n\t\n\t// ✅ Current timestamp in Asia/Kolkata timezone\n\tdef nowKolkata = java.time.ZonedDateTime.now(java.time.ZoneId.of(\"Asia/Kolkata\"))\n\tdef formatter = java.time.format.DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\")\n\tdef currentTime = nowKolkata.format(formatter)\n\n    // --- Add to JSON ---\n    json[\"start_time\"] = formattedStartTime\n    json[\"end_time\"]   = formattedEndTime\n\n    outputStream.write(JsonOutput.prettyPrint(JsonOutput.toJson(json)).getBytes(StandardCharsets.UTF_8))\n\n} as StreamCallback)\n\nsession.transfer(flowFile, REL_SUCCESS)\n"
+        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\nimport java.time.*\nimport java.time.format.DateTimeFormatter\nimport java.time.Instant\nimport java.time.ZoneId\n\nflowFile = session.get()\nif(!flowFile) return\n\nflowFile = session.write(flowFile, { inputStream, outputStream ->\n\n    def text = inputStream.getText(\"UTF-8\")\n    def json = new JsonSlurper().parseText(text)\n\n    // --- READ ATTRIBUTES ---\n    def startTimeAttr = flowFile.getAttribute(\"datetimerange-fromTime\")?.trim()\n    def endTimeAttr   = flowFile.getAttribute(\"datetimerange-toTime\")?.trim()\n\tdef trafficType   = flowFile.getAttribute(\"trafficType\")\n\n\t// Convert epoch string → yyyy-MM-dd HH:mm:ss in Asia/Kolkata timezone\n\tdef toISTDateTime = { epochStr ->\n\t\ttry {\n\t\t\tdef epoch = Long.parseLong(epochStr)\n\t\t\tif (epoch < 1000000000000L) {\n\t\t\t\tepoch *= 1000L\n\t\t\t}\n\t\t\tdef zoned = Instant.ofEpochMilli(epoch).atZone(ZoneId.of(\"Asia/Kolkata\"))\n\t\t\treturn zoned.format(DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\"))\n\t\t} catch (Exception e) {\n\t\t\treturn epochStr\n\t\t}\n\t}\n\t\t\t\t\t\t\t\t\n\tdef formattedStartTime = toISTDateTime(startTimeAttr)\n\tdef formattedEndTime = toISTDateTime(endTimeAttr)\n\t\n\t// ✅ Current timestamp in Asia/Kolkata timezone\n\tdef nowKolkata = java.time.ZonedDateTime.now(java.time.ZoneId.of(\"Asia/Kolkata\"))\n\tdef formatter = java.time.format.DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\")\n\tdef currentTime = nowKolkata.format(formatter)\n\n    // --- Add to JSON ---\n    json[\"start_time\"] = formattedStartTime\n    json[\"end_time\"]   = formattedEndTime\n\tjson[\"trafficType\"]   = trafficType\n\n    outputStream.write(JsonOutput.prettyPrint(JsonOutput.toJson(json)).getBytes(StandardCharsets.UTF_8))\n\n} as StreamCallback)\n\nsession.transfer(flowFile, REL_SUCCESS)\n"
       },
       "propertyDescriptors" : {
         "Script File" : {
@@ -5754,8 +5816,8 @@
       "name" : "PutDatabaseRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 15056.0,
-        "y" : 1216.0
+        "x" : 13216.0,
+        "y" : 1584.0
       },
       "properties" : {
         "put-db-record-allow-multiple-statements" : "false",
@@ -5998,11 +6060,11 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 13112.0,
-        "y" : 336.0
+        "x" : 12136.0,
+        "y" : 352.0
       },
       "properties" : {
-        "filename" : "bookloads_bookloadsstats_InvokeHTTP_api_${now():format(\"yyyyMMdd_HHmmss_SSS\")}_${UUID()}.json",
+        "filename" : "bookloads_bookloadsstats_Domestic_InvokeHTTP_api_${now():format(\"yyyyMMdd_HHmmss_SSS\")}_${UUID()}.json",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100"
       },
@@ -6071,8 +6133,8 @@
       "name" : "PutFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 13112.0,
-        "y" : 664.0
+        "x" : 12128.0,
+        "y" : 696.0
       },
       "properties" : {
         "Create Missing Directories" : "true",
@@ -6165,8 +6227,8 @@
       "name" : "Default_ML_Simulation_InvokeHTTP",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 15864.0,
-        "y" : 288.0
+        "x" : 14784.0,
+        "y" : 304.0
       },
       "properties" : {
         "Request Content-Encoding" : "DISABLED",
@@ -6476,134 +6538,6 @@
       "type" : "org.apache.nifi.processors.standard.InvokeHTTP",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ ],
-      "backoffMechanism" : "PENALIZE_FLOWFILE",
-      "bulletinLevel" : "WARN",
-      "bundle" : {
-        "artifact" : "nifi-standard-nar",
-        "group" : "org.apache.nifi",
-        "version" : "2.6.0"
-      },
-      "comments" : "",
-      "componentType" : "PROCESSOR",
-      "concurrentlySchedulableTaskCount" : 1,
-      "executionNode" : "ALL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "95f11f38-019a-1000-83ae-e563cf687b10",
-      "maxBackoffPeriod" : "10 mins",
-      "name" : "GetFile",
-      "penaltyDuration" : "30 sec",
-      "position" : {
-        "x" : 15872.0,
-        "y" : -792.0
-      },
-      "properties" : {
-        "Keep Source File" : "true",
-        "Minimum File Age" : "0 sec",
-        "Polling Interval" : "0 sec",
-        "Input Directory" : "cred",
-        "Batch Size" : "10",
-        "Minimum File Size" : "0 B",
-        "Ignore Hidden Files" : "true",
-        "Recurse Subdirectories" : "true",
-        "File Filter" : "bearer_token.json"
-      },
-      "propertyDescriptors" : {
-        "Keep Source File" : {
-          "displayName" : "Keep Source File",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Keep Source File",
-          "sensitive" : false
-        },
-        "Minimum File Age" : {
-          "displayName" : "Minimum File Age",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Minimum File Age",
-          "sensitive" : false
-        },
-        "Polling Interval" : {
-          "displayName" : "Polling Interval",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Polling Interval",
-          "sensitive" : false
-        },
-        "Input Directory" : {
-          "displayName" : "Input Directory",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Input Directory",
-          "sensitive" : false
-        },
-        "Maximum File Age" : {
-          "displayName" : "Maximum File Age",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Maximum File Age",
-          "sensitive" : false
-        },
-        "Batch Size" : {
-          "displayName" : "Batch Size",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Batch Size",
-          "sensitive" : false
-        },
-        "Maximum File Size" : {
-          "displayName" : "Maximum File Size",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Maximum File Size",
-          "sensitive" : false
-        },
-        "Minimum File Size" : {
-          "displayName" : "Minimum File Size",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Minimum File Size",
-          "sensitive" : false
-        },
-        "Ignore Hidden Files" : {
-          "displayName" : "Ignore Hidden Files",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Ignore Hidden Files",
-          "sensitive" : false
-        },
-        "Recurse Subdirectories" : {
-          "displayName" : "Recurse Subdirectories",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Recurse Subdirectories",
-          "sensitive" : false
-        },
-        "File Filter" : {
-          "displayName" : "File Filter",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "File Filter",
-          "sensitive" : false
-        },
-        "Path Filter" : {
-          "displayName" : "Path Filter",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Path Filter",
-          "sensitive" : false
-        }
-      },
-      "retriedRelationships" : [ ],
-      "retryCount" : 10,
-      "runDurationMillis" : 0,
-      "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 0/1 * * * ?",
-      "schedulingStrategy" : "CRON_DRIVEN",
-      "style" : { },
-      "type" : "org.apache.nifi.processors.standard.GetFile",
-      "yieldDuration" : "1 sec"
-    }, {
       "autoTerminatedRelationships" : [ "failure" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
@@ -6622,8 +6556,8 @@
       "name" : "JoltTransformJSON",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 16384.0,
-        "y" : 648.0
+        "x" : 14464.0,
+        "y" : 1064.0
       },
       "properties" : {
         "JSON Source" : "FLOW_FILE",
@@ -6734,8 +6668,8 @@
       "name" : "JoltTransformJSON",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 16720.0,
-        "y" : 288.0
+        "x" : 14800.0,
+        "y" : 704.0
       },
       "properties" : {
         "JSON Source" : "FLOW_FILE",
@@ -6846,8 +6780,8 @@
       "name" : "PutDatabaseRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 16376.0,
-        "y" : 1168.0
+        "x" : 14456.0,
+        "y" : 1584.0
       },
       "properties" : {
         "put-db-record-allow-multiple-statements" : "false",
@@ -6868,7 +6802,7 @@
         "rollback-on-failure" : "false",
         "put-db-record-binary-format" : "UTF-8",
         "db-type" : "PostgreSQL",
-        "put-db-record-table-name" : "terminalwise_bookload_stats_dev_v0",
+        "put-db-record-table-name" : "terminalwise_bookload_stats",
         "put-db-record-record-reader" : "8bc1e2c3-019a-1000-f1d3-fe4ebd7d5e05"
       },
       "propertyDescriptors" : {
@@ -7072,185 +7006,6 @@
       "type" : "org.apache.nifi.processors.standard.PutDatabaseRecord",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ "unmatched" ],
-      "backoffMechanism" : "PENALIZE_FLOWFILE",
-      "bulletinLevel" : "WARN",
-      "bundle" : {
-        "artifact" : "nifi-standard-nar",
-        "group" : "org.apache.nifi",
-        "version" : "2.6.0"
-      },
-      "comments" : "",
-      "componentType" : "PROCESSOR",
-      "concurrentlySchedulableTaskCount" : 1,
-      "executionNode" : "ALL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "95f11f3c-019a-1000-d945-cb22105737b7",
-      "maxBackoffPeriod" : "10 mins",
-      "name" : "ExtractText",
-      "penaltyDuration" : "30 sec",
-      "position" : {
-        "x" : 15872.0,
-        "y" : -520.0
-      },
-      "properties" : {
-        "Enable Unicode Predefined Character Classes" : "false",
-        "Permit Whitespace and Comments in Pattern" : "false",
-        "Enable Unicode-aware Case Folding" : "false",
-        "Enable named group support" : "false",
-        "bearer_token" : "\"token\"\\s*:\\s*\"(.*?)\"",
-        "Enable DOTALL Mode" : "false",
-        "Enable Unix Lines Mode" : "false",
-        "Maximum Buffer Size" : "1 MB",
-        "Enable Canonical Equivalence" : "false",
-        "Enable Case-insensitive Matching" : "false",
-        "Enable Multiline Mode" : "false",
-        "Enable repeating capture group" : "false",
-        "locationId" : "(?s).*",
-        "bearer.token" : "(?s)(.*)",
-        "Maximum Capture Group Length" : "1024",
-        "Enable Literal Parsing of the Pattern" : "false",
-        "Character Set" : "UTF-8",
-        "Include Capture Group 0" : "true"
-      },
-      "propertyDescriptors" : {
-        "Enable Unicode Predefined Character Classes" : {
-          "displayName" : "Enable Unicode Predefined Character Classes",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Enable Unicode Predefined Character Classes",
-          "sensitive" : false
-        },
-        "Permit Whitespace and Comments in Pattern" : {
-          "displayName" : "Permit Whitespace and Comments in Pattern",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Permit Whitespace and Comments in Pattern",
-          "sensitive" : false
-        },
-        "Enable Unicode-aware Case Folding" : {
-          "displayName" : "Enable Unicode-aware Case Folding",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Enable Unicode-aware Case Folding",
-          "sensitive" : false
-        },
-        "Enable named group support" : {
-          "displayName" : "Enable named group support",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Enable named group support",
-          "sensitive" : false
-        },
-        "bearer_token" : {
-          "displayName" : "bearer_token",
-          "dynamic" : true,
-          "identifiesControllerService" : false,
-          "name" : "bearer_token",
-          "sensitive" : false
-        },
-        "Enable DOTALL Mode" : {
-          "displayName" : "Enable DOTALL Mode",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Enable DOTALL Mode",
-          "sensitive" : false
-        },
-        "Enable Unix Lines Mode" : {
-          "displayName" : "Enable Unix Lines Mode",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Enable Unix Lines Mode",
-          "sensitive" : false
-        },
-        "Maximum Buffer Size" : {
-          "displayName" : "Maximum Buffer Size",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Maximum Buffer Size",
-          "sensitive" : false
-        },
-        "Enable Canonical Equivalence" : {
-          "displayName" : "Enable Canonical Equivalence",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Enable Canonical Equivalence",
-          "sensitive" : false
-        },
-        "Enable Case-insensitive Matching" : {
-          "displayName" : "Enable Case-insensitive Matching",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Enable Case-insensitive Matching",
-          "sensitive" : false
-        },
-        "Enable Multiline Mode" : {
-          "displayName" : "Enable Multiline Mode",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Enable Multiline Mode",
-          "sensitive" : false
-        },
-        "Enable repeating capture group" : {
-          "displayName" : "Enable repeating capture group",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Enable repeating capture group",
-          "sensitive" : false
-        },
-        "locationId" : {
-          "displayName" : "locationId",
-          "dynamic" : true,
-          "identifiesControllerService" : false,
-          "name" : "locationId",
-          "sensitive" : false
-        },
-        "bearer.token" : {
-          "displayName" : "bearer.token",
-          "dynamic" : true,
-          "identifiesControllerService" : false,
-          "name" : "bearer.token",
-          "sensitive" : false
-        },
-        "Maximum Capture Group Length" : {
-          "displayName" : "Maximum Capture Group Length",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Maximum Capture Group Length",
-          "sensitive" : false
-        },
-        "Enable Literal Parsing of the Pattern" : {
-          "displayName" : "Enable Literal Parsing of the Pattern",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Enable Literal Parsing of the Pattern",
-          "sensitive" : false
-        },
-        "Character Set" : {
-          "displayName" : "Character Set",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Character Set",
-          "sensitive" : false
-        },
-        "Include Capture Group 0" : {
-          "displayName" : "Include Capture Group 0",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Include Capture Group 0",
-          "sensitive" : false
-        }
-      },
-      "retriedRelationships" : [ ],
-      "retryCount" : 10,
-      "runDurationMillis" : 0,
-      "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "30 sec",
-      "schedulingStrategy" : "TIMER_DRIVEN",
-      "style" : { },
-      "type" : "org.apache.nifi.processors.standard.ExtractText",
-      "yieldDuration" : "1 sec"
-    }, {
       "autoTerminatedRelationships" : [ "failure", "original" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
@@ -7269,8 +7024,8 @@
       "name" : "SplitJson",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 17056.0,
-        "y" : 624.0
+        "x" : 15136.0,
+        "y" : 1040.0
       },
       "properties" : {
         "Max String Length" : "20 MB",
@@ -7328,41 +7083,37 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 15880.0,
-        "y" : -256.0
+        "x" : 14800.0,
+        "y" : -240.0
       },
       "properties" : {
-        "Authorization" : "Bearer ${bearer.token}",
-        "start_time" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:01\")}",
+        "distributionType" : "daily",
+        "movementIndicator" : "Departure",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "api_url" : "https://ghial-prd.ghialapoc.in/advanced/api/v1/airport/bookloads/bookloadsStats",
         "datetimerange-fromTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:01\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
         "end_time" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd\")} 23:59:59",
-        "trafficType" : "\"International\"",
+        "trafficType" : "International",
+        "datetimerange-toTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
+        "Authorization" : "Bearer ${bearer.token}",
+        "start_time" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:01\")}",
         "location" : "[\"6687c2b4a406546ac5a1f7cb\", \"6687c3b3a406546ac5a1f7e9\", \"668cf208767c2d4c35965376\"]",
-        "datetimerange-toTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}"
+        "timestampField" : "schedule"
       },
       "propertyDescriptors" : {
-        "Authorization" : {
-          "displayName" : "Authorization",
+        "distributionType" : {
+          "displayName" : "distributionType",
           "dynamic" : true,
           "identifiesControllerService" : false,
-          "name" : "Authorization",
+          "name" : "distributionType",
           "sensitive" : false
         },
-        "start_time" : {
-          "displayName" : "start_time",
+        "movementIndicator" : {
+          "displayName" : "movementIndicator",
           "dynamic" : true,
           "identifiesControllerService" : false,
-          "name" : "start_time",
-          "sensitive" : false
-        },
-        "Delete Attributes Expression" : {
-          "displayName" : "Delete Attributes Expression",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Delete Attributes Expression",
+          "name" : "movementIndicator",
           "sensitive" : false
         },
         "Store State" : {
@@ -7407,13 +7158,6 @@
           "name" : "trafficType",
           "sensitive" : false
         },
-        "location" : {
-          "displayName" : "location",
-          "dynamic" : true,
-          "identifiesControllerService" : false,
-          "name" : "location",
-          "sensitive" : false
-        },
         "Stateful Variables Initial Value" : {
           "displayName" : "Stateful Variables Initial Value",
           "dynamic" : false,
@@ -7426,6 +7170,41 @@
           "dynamic" : true,
           "identifiesControllerService" : false,
           "name" : "datetimerange-toTime",
+          "sensitive" : false
+        },
+        "Authorization" : {
+          "displayName" : "Authorization",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "Authorization",
+          "sensitive" : false
+        },
+        "start_time" : {
+          "displayName" : "start_time",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "start_time",
+          "sensitive" : false
+        },
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "location" : {
+          "displayName" : "location",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "location",
+          "sensitive" : false
+        },
+        "timestampField" : {
+          "displayName" : "timestampField",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "timestampField",
           "sensitive" : false
         }
       },
@@ -7457,8 +7236,8 @@
       "name" : "LogAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 17056.0,
-        "y" : 1408.0
+        "x" : 15136.0,
+        "y" : 1824.0
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -7568,8 +7347,8 @@
       "name" : "PutDatabaseRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 17048.0,
-        "y" : 1176.0
+        "x" : 15128.0,
+        "y" : 1592.0
       },
       "properties" : {
         "put-db-record-allow-multiple-statements" : "false",
@@ -7590,7 +7369,7 @@
         "rollback-on-failure" : "false",
         "put-db-record-binary-format" : "UTF-8",
         "db-type" : "PostgreSQL",
-        "put-db-record-table-name" : "flightwise_bookload_stats_dev_v0",
+        "put-db-record-table-name" : "flightwise_bookload_stats",
         "put-db-record-record-reader" : "8bc1e2c3-019a-1000-f1d3-fe4ebd7d5e05"
       },
       "propertyDescriptors" : {
@@ -7812,12 +7591,12 @@
       "name" : "ReplaceText",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 15872.0,
-        "y" : 8.0
+        "x" : 14792.0,
+        "y" : 24.0
       },
       "properties" : {
         "Regular Expression" : "(?s)(^.*$)",
-        "Replacement Value" : "{\n  \"startTime\": \"${datetimerange-fromTime}\",\n  \"endTime\": \"${datetimerange-toTime}\",\n  \"distributionType\": \"daily\",\n  \"movementIndicator\": \"Departure\",\n  \"trafficType\": \"International\",\n  \"timestampField\": \"schedule\"\n}",
+        "Replacement Value" : "{\n  \"startTime\": \"${datetimerange-fromTime}\",\n  \"endTime\": \"${datetimerange-toTime}\",\n  \"distributionType\": \"${distributionType}\",\n  \"movementIndicator\": \"${movementIndicator}\",\n  \"trafficType\": \"${trafficType}\",\n  \"timestampField\": \"${timestampField}\"\n}",
         "Evaluation Mode" : "Entire text",
         "Line-by-Line Evaluation Mode" : "All",
         "Character Set" : "UTF-8",
@@ -7917,8 +7696,8 @@
       "name" : "ExecuteScript",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 17056.0,
-        "y" : 912.0
+        "x" : 15136.0,
+        "y" : 1328.0
       },
       "properties" : {
         "Script Engine" : "Groovy",
@@ -7990,8 +7769,8 @@
       "name" : "ExecuteScript",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 16376.0,
-        "y" : 912.0
+        "x" : 14456.0,
+        "y" : 1328.0
       },
       "properties" : {
         "Script Engine" : "Groovy",
@@ -8063,8 +7842,8 @@
       "name" : "LogAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 16384.0,
-        "y" : 1416.0
+        "x" : 14464.0,
+        "y" : 1832.0
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -8174,12 +7953,12 @@
       "name" : "ExecuteScript",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 14384.0,
-        "y" : 952.0
+        "x" : 12544.0,
+        "y" : 1320.0
       },
       "properties" : {
         "Script Engine" : "Groovy",
-        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\nimport java.time.*\nimport java.time.format.DateTimeFormatter\nimport java.time.Instant\nimport java.time.ZoneId\n\nflowFile = session.get()\nif(!flowFile) return\n\nflowFile = session.write(flowFile, { inputStream, outputStream ->\n\n    def text = inputStream.getText(\"UTF-8\")\n    def json = new JsonSlurper().parseText(text)\n\n    // --- READ ATTRIBUTES ---\n    def startTimeAttr = flowFile.getAttribute(\"datetimerange-fromTime\")?.trim()\n    def endTimeAttr   = flowFile.getAttribute(\"datetimerange-toTime\")?.trim()\n\n\t// Convert epoch string → yyyy-MM-dd HH:mm:ss in Asia/Kolkata timezone\n\tdef toISTDateTime = { epochStr ->\n\t\ttry {\n\t\t\tdef epoch = Long.parseLong(epochStr)\n\t\t\tif (epoch < 1000000000000L) {\n\t\t\t\tepoch *= 1000L\n\t\t\t}\n\t\t\tdef zoned = Instant.ofEpochMilli(epoch).atZone(ZoneId.of(\"Asia/Kolkata\"))\n\t\t\treturn zoned.format(DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\"))\n\t\t} catch (Exception e) {\n\t\t\treturn epochStr\n\t\t}\n\t}\n\t\t\t\t\t\t\t\t\n\tdef formattedStartTime = toISTDateTime(startTimeAttr)\n\tdef formattedEndTime = toISTDateTime(endTimeAttr)\n\t\n\t// ✅ Current timestamp in Asia/Kolkata timezone\n\tdef nowKolkata = java.time.ZonedDateTime.now(java.time.ZoneId.of(\"Asia/Kolkata\"))\n\tdef formatter = java.time.format.DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\")\n\tdef currentTime = nowKolkata.format(formatter)\n\n    // --- Add to JSON ---\n    json[\"start_time\"] = formattedStartTime\n    json[\"end_time\"]   = formattedEndTime\n\n    outputStream.write(JsonOutput.prettyPrint(JsonOutput.toJson(json)).getBytes(StandardCharsets.UTF_8))\n\n} as StreamCallback)\n\nsession.transfer(flowFile, REL_SUCCESS)\n"
+        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\nimport java.time.*\nimport java.time.format.DateTimeFormatter\nimport java.time.Instant\nimport java.time.ZoneId\n\nflowFile = session.get()\nif(!flowFile) return\n\nflowFile = session.write(flowFile, { inputStream, outputStream ->\n\n    def text = inputStream.getText(\"UTF-8\")\n    def json = new JsonSlurper().parseText(text)\n\n    // --- READ ATTRIBUTES ---\n    def startTimeAttr = flowFile.getAttribute(\"datetimerange-fromTime\")?.trim()\n    def endTimeAttr   = flowFile.getAttribute(\"datetimerange-toTime\")?.trim()\n\tdef trafficType   = flowFile.getAttribute(\"trafficType\")\n\n\t// Convert epoch string → yyyy-MM-dd HH:mm:ss in Asia/Kolkata timezone\n\tdef toISTDateTime = { epochStr ->\n\t\ttry {\n\t\t\tdef epoch = Long.parseLong(epochStr)\n\t\t\tif (epoch < 1000000000000L) {\n\t\t\t\tepoch *= 1000L\n\t\t\t}\n\t\t\tdef zoned = Instant.ofEpochMilli(epoch).atZone(ZoneId.of(\"Asia/Kolkata\"))\n\t\t\treturn zoned.format(DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\"))\n\t\t} catch (Exception e) {\n\t\t\treturn epochStr\n\t\t}\n\t}\n\t\t\t\t\t\t\t\t\n\tdef formattedStartTime = toISTDateTime(startTimeAttr)\n\tdef formattedEndTime = toISTDateTime(endTimeAttr)\n\t\n\t// ✅ Current timestamp in Asia/Kolkata timezone\n\tdef nowKolkata = java.time.ZonedDateTime.now(java.time.ZoneId.of(\"Asia/Kolkata\"))\n\tdef formatter = java.time.format.DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\")\n\tdef currentTime = nowKolkata.format(formatter)\n\n    // --- Add to JSON ---\n    json[\"start_time\"] = formattedStartTime\n    json[\"end_time\"]   = formattedEndTime\n\tjson[\"trafficType\"]   = trafficType\n\n    outputStream.write(JsonOutput.prettyPrint(JsonOutput.toJson(json)).getBytes(StandardCharsets.UTF_8))\n\n} as StreamCallback)\n\nsession.transfer(flowFile, REL_SUCCESS)\n"
       },
       "propertyDescriptors" : {
         "Script File" : {
@@ -8228,6 +8007,173 @@
       "style" : { },
       "type" : "org.apache.nifi.processors.script.ExecuteScript",
       "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "96b780cc-019a-1000-d2f5-ecb8ba397158",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutFile",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 15544.0,
+        "y" : 688.0
+      },
+      "properties" : {
+        "Create Missing Directories" : "true",
+        "Directory" : "output/bookloads_bookloadsstats",
+        "Conflict Resolution Strategy" : "fail"
+      },
+      "propertyDescriptors" : {
+        "Group" : {
+          "displayName" : "Group",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Group",
+          "sensitive" : false
+        },
+        "Owner" : {
+          "displayName" : "Owner",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Owner",
+          "sensitive" : false
+        },
+        "Create Missing Directories" : {
+          "displayName" : "Create Missing Directories",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Create Missing Directories",
+          "sensitive" : false
+        },
+        "Permissions" : {
+          "displayName" : "Permissions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Permissions",
+          "sensitive" : false
+        },
+        "Maximum File Count" : {
+          "displayName" : "Maximum File Count",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Maximum File Count",
+          "sensitive" : false
+        },
+        "Last Modified Time" : {
+          "displayName" : "Last Modified Time",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Last Modified Time",
+          "sensitive" : false
+        },
+        "Directory" : {
+          "displayName" : "Directory",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Directory",
+          "sensitive" : false
+        },
+        "Conflict Resolution Strategy" : {
+          "displayName" : "Conflict Resolution Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Conflict Resolution Strategy",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutFile",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "96b780cd-019a-1000-2bf9-c0fe8697b27c",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 15544.0,
+        "y" : 304.0
+      },
+      "properties" : {
+        "filename" : "bookloads_bookloadsstats_International_InvokeHTTP_api_${now():format(\"yyyyMMdd_HHmmss_SSS\")}_${UUID()}.json",
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "filename" : {
+          "displayName" : "filename",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "filename",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
     } ],
     "remoteProcessGroups" : [ ],
     "scheduledState" : "ENABLED",
@@ -8240,6 +8186,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "BookloadsAPI",
-    "timestamp" : 1763456444349
+    "timestamp" : 1763466793670
   }
 }
