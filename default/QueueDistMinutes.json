@@ -2769,7 +2769,7 @@
       },
       "properties" : {
         "Create Missing Directories" : "true",
-        "Directory" : "/opt/nifi/nifi-current/data/output/queue_distr",
+        "Directory" : "output/queue_distribution_minutes",
         "Conflict Resolution Strategy" : "fail"
       },
       "propertyDescriptors" : {
@@ -3595,7 +3595,7 @@
         "y" : 504.0
       },
       "properties" : {
-        "filename" : "${UUID()}.json",
+        "filename" : "queue_distribution_${now():format(\"yyyyMMdd_HHmmss_SSS\")}_${UUID()}.json",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100"
       },
@@ -7352,79 +7352,6 @@
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.PutDatabaseRecord",
       "yieldDuration" : "1 sec"
-    }, {
-      "autoTerminatedRelationships" : [ "failure" ],
-      "backoffMechanism" : "PENALIZE_FLOWFILE",
-      "bulletinLevel" : "WARN",
-      "bundle" : {
-        "artifact" : "nifi-scripting-nar",
-        "group" : "org.apache.nifi",
-        "version" : "2.6.0"
-      },
-      "comments" : "",
-      "componentType" : "PROCESSOR",
-      "concurrentlySchedulableTaskCount" : 1,
-      "executionNode" : "ALL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "95ba41c8-019a-1000-c466-453f9e657add",
-      "maxBackoffPeriod" : "10 mins",
-      "name" : "ExecuteScript_gates",
-      "penaltyDuration" : "30 sec",
-      "position" : {
-        "x" : -208.0,
-        "y" : 720.0
-      },
-      "properties" : {
-        "Script Engine" : "Groovy",
-        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\nimport java.time.Instant\nimport java.time.ZoneId\nimport java.time.ZonedDateTime\nimport java.time.format.DateTimeFormatter\n\ndef flowFile = session.get()\nif (!flowFile) return\n\ndef istZone = ZoneId.of(\"Asia/Kolkata\")\ndef formatter = DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\")\n\n// Compute \"today\" in IST once\ndef now = ZonedDateTime.now(istZone)\ndef startTimeStr = now.withHour(0).withMinute(0).withSecond(1).withNano(0).format(formatter)\ndef endTimeStr   = now.withHour(23).withMinute(59).withSecond(59).withNano(0).format(formatter)\ndef createdAtStr = now.format(formatter)\n\nflowFile = session.write(flowFile, { inputStream, outputStream ->\n\n    def jsonText = inputStream.getText('UTF-8')\n    def data = new JsonSlurper().parseText(jsonText)\n    def transformed = []\n\n    data.each { record ->\n        // Convert timestamp to long\n        def timestampMs = (record.timestamp as BigDecimal).longValue()\n        def zdtEvent = Instant.ofEpochMilli(timestampMs).atZone(istZone)\n        def eventTime = zdtEvent.format(formatter)\n\n        record.stats.each { stat ->\n            transformed << [\n                start_time: startTimeStr,   // Always today IST\n                end_time: endTimeStr,       // Always today IST\n                timestamp_ms: timestampMs,\n                event_time: eventTime,      // Event time in IST\n                queue_id: stat.queueId ?: \"\",\n                site_id: stat.siteId ?: \"\",\n                zone_id: stat.zoneId ?: \"\",\n                count: stat.count ?: 0,\n                wait_time: stat.waitTime ?: 0,\n                active_servers: stat.activeServers ?: 0,\n                active_gates: stat.activeGates ?: 0,\n                avg_server_service_time: stat.avgServerServiceTime ?: 0,\n                avg_gate_service_time: stat.avgGateServiceTime ?: 0,\n                entry_count: stat.entry ?: 0,\n                exit_count: stat.exit ?: 0,\n                created_at: createdAtStr\n            ]\n        }\n    }\n\n    outputStream.write(JsonOutput.prettyPrint(JsonOutput.toJson(transformed)).getBytes(StandardCharsets.UTF_8))\n\n} as StreamCallback)\n\nsession.transfer(flowFile, REL_SUCCESS)"
-      },
-      "propertyDescriptors" : {
-        "Script File" : {
-          "displayName" : "Script File",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Script File",
-          "resourceDefinition" : {
-            "cardinality" : "SINGLE",
-            "resourceTypes" : [ "FILE" ]
-          },
-          "sensitive" : false
-        },
-        "Script Engine" : {
-          "displayName" : "Script Engine",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Script Engine",
-          "sensitive" : false
-        },
-        "Script Body" : {
-          "displayName" : "Script Body",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Script Body",
-          "sensitive" : false
-        },
-        "Module Directory" : {
-          "displayName" : "Module Directory",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Module Directory",
-          "resourceDefinition" : {
-            "cardinality" : "MULTIPLE",
-            "resourceTypes" : [ "DIRECTORY", "FILE" ]
-          },
-          "sensitive" : false
-        }
-      },
-      "retriedRelationships" : [ ],
-      "retryCount" : 10,
-      "runDurationMillis" : 0,
-      "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 sec",
-      "schedulingStrategy" : "TIMER_DRIVEN",
-      "style" : { },
-      "type" : "org.apache.nifi.processors.script.ExecuteScript",
-      "yieldDuration" : "1 sec"
     } ],
     "remoteProcessGroups" : [ ],
     "scheduledState" : "ENABLED",
@@ -7437,6 +7364,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "QueueDistMinutes",
-    "timestamp" : 1763470223537
+    "timestamp" : 1763470371874
   }
 }
