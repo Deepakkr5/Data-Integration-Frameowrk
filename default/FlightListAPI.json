@@ -5095,7 +5095,7 @@
       },
       "properties" : {
         "Create Missing Directories" : "true",
-        "Directory" : "output/flight_list/depature",
+        "Directory" : "output/flight_list/departure",
         "Conflict Resolution Strategy" : "fail"
       },
       "propertyDescriptors" : {
@@ -6736,6 +6736,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "FlightListAPI",
-    "timestamp" : 1763470887315
+    "timestamp" : 1763558819500
   }
 }
