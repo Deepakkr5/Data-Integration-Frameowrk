@@ -127,7 +127,7 @@
         "comments" : "",
         "groupId" : "flow-contents-group",
         "id" : "7d5fde11-019a-1000-2454-55e77ba2ca3d",
-        "name" : "bookloadsStats_InvokeHTTP",
+        "name" : "default_ml_simulation_InvokeHTTP",
         "type" : "PROCESSOR"
       },
       "zIndex" : 118
@@ -187,7 +187,7 @@
         "comments" : "",
         "groupId" : "flow-contents-group",
         "id" : "7d5fde11-019a-1000-2454-55e77ba2ca3d",
-        "name" : "bookloadsStats_InvokeHTTP",
+        "name" : "default_ml_simulation_InvokeHTTP",
         "type" : "PROCESSOR"
       },
       "zIndex" : 129
@@ -290,7 +290,7 @@
         "comments" : "",
         "groupId" : "flow-contents-group",
         "id" : "7d5fde11-019a-1000-2454-55e77ba2ca3d",
-        "name" : "bookloadsStats_InvokeHTTP",
+        "name" : "default_ml_simulation_InvokeHTTP",
         "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
@@ -4090,7 +4090,7 @@
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "7d5fde11-019a-1000-2454-55e77ba2ca3d",
       "maxBackoffPeriod" : "10 mins",
-      "name" : "bookloadsStats_InvokeHTTP",
+      "name" : "default_ml_simulation_InvokeHTTP",
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : 2512.0,
@@ -5128,6 +5128,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "MiSimulationAPI",
-    "timestamp" : 1763382852816
+    "timestamp" : 1763751402701
   }
 }
