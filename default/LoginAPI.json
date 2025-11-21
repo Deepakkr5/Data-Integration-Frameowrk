@@ -44,6 +44,66 @@
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "78edb63b-019a-1000-abfe-474bbdd1bf01",
+        "name" : "InvokeHTTP",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "36b2e3f2-d0e9-3380-9e06-6018c14f0cc8",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "retry" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "fb62c504-573d-368f-ad1f-7153d2edb246",
+        "name" : "RetryFlowFile",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 34
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "a46120ae-5f46-333c-b939-feee46416812",
+        "name" : "Wait",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "5ea88829-6006-38db-b54e-a2565b0e7ddf",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "unmatched" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "bcbdcde0-9231-3f98-b35f-6464c593642a",
+        "name" : "RouteOnAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 29
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
       "bends" : [ {
         "x" : -1120.0,
         "y" : -32.0
@@ -140,8 +200,162 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 20
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "fb62c504-573d-368f-ad1f-7153d2edb246",
+        "name" : "RetryFlowFile",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c327a798-42ab-3ab4-9d45-095f9daff07c",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "wait" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "a46120ae-5f46-333c-b939-feee46416812",
+        "name" : "Wait",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 33
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "78edb63e-019a-1000-3c98-7a08e969c7c5",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "d6d19ce8-7f46-30b3-8d43-155d34270a2a",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "Failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "78edb63b-019a-1000-abfe-474bbdd1bf01",
+        "name" : "InvokeHTTP",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 32
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "bcbdcde0-9231-3f98-b35f-6464c593642a",
+        "name" : "RouteOnAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "ec30f9e8-647e-3f3f-afb5-8dbc62c4fa96",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "78edb63e-019a-1000-3c98-7a08e969c7c5",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 31
     } ],
-    "controllerServices" : [ ],
+    "controllerServices" : [ {
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-distributed-cache-services-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "CONTROLLER_SERVICE",
+      "controllerServiceApis" : [ {
+        "bundle" : {
+          "artifact" : "nifi-standard-services-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
+      }, {
+        "bundle" : {
+          "artifact" : "nifi-standard-services-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
+      } ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "3830c824-48e2-3517-b82a-375b427991d6",
+      "name" : "MapCacheClientService",
+      "properties" : {
+        "Server Port" : "4557",
+        "Server Hostname" : "localhost",
+        "Communications Timeout" : "30 secs"
+      },
+      "propertyDescriptors" : {
+        "SSL Context Service" : {
+          "displayName" : "SSL Context Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "SSL Context Service",
+          "sensitive" : false
+        },
+        "Server Port" : {
+          "displayName" : "Server Port",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Server Port",
+          "sensitive" : false
+        },
+        "Server Hostname" : {
+          "displayName" : "Server Hostname",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Server Hostname",
+          "sensitive" : false
+        },
+        "Communications Timeout" : {
+          "displayName" : "Communications Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Communications Timeout",
+          "sensitive" : false
+        }
+      },
+      "scheduledState" : "DISABLED",
+      "type" : "org.apache.nifi.distributed.cache.client.MapCacheClientService"
+    } ],
     "defaultBackPressureDataSizeThreshold" : "1 GB",
     "defaultBackPressureObjectThreshold" : 10000,
     "defaultFlowFileExpiration" : "0 sec",
@@ -162,7 +376,7 @@
     },
     "processGroups" : [ ],
     "processors" : [ {
-      "autoTerminatedRelationships" : [ "Failure", "No Retry", "Original", "Retry" ],
+      "autoTerminatedRelationships" : [ "No Retry", "Original", "Retry" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
@@ -188,17 +402,17 @@
         "Request Multipart Form-Data Filename Enabled" : "true",
         "Request Chunked Transfer-Encoding Enabled" : "false",
         "HTTP/2 Disabled" : "False",
-        "Connection Timeout" : "5 secs",
+        "Connection Timeout" : "60 secs",
         "Response Cookie Strategy" : "DISABLED",
-        "Socket Read Timeout" : "15 secs",
-        "Socket Idle Connections" : "5",
+        "Socket Read Timeout" : "120 secs",
+        "Socket Idle Connections" : "1",
         "Request Body Enabled" : "true",
         "OAuth2 Access Token Refresh Strategy" : "ON_TOKEN_EXPIRATION",
         "HTTP URL" : "https://ghial-prd.ghialapoc.in/advanced/api/v1/auth/login",
         "Socket Idle Timeout" : "5 mins",
         "Response Redirects Enabled" : "True",
         "Accept" : "text/plain",
-        "Socket Write Timeout" : "15 secs",
+        "Socket Write Timeout" : "60 secs",
         "Response FlowFile Naming Strategy" : "RANDOM",
         "Response Cache Enabled" : "false",
         "Request Date Header Enabled" : "True",
@@ -477,7 +691,7 @@
       "retryCount" : 10,
       "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 sec",
+      "schedulingPeriod" : "60 sec",
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.InvokeHTTP",
@@ -607,12 +821,13 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : -976.0,
-        "y" : -16.0
+        "y" : 8.0
       },
       "properties" : {
         "filename" : "bearer_token.json",
         "Store State" : "Do not store state",
-        "canonical-value-lookup-cache-size" : "100"
+        "canonical-value-lookup-cache-size" : "100",
+        "retry_count" : "${retry_count:plus(1)}"
       },
       "propertyDescriptors" : {
         "Delete Attributes Expression" : {
@@ -641,6 +856,13 @@
           "dynamic" : false,
           "identifiesControllerService" : false,
           "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "retry_count" : {
+          "displayName" : "retry_count",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "retry_count",
           "sensitive" : false
         },
         "Stateful Variables Initial Value" : {
@@ -877,10 +1099,249 @@
       "retryCount" : 10,
       "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "1 0 0 * * ?",
+      "schedulingPeriod" : "1 0 12 * * ?",
       "schedulingStrategy" : "CRON_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.GetFile",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "expired", "failure", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "a46120ae-5f46-333c-b939-feee46416812",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "Wait",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -144.0,
+        "y" : -64.0
+      },
+      "properties" : {
+        "wait-buffer-count" : "1",
+        "wait-mode" : "wait",
+        "attribute-copy-mode" : "keeporiginal",
+        "distributed-cache-service" : "3830c824-48e2-3517-b82a-375b427991d6",
+        "releasable-flowfile-count" : "1",
+        "release-signal-id" : "1",
+        "expiration-duration" : "5 min",
+        "target-signal-count" : "1"
+      },
+      "propertyDescriptors" : {
+        "wait-buffer-count" : {
+          "displayName" : "Wait Buffer Count",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "wait-buffer-count",
+          "sensitive" : false
+        },
+        "wait-mode" : {
+          "displayName" : "Wait Mode",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "wait-mode",
+          "sensitive" : false
+        },
+        "attribute-copy-mode" : {
+          "displayName" : "Attribute Copy Mode",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "attribute-copy-mode",
+          "sensitive" : false
+        },
+        "distributed-cache-service" : {
+          "displayName" : "Distributed Cache Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "distributed-cache-service",
+          "sensitive" : false
+        },
+        "releasable-flowfile-count" : {
+          "displayName" : "Releasable FlowFile Count",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "releasable-flowfile-count",
+          "sensitive" : false
+        },
+        "release-signal-id" : {
+          "displayName" : "Release Signal Identifier",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "release-signal-id",
+          "sensitive" : false
+        },
+        "signal-counter-name" : {
+          "displayName" : "Signal Counter Name",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "signal-counter-name",
+          "sensitive" : false
+        },
+        "expiration-duration" : {
+          "displayName" : "Expiration Duration",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "expiration-duration",
+          "sensitive" : false
+        },
+        "target-signal-count" : {
+          "displayName" : "Target Signal Count",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "target-signal-count",
+          "sensitive" : false
+        },
+        "wait-penalty-duration" : {
+          "displayName" : "Wait Penalty Duration",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "wait-penalty-duration",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.Wait",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "retry_needed" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "bcbdcde0-9231-3f98-b35f-6464c593642a",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "RouteOnAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -392.0,
+        "y" : 176.0
+      },
+      "properties" : {
+        "Routing Strategy" : "Route to Property name",
+        "retry_needed" : "${retry_count:lt(10)}"
+      },
+      "propertyDescriptors" : {
+        "Routing Strategy" : {
+          "displayName" : "Routing Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Routing Strategy",
+          "sensitive" : false
+        },
+        "retry_needed" : {
+          "displayName" : "retry_needed",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "retry_needed",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retries_exceeded" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "fb62c504-573d-368f-ad1f-7153d2edb246",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "RetryFlowFile",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -512.0,
+        "y" : -376.0
+      },
+      "properties" : {
+        "penalize-retries" : "true",
+        "maximum-retries" : "3",
+        "Fail on Non-numerical Overwrite" : "false",
+        "reuse-mode" : "fail",
+        "retry-attribute" : "flowfile.retries"
+      },
+      "propertyDescriptors" : {
+        "penalize-retries" : {
+          "displayName" : "Penalize Retries",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "penalize-retries",
+          "sensitive" : false
+        },
+        "maximum-retries" : {
+          "displayName" : "Maximum Retries",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "maximum-retries",
+          "sensitive" : false
+        },
+        "Fail on Non-numerical Overwrite" : {
+          "displayName" : "Fail on Non-numerical Overwrite",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Fail on Non-numerical Overwrite",
+          "sensitive" : false
+        },
+        "reuse-mode" : {
+          "displayName" : "Reuse Mode",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "reuse-mode",
+          "sensitive" : false
+        },
+        "retry-attribute" : {
+          "displayName" : "Retry Attribute",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "retry-attribute",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.RetryFlowFile",
       "yieldDuration" : "1 sec"
     } ],
     "remoteProcessGroups" : [ ],
@@ -894,6 +1355,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "LoginAPI",
-    "timestamp" : 1763282038230
+    "timestamp" : 1763702021411
   }
 }
