@@ -3664,8 +3664,8 @@
       "retryCount" : 10,
       "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 0 * * * ?",
-      "schedulingStrategy" : "CRON_DRIVEN",
+      "schedulingPeriod" : "900 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.GetFile",
       "yieldDuration" : "1 sec"
@@ -5128,6 +5128,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "MiSimulationAPI",
-    "timestamp" : 1763751402701
+    "timestamp" : 1763788136418
   }
 }
