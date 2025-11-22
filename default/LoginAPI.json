@@ -1247,7 +1247,7 @@
       "executionNode" : "ALL",
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "792e7d91-019a-1000-226b-8d00924bae94",
-      "maxBackoffPeriod" : "10 mins",
+      "maxBackoffPeriod" : "60 mins",
       "name" : "GetFile",
       "penaltyDuration" : "30 sec",
       "position" : {
@@ -1351,8 +1351,8 @@
           "sensitive" : false
         }
       },
-      "retriedRelationships" : [ ],
-      "retryCount" : 10,
+      "retriedRelationships" : [ "success" ],
+      "retryCount" : 60,
       "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
       "schedulingPeriod" : "1 0 12 * * ?",
@@ -1423,6 +1423,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "LoginAPI",
-    "timestamp" : 1763711669238
+    "timestamp" : 1763797773117
   }
 }
