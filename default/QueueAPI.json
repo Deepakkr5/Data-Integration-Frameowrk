@@ -2092,7 +2092,7 @@
       "executionNode" : "ALL",
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "78ef1c23-019a-1000-0cde-4aa0a276b38f",
-      "maxBackoffPeriod" : "10 mins",
+      "maxBackoffPeriod" : "5 mins",
       "name" : "InvokeHTTP",
       "penaltyDuration" : "30 sec",
       "position" : {
@@ -2398,7 +2398,7 @@
         }
       },
       "retriedRelationships" : [ "Failure" ],
-      "retryCount" : 10,
+      "retryCount" : 5,
       "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
       "schedulingPeriod" : "10 sec",
@@ -2758,6 +2758,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "QueueAPI",
-    "timestamp" : 1763711718229
+    "timestamp" : 1763796376531
   }
 }
