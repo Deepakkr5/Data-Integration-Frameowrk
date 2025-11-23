@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1763879987245,
+    "description" : "FlightDetailsAPINewToken",
+    "identifier" : "FlightDetailsAPINewToken",
+    "lastModifiedTimestamp" : 1763879987245,
+    "name" : "FlightDetailsAPINewToken",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
