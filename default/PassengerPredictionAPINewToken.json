@@ -2362,7 +2362,7 @@
         "inactiveLocationIds" : "[]",
         "modelInstanceId" : "model-entry_gates_ratio",
         "personel" : "18",
-        "startTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:01\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
+        "startTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:00\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
         "endTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}"
       },
       "propertyDescriptors" : {
@@ -3948,7 +3948,7 @@
         "inactiveLocationIds" : "[]",
         "modelInstanceId" : "model-atrs_ratio",
         "personel" : "46",
-        "startTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:01\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
+        "startTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:00\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
         "endTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}"
       },
       "propertyDescriptors" : {
@@ -4696,7 +4696,7 @@
         "inactiveLocationIds" : "[]",
         "modelInstanceId" : "model-atrs_ratio",
         "personel" : "46",
-        "startTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:01\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
+        "startTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:00\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
         "endTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}"
       },
       "propertyDescriptors" : {
@@ -6747,7 +6747,7 @@
         "inactiveLocationIds" : "[]",
         "modelInstanceId" : "model-pod_dep_emig",
         "personel" : "47",
-        "startTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:01\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
+        "startTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:00\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
         "endTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}"
       },
       "propertyDescriptors" : {
@@ -7526,7 +7526,7 @@
         "inactiveLocationIds" : "null",
         "modelInstanceId" : "model-pod_arr_immi",
         "personel" : "24",
-        "startTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:01\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
+        "startTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 00:00:00\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
         "endTime" : "${now():toDate(\"Asia/Kolkata\"):format(\"yyyy-MM-dd 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}"
       },
       "propertyDescriptors" : {
@@ -8177,6 +8177,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "PassengerPredictionAPINewToken",
-    "timestamp" : 1763983518639
+    "timestamp" : 1763985818829
   }
 }
