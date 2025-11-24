@@ -4971,9 +4971,9 @@
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "api_url" : "https://ghial-prd.ghialapoc.in/advanced/api/v1/airport/aodb/flightDetails",
-        "startTime" : "${now():format(\"yyyy-MM-dd 00:00:01\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
+        "startTime" : "${now():format('yyyy-MM-dd 00:00:01'):toDate('yyyy-MM-dd HH:mm:ss'):toNumber()}",
         "flightType" : "flight",
-        "endTime" : "${now():format(\"yyyy-MM-dd 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
+        "endTime" : "${now():toNumber():plus(86400000):toDate():format(\"yyyy-MM-dd\"):append(\" 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
         "operationalStatuses" : "[\"OPERATIONAL\"]"
       },
       "propertyDescriptors" : {
@@ -6736,6 +6736,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "FlightDetailsAPINewToken",
-    "timestamp" : 1763965281197
+    "timestamp" : 1763988320391
   }
 }
