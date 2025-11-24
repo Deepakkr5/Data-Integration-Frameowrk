@@ -1217,7 +1217,42 @@
       "x" : 0.0,
       "y" : 0.0
     },
-    "processGroups" : [ ],
+    "processGroups" : [ {
+      "comments" : "",
+      "componentType" : "PROCESS_GROUP",
+      "connections" : [ ],
+      "controllerServices" : [ ],
+      "defaultBackPressureDataSizeThreshold" : "1 GB",
+      "defaultBackPressureObjectThreshold" : 10000,
+      "defaultFlowFileExpiration" : "0 sec",
+      "executionEngine" : "INHERITED",
+      "flowFileConcurrency" : "UNBOUNDED",
+      "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+      "funnels" : [ ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "78f2d324-019a-1000-fb3a-5fc532b6cffd",
+      "inputPorts" : [ ],
+      "labels" : [ ],
+      "maxConcurrentTasks" : 1,
+      "name" : "Kloudspot_aerowise_Cab_Availability",
+      "outputPorts" : [ ],
+      "position" : {
+        "x" : -448.0,
+        "y" : 48.0
+      },
+      "processGroups" : [ ],
+      "processors" : [ ],
+      "remoteProcessGroups" : [ ],
+      "scheduledState" : "ENABLED",
+      "statelessFlowTimeout" : "1 min",
+      "versionedFlowCoordinates" : {
+        "branch" : "sit",
+        "bucketId" : "default",
+        "flowId" : "CabAvaibailityAPINewToken",
+        "storageLocation" : "git@github.com:Deepakkr5/Data-Integration-Frameowrk.git",
+        "version" : "cf86754e550b03d08a5be6a877456f15d5b4926b"
+      }
+    } ],
     "processors" : [ {
       "autoTerminatedRelationships" : [ "activity.restored", "inactive", "success" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
@@ -3329,6 +3364,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "OldActualAnalyticsDistributionAPINewToken",
-    "timestamp" : 1763880169359
+    "timestamp" : 1763988292235
   }
 }
