@@ -1966,7 +1966,7 @@
         "schema-name" : "${schema.name}",
         "starting-field-strategy" : "ROOT_NODE",
         "schema-access-strategy" : "schema-text-property",
-        "schema-text" : "{\n  \"type\": \"record\",\n  \"name\": \"actual_pax_distribution\",\n  \"fields\": [\n    {\"name\": \"start_time\", \"type\": [\"null\",\"string\"], \"default\": null},\n    {\"name\": \"end_time\", \"type\": [\"null\",\"string\"], \"default\": null},\n    {\"name\": \"hour\", \"type\": [\"null\",\"string\"], \"default\": null},\n    {\"name\": \"location_id\", \"type\": [\"null\",\"string\"], \"default\": null},\n    {\"name\": \"domestic\", \"type\": [\"null\",\"boolean\"], \"default\": null},\n    {\"name\": \"entry_sum\", \"type\": [\"null\",\"double\"], \"default\": null}\n  ]\n}",
+        "schema-text" : "{\n  \"type\": \"record\",\n  \"name\": \"forecast_pax_distribution\",\n  \"fields\": [\n    {\"name\": \"start_time\", \"type\": [\"null\",\"string\"], \"default\": null},\n    {\"name\": \"end_time\", \"type\": [\"null\",\"string\"], \"default\": null},\n    {\"name\": \"hour\", \"type\": [\"null\",\"string\"], \"default\": null},\n    {\"name\": \"location_id\", \"type\": [\"null\",\"string\"], \"default\": null},\n    {\"name\": \"domestic\", \"type\": [\"null\",\"boolean\"], \"default\": null},\n    {\"name\": \"entry_sum\", \"type\": [\"null\",\"double\"], \"default\": null}\n  ]\n}",
         "Allow Comments" : "false"
       },
       "propertyDescriptors" : {
@@ -9587,6 +9587,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "PassengerPredictionAPINewToken",
-    "timestamp" : 1764001389958
+    "timestamp" : 1764054311508
   }
 }
