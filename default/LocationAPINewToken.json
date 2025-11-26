@@ -3190,10 +3190,10 @@
         "Request Multipart Form-Data Filename Enabled" : "true",
         "Request Chunked Transfer-Encoding Enabled" : "false",
         "HTTP/2 Disabled" : "False",
-        "Connection Timeout" : "5 secs",
+        "Connection Timeout" : "60 secs",
         "Response Cookie Strategy" : "ACCEPT_ALL",
         "Authorization" : "Bearer ${bearer.token}",
-        "Socket Read Timeout" : "15 secs",
+        "Socket Read Timeout" : "300 secs",
         "Socket Idle Connections" : "5",
         "Request Body Enabled" : "true",
         "OAuth2 Access Token Refresh Strategy" : "ON_TOKEN_EXPIRATION",
@@ -3201,7 +3201,7 @@
         "Socket Idle Timeout" : "5 mins",
         "Response Redirects Enabled" : "True",
         "Accept" : "application/json",
-        "Socket Write Timeout" : "15 secs",
+        "Socket Write Timeout" : "120 secs",
         "Response FlowFile Naming Strategy" : "RANDOM",
         "Response Cache Enabled" : "false",
         "Request Date Header Enabled" : "False",
@@ -3855,6 +3855,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "LocationAPINewToken",
-    "timestamp" : 1763879947001
+    "timestamp" : 1764137555542
   }
 }
