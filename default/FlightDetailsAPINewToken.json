@@ -4640,10 +4640,10 @@
         "Request Multipart Form-Data Filename Enabled" : "true",
         "Request Chunked Transfer-Encoding Enabled" : "false",
         "HTTP/2 Disabled" : "False",
-        "Connection Timeout" : "120 secs",
+        "Connection Timeout" : "60 secs",
         "Response Cookie Strategy" : "ACCEPT_ALL",
         "Authorization" : "Bearer ${bearer.token}",
-        "Socket Read Timeout" : "180 secs",
+        "Socket Read Timeout" : "300 secs",
         "Socket Idle Connections" : "1",
         "Request Body Enabled" : "true",
         "OAuth2 Access Token Refresh Strategy" : "ON_TOKEN_EXPIRATION",
@@ -4655,7 +4655,7 @@
         "Response FlowFile Naming Strategy" : "RANDOM",
         "Response Cache Enabled" : "false",
         "Request Date Header Enabled" : "False",
-        "Request Failure Penalization Enabled" : "false",
+        "Request Failure Penalization Enabled" : "true",
         "Response Body Attribute Size" : "256",
         "Response Generation Required" : "false",
         "Response Header Request Attributes Enabled" : "false",
@@ -5729,7 +5729,7 @@
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "api_url" : "https://ghial-prd.ghialapoc.in/advanced/api/v1/airport/aodb/flightDetails",
-        "startTime" : "${now():format(\"yyyy-MM-dd 00:00:01\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
+        "startTime" : "${now():format(\"yyyy-MM-dd 00:00:00\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
         "flightType" : "flight",
         "endTime" : "${now():toNumber():plus(86400000):toDate():format(\"yyyy-MM-dd\"):append(\" 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
         "operationalStatuses" : "[\"OPERATIONAL\"]"
@@ -6026,7 +6026,7 @@
         "Connection Timeout" : "60 secs",
         "Response Cookie Strategy" : "ACCEPT_ALL",
         "Authorization" : "Bearer ${bearer.token}",
-        "Socket Read Timeout" : "120 secs",
+        "Socket Read Timeout" : "300 secs",
         "Socket Idle Connections" : "1",
         "Request Body Enabled" : "true",
         "OAuth2 Access Token Refresh Strategy" : "ON_TOKEN_EXPIRATION",
@@ -6034,11 +6034,11 @@
         "Socket Idle Timeout" : "5 mins",
         "Response Redirects Enabled" : "True",
         "Accept" : "application/json",
-        "Socket Write Timeout" : "60 secs",
+        "Socket Write Timeout" : "120 secs",
         "Response FlowFile Naming Strategy" : "RANDOM",
         "Response Cache Enabled" : "false",
         "Request Date Header Enabled" : "False",
-        "Request Failure Penalization Enabled" : "false",
+        "Request Failure Penalization Enabled" : "true",
         "Response Body Attribute Size" : "256",
         "Response Generation Required" : "false",
         "Response Header Request Attributes Enabled" : "false",
@@ -6736,6 +6736,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "FlightDetailsAPINewToken",
-    "timestamp" : 1763991959962
+    "timestamp" : 1764137246389
   }
 }
