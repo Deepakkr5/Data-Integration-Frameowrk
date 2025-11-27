@@ -1249,8 +1249,8 @@
       "name" : "LogAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 816.0,
-        "y" : 616.0
+        "x" : 848.0,
+        "y" : 464.0
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -2758,6 +2758,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "QueueAPINewToken",
-    "timestamp" : 1763880058592
+    "timestamp" : 1764240019853
   }
 }
