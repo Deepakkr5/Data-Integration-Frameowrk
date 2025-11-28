@@ -1291,7 +1291,7 @@
       "retryCount" : 60,
       "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "1 0 12 * * ?",
+      "schedulingPeriod" : "1 0 0 * * ?",
       "schedulingStrategy" : "CRON_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.GetFile",
@@ -1738,6 +1738,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "LoginAPILoginAPI",
-    "timestamp" : 1764230447970
+    "timestamp" : 1764328116763
   }
 }
