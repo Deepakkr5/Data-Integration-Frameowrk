@@ -7671,8 +7671,8 @@
       "name" : "PutEmail",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -600.0,
-        "y" : 376.0
+        "x" : -800.0,
+        "y" : 352.0
       },
       "properties" : {
         "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
@@ -8360,6 +8360,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "QueueDistributionAPINewToken",
-    "timestamp" : 1764240048353
+    "timestamp" : 1764589129879
   }
 }
