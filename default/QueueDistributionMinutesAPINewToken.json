@@ -190,7 +190,7 @@
         "comments" : "",
         "groupId" : "flow-contents-group",
         "id" : "7bd7c47f-019a-1000-378f-90174eed0f12",
-        "name" : "UpdateAttribute",
+        "name" : "UpdateAttribute_Arrival-IMM",
         "type" : "PROCESSOR"
       },
       "zIndex" : 51
@@ -686,7 +686,10 @@
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
+      "bends" : [ {
+        "x" : 1580.0,
+        "y" : 139.66664123535156
+      } ],
       "componentType" : "CONNECTION",
       "destination" : {
         "comments" : "",
@@ -1034,7 +1037,7 @@
         "comments" : "",
         "groupId" : "flow-contents-group",
         "id" : "7bd7c47f-019a-1000-378f-90174eed0f12",
-        "name" : "UpdateAttribute",
+        "name" : "UpdateAttribute_Arrival-IMM",
         "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
@@ -3606,14 +3609,14 @@
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "7bd7c47f-019a-1000-378f-90174eed0f12",
       "maxBackoffPeriod" : "10 mins",
-      "name" : "UpdateAttribute",
+      "name" : "UpdateAttribute_Arrival-IMM",
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : 2208.0,
         "y" : 56.0
       },
       "properties" : {
-        "distributionType" : "daily",
+        "distributionType" : "minutes",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "api_url" : "https://ghial-prd.ghialapoc.in/advanced/api/v1/queue/distribution",
@@ -4309,7 +4312,7 @@
         "y" : 64.0
       },
       "properties" : {
-        "distributionType" : "fiveminutes",
+        "distributionType" : "minutes",
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "api_url" : "https://ghial-prd.ghialapoc.in/advanced/api/v1/queue/distribution",
@@ -4563,8 +4566,8 @@
       "name" : "UpdateAttribute_Checkin",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 1336.0,
-        "y" : 56.0
+        "x" : 1320.0,
+        "y" : 32.0
       },
       "properties" : {
         "distributionType" : "minutes",
@@ -4577,7 +4580,7 @@
         "gates" : "[]",
         "servers" : "[]",
         "lanes" : "[]",
-        "locations" : "[\"658aa270c79ac16d63ea05d1\",\"658aa294c79ac16d63ea05d4\"]",
+        "locations" : "[\"658aa294c79ac16d63ea05d4\",\"6634bedfb8c0fd124518b246\",\"658aa2f8c79ac16d63ea05dd\",\"6634bea2b8c0fd124518b227\",\"65d34c817c95fd0bd3c85ad3\",\"658aa270c79ac16d63ea05d1\",\"658aa311c79ac16d63ea05e0\",\"65d34be47c95fd0bd3c85970\",\"658aa2d4c79ac16d63ea05da\",\"658aa2b4c79ac16d63ea05d7\"]",
         "finish" : "${now():toNumber()}",
         "Content-Type" : "application/json"
       },
@@ -7750,6 +7753,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "QueueDistributionMinutesAPINewToken",
-    "timestamp" : 1764240247868
+    "timestamp" : 1764589066376
   }
 }
