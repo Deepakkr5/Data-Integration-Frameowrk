@@ -1752,7 +1752,7 @@
         "schema-name" : "${schema.name}",
         "starting-field-strategy" : "ROOT_NODE",
         "schema-access-strategy" : "schema-text-property",
-        "schema-text" : "{\n  \"type\": \"record\",\n  \"name\": \"FlightInfoHist\",\n  \"fields\": [\n    { \"name\": \"flt_no\",        \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"runway_no\",        \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"sch_dep\",        \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"est_dep\",        \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"sch_arr\",        \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"est_arr\",        \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"start_time\",    \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"end_time\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"tsat\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"tobt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"schedule_time\", \"type\": [\"null\",\"string\"], \"default\": null }\n  ]\n}",
+        "schema-text" : "{\n  \"type\": \"record\",\n  \"name\": \"FlightInfoHist\",\n  \"fields\": [\n    { \"name\": \"flt_no\",        \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"start_time\",    \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"end_time\",      \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"tsat\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"tobt\",          \"type\": [\"null\",\"string\"], \"default\": null },\n    { \"name\": \"schedule_time\", \"type\": [\"null\",\"string\"], \"default\": null }\n  ]\n}",
         "Allow Comments" : "false"
       },
       "propertyDescriptors" : {
@@ -7818,6 +7818,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "AerowiseAODBFlightInfoHistory",
-    "timestamp" : 1764939923844
+    "timestamp" : 1764940351007
   }
 }
