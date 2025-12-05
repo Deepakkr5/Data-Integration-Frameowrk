@@ -44,36 +44,6 @@
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "78f21d78-019a-1000-7290-ba34f56ca916",
-        "name" : "LogAttribute",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "728a661e-d6eb-3eef-83e1-c3d4fc43a515",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "success" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "23bd4769-46a2-3eec-a502-7af69cee5557",
-        "name" : "ExecuteSQL",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 97
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
       "bends" : [ {
         "x" : 1848.0,
         "y" : -224.0
@@ -748,7 +718,7 @@
       },
       "flowFileExpiration" : "0 sec",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "fa40e675-4d8d-3be7-8f58-f6ef345243a8",
+      "identifier" : "bd61f6ca-cf97-34e0-b721-cc593a795066",
       "labelIndex" : 0,
       "loadBalanceCompression" : "DO_NOT_COMPRESS",
       "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -763,7 +733,37 @@
         "name" : "PutDatabaseRecord",
         "type" : "PROCESSOR"
       },
-      "zIndex" : 99
+      "zIndex" : 100
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "78f21d78-019a-1000-7290-ba34f56ca916",
+        "name" : "LogAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c2683d05-ba3e-3c3a-b792-d14256bf96ed",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "23bd4769-46a2-3eec-a502-7af69cee5557",
+        "name" : "ExecuteSQL",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 101
     } ],
     "controllerServices" : [ {
       "bulletinLevel" : "WARN",
@@ -3749,13 +3749,13 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : 1328.0,
-        "y" : 1152.0
+        "y" : 1136.0
       },
       "properties" : {
         "esql-max-rows" : "0",
         "dbf-default-precision" : "10",
         "Max Wait Time" : "0 seconds",
-        "SQL Query" : "DELETE FROM flight_service.flight_info_history WHERE inserted_at < now() - INTERVAL '2 days';",
+        "SQL Query" : "DELETE FROM flight_service.flight_info_history\nWHERE inserted_at < date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata') - INTERVAL '7 days';",
         "Database Connection Pooling Service" : "78f21d64-019a-1000-d3b6-6c6f3acfa097",
         "esql-auto-commit" : "true",
         "dbf-user-logical-types" : "false",
@@ -4113,8 +4113,8 @@
       "name" : "LogAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 1336.0,
-        "y" : 1408.0
+        "x" : 1328.0,
+        "y" : 1376.0
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -4647,7 +4647,7 @@
         "put-db-record-schema-name" : "flight_service",
         "put-db-record-unmatched-column-behavior" : "Ignore Unmatched Columns",
         "put-db-record-catalog-name" : "aerowise_mbapp",
-        "put-db-record-statement-type" : "INSERT",
+        "put-db-record-statement-type" : "UPSERT",
         "put-db-record-quoted-identifiers" : "false",
         "put-db-record-unmatched-field-behavior" : "Ignore Unmatched Fields",
         "put-db-record-max-batch-size" : "1000",
@@ -7757,7 +7757,7 @@
       },
       "properties" : {
         "Script Engine" : "Groovy",
-        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\n\nflowFile = session.get()\nif (!flowFile) return\n\nflowFile = session.write(flowFile, { inputStream, outputStream ->\n    def json = new JsonSlurper().parse(inputStream)\n    def obj = json[0]   // Single-element array\n\n    def formatToMinute = { ts ->\n        if (ts) {\n            return ts.substring(0,16) + \":00\"  // Replace seconds with 00\n        }\n        return null\n    }\n\n    def result = [\n        flt_no        : obj.flt_no,\n        schedule_time : obj.schedule_time,     // as-is\n        start_time    : obj.start_time,        // as-is\n        end_time      : obj.end_time,          // as-is\t\t\n        runway_no     : obj.runway_no,\n        sch_dep       : obj.sch_dep,\n        est_dep       : obj.est_dep,\n        sch_arr       : obj.sch_arr,\n        est_arr       : obj.est_arr,\n        tsat          : formatToMinute(obj.tsat),\n        tobt          : formatToMinute(obj.tobt)\n    ]\n\n    outputStream.write(JsonOutput.toJson(result).getBytes(\"UTF-8\"))\n} as StreamCallback)\n\nflowFile = session.putAttribute(flowFile, \"mime.type\", \"application/json\")\nsession.transfer(flowFile, REL_SUCCESS)"
+        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\n\nflowFile = session.get()\nif (!flowFile) return\n\ntry {\n    def newFlowFile = flowFile\n\n    newFlowFile = session.write(flowFile, { inputStream, outputStream ->\n        def json = new JsonSlurper().parse(inputStream)\n        def obj = json[0]\n\n        // If tsat is null => DROP the flowfile (remove from session)\n        if (obj.tsat == null || obj.tsat.toString().trim().isEmpty()) {\n            return\n        }\n\n        def formatToMinute = { ts ->\n            ts ? ts.substring(0, 16) + \":00\" : null\n        }\n\n        // Output only required fields\n        def result = [\n            flt_no        : obj.flt_no,\n            schedule_time : obj.schedule_time,\n            start_time    : obj.start_time,\n            end_time      : obj.end_time,\n            tsat          : formatToMinute(obj.tsat),\n            tobt          : formatToMinute(obj.tobt)\n        ]\n\n        outputStream.write(JsonOutput.toJson(result).getBytes(\"UTF-8\"))\n    } as StreamCallback)\n\n    // Check again after writing — if output is empty, tsat was null\n    if (newFlowFile.size == 0L) {\n        session.remove(newFlowFile)  // Drop the flow file\n        return\n    }\n\n    newFlowFile = session.putAttribute(newFlowFile, \"mime.type\", \"application/json\")\n    session.transfer(newFlowFile, REL_SUCCESS)\n\n} catch(Exception ex) {\n    log.error(\"Error in ExecuteScript\", ex)\n    session.transfer(flowFile, REL_FAILURE)\n}\n"
       },
       "propertyDescriptors" : {
         "Script File" : {
@@ -7818,6 +7818,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "AerowiseAODBFlightInfoHistory",
-    "timestamp" : 1764926226838
+    "timestamp" : 1764939923844
   }
 }
