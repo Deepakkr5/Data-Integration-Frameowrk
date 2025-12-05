@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1764926225917,
+    "description" : "Historical Data Identification For FlightInfo",
+    "identifier" : "AerowiseAODBFlightInfoHistory",
+    "lastModifiedTimestamp" : 1764926225917,
+    "name" : "Aerowise_AODB_FlightInfo_History",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
