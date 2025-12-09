@@ -4974,7 +4974,7 @@
         "startTime" : "${now():format('yyyy-MM-dd 00:00:01'):toDate('yyyy-MM-dd HH:mm:ss'):toNumber()}",
         "flightType" : "flight",
         "endTime" : "${now():toNumber():plus(86400000):toDate():format(\"yyyy-MM-dd\"):append(\" 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
-        "operationalStatuses" : "[\"OPERATIONAL\"]"
+        "operationalStatuses" : "[]"
       },
       "propertyDescriptors" : {
         "Authorization" : {
@@ -5090,7 +5090,7 @@
       "name" : "PutFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 800.0,
+        "x" : 792.0,
         "y" : 200.0
       },
       "properties" : {
@@ -5732,7 +5732,7 @@
         "startTime" : "${now():format(\"yyyy-MM-dd 00:00:00\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
         "flightType" : "flight",
         "endTime" : "${now():toNumber():plus(86400000):toDate():format(\"yyyy-MM-dd\"):append(\" 23:59:59\"):toDate(\"yyyy-MM-dd HH:mm:ss\"):toNumber()}",
-        "operationalStatuses" : "[\"OPERATIONAL\"]"
+        "operationalStatuses" : "[]"
       },
       "propertyDescriptors" : {
         "Authorization" : {
@@ -6736,6 +6736,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "FlightDetailsAPINewToken",
-    "timestamp" : 1765179699286
+    "timestamp" : 1765265610002
   }
 }
