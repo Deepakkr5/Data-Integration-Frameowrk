@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1765366059226,
+    "description" : "Deleting old files more than 7 days.",
+    "identifier" : "Cleanupoldfiles",
+    "lastModifiedTimestamp" : 1765366059226,
+    "name" : "Cleanup_oldfiles",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
