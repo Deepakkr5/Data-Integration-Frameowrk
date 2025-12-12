@@ -7311,8 +7311,8 @@
       "name" : "PutDatabaseRecord",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -1376.0,
-        "y" : 728.0
+        "x" : -760.0,
+        "y" : 632.0
       },
       "properties" : {
         "put-db-record-allow-multiple-statements" : "false",
@@ -7818,6 +7818,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "AerowiseAODBFlightInfoHistory",
-    "timestamp" : 1764940351007
+    "timestamp" : 1765523576383
   }
 }
