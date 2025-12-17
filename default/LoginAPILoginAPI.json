@@ -449,14 +449,14 @@
           "group" : "org.apache.nifi",
           "version" : "2.6.0"
         },
-        "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
+        "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
       }, {
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
           "version" : "2.6.0"
         },
-        "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
+        "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
       } ],
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "3830c824-48e2-3517-b82a-375b427991d6",
@@ -513,14 +513,14 @@
           "group" : "org.apache.nifi",
           "version" : "2.6.0"
         },
-        "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
+        "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
       }, {
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
           "version" : "2.6.0"
         },
-        "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
+        "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
       } ],
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "e04e4e36-cb7c-353c-bb31-dbadc1aa8a11",
@@ -560,7 +560,7 @@
     "inputPorts" : [ ],
     "labels" : [ ],
     "maxConcurrentTasks" : 1,
-    "name" : "Aerowise_Login_API_mobile",
+    "name" : "Aerowise  Login",
     "outputPorts" : [ ],
     "position" : {
       "x" : 0.0,
@@ -1319,10 +1319,8 @@
         "y" : 352.0
       },
       "properties" : {
-        "CC" : "praveen.kumar2@waisldigital.com",
         "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
-        "BCC" : "Deepak.Kumar1@waisldigital.com",
-        "Message" : "login api token Genrated in put file location.",
+        "Message" : "login api token Genrated in put file location.folder Name cred",
         "Attach File" : "false",
         "input-character-set" : "UTF-8",
         "SMTP Port" : "587",
@@ -1334,7 +1332,7 @@
         "SMTP X-Mailer Header" : "NiFi",
         "Content Type" : "text/plain",
         "SMTP Username" : "AKIAU6GDXI5XOIV64D62",
-        "To" : "Lav.shukla@waisldigital.com",
+        "To" : "support.aerowiseapp@waisldigital.com",
         "email-ff-content-as-message" : "false",
         "authorization-mode" : "password-based-authorization-mode",
         "SMTP TLS" : "true"
@@ -1534,10 +1532,8 @@
         "y" : -160.0
       },
       "properties" : {
-        "CC" : "praveen.kumar2@waisldigital.com",
         "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
-        "BCC" : "Deepak.Kumar1@waisldigital.com",
-        "Message" : "Login Api Invoke hhtp fail.",
+        "Message" : "Login Api Invoke hhtp fail. New token is not created till now.",
         "Attach File" : "false",
         "input-character-set" : "UTF-8",
         "SMTP Port" : "587",
@@ -1549,7 +1545,7 @@
         "SMTP X-Mailer Header" : "NiFi",
         "Content Type" : "text/plain",
         "SMTP Username" : "AKIAU6GDXI5XOIV64D62",
-        "To" : "Lav.shukla@waisldigital.com",
+        "To" : "support.aerowiseapp@waisldigital.com",
         "email-ff-content-as-message" : "false",
         "authorization-mode" : "password-based-authorization-mode",
         "SMTP TLS" : "true"
@@ -1738,6 +1734,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "LoginAPILoginAPI",
-    "timestamp" : 1764328116763
+    "timestamp" : 1765949949851
   }
 }
