@@ -310,36 +310,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "2ac7e8ea-019b-1000-fc7c-b29bb2df396b",
-        "name" : "PutEmail",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "9652b7db-db8c-3509-8f31-2ced2d483526",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "Failure" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "78edf13f-019a-1000-ab53-34cc50b851b4",
-        "name" : "InvokeHTTP",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 64
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "7eea3825-019a-1000-8481-4889c5c9d7f4",
         "name" : "UpdateAttribute",
         "type" : "PROCESSOR"
@@ -2183,219 +2153,6 @@
     },
     "processGroups" : [ ],
     "processors" : [ {
-      "autoTerminatedRelationships" : [ "failure", "success" ],
-      "backoffMechanism" : "PENALIZE_FLOWFILE",
-      "bulletinLevel" : "WARN",
-      "bundle" : {
-        "artifact" : "nifi-standard-nar",
-        "group" : "org.apache.nifi",
-        "version" : "2.6.0"
-      },
-      "comments" : "",
-      "componentType" : "PROCESSOR",
-      "concurrentlySchedulableTaskCount" : 1,
-      "executionNode" : "ALL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "2ac7e8ea-019b-1000-fc7c-b29bb2df396b",
-      "maxBackoffPeriod" : "10 mins",
-      "name" : "PutEmail",
-      "penaltyDuration" : "30 sec",
-      "position" : {
-        "x" : 360.0,
-        "y" : -1232.0
-      },
-      "properties" : {
-        "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
-        "Message" : "Location Flow Invoke HTTP failed. We are retrying.",
-        "Attach File" : "false",
-        "input-character-set" : "UTF-8",
-        "SMTP Port" : "587",
-        "SMTP Auth" : "true",
-        "From" : "no-reply@aerowiseplatform.com",
-        "Include All Attributes In Message" : "false",
-        "SMTP Hostname" : "email-smtp.ap-south-1.amazonaws.com",
-        "Subject" : "Location Flow Invoke HTTP failed.",
-        "SMTP X-Mailer Header" : "NiFi",
-        "Content Type" : "text/plain",
-        "SMTP Username" : "AKIAU6GDXI5XOIV64D62",
-        "To" : "support.aerowiseapp@waisldigital.com",
-        "email-ff-content-as-message" : "false",
-        "authorization-mode" : "password-based-authorization-mode",
-        "SMTP TLS" : "true"
-      },
-      "propertyDescriptors" : {
-        "CC" : {
-          "displayName" : "CC",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "CC",
-          "sensitive" : false
-        },
-        "Reply-To" : {
-          "displayName" : "Reply-To",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Reply-To",
-          "sensitive" : false
-        },
-        "SMTP Socket Factory" : {
-          "displayName" : "SMTP Socket Factory",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "SMTP Socket Factory",
-          "sensitive" : false
-        },
-        "BCC" : {
-          "displayName" : "BCC",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "BCC",
-          "sensitive" : false
-        },
-        "Message" : {
-          "displayName" : "Message",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Message",
-          "sensitive" : false
-        },
-        "Attach File" : {
-          "displayName" : "Attach File",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Attach File",
-          "sensitive" : false
-        },
-        "attribute-name-regex" : {
-          "displayName" : "Attributes to Send as Headers (Regex)",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "attribute-name-regex",
-          "sensitive" : false
-        },
-        "input-character-set" : {
-          "displayName" : "Input Character Set",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "input-character-set",
-          "sensitive" : false
-        },
-        "SMTP Port" : {
-          "displayName" : "SMTP Port",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "SMTP Port",
-          "sensitive" : false
-        },
-        "SMTP Auth" : {
-          "displayName" : "SMTP Auth",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "SMTP Auth",
-          "sensitive" : false
-        },
-        "From" : {
-          "displayName" : "From",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "From",
-          "sensitive" : false
-        },
-        "Include All Attributes In Message" : {
-          "displayName" : "Include All Attributes In Message",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Include All Attributes In Message",
-          "sensitive" : false
-        },
-        "SMTP Hostname" : {
-          "displayName" : "SMTP Hostname",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "SMTP Hostname",
-          "sensitive" : false
-        },
-        "Subject" : {
-          "displayName" : "Subject",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Subject",
-          "sensitive" : false
-        },
-        "SMTP X-Mailer Header" : {
-          "displayName" : "SMTP X-Mailer Header",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "SMTP X-Mailer Header",
-          "sensitive" : false
-        },
-        "oauth2-access-token-provider" : {
-          "displayName" : "OAuth2 Access Token Provider",
-          "dynamic" : false,
-          "identifiesControllerService" : true,
-          "name" : "oauth2-access-token-provider",
-          "sensitive" : false
-        },
-        "Content Type" : {
-          "displayName" : "Content Type",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Content Type",
-          "sensitive" : false
-        },
-        "SMTP Username" : {
-          "displayName" : "SMTP Username",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "SMTP Username",
-          "sensitive" : false
-        },
-        "To" : {
-          "displayName" : "To",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "To",
-          "sensitive" : false
-        },
-        "SMTP Password" : {
-          "displayName" : "SMTP Password",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "SMTP Password",
-          "sensitive" : true
-        },
-        "email-ff-content-as-message" : {
-          "displayName" : "Flow file content as message",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "email-ff-content-as-message",
-          "sensitive" : false
-        },
-        "authorization-mode" : {
-          "displayName" : "Authorization Mode",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "authorization-mode",
-          "sensitive" : false
-        },
-        "SMTP TLS" : {
-          "displayName" : "SMTP STARTTLS",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "SMTP TLS",
-          "sensitive" : false
-        }
-      },
-      "retriedRelationships" : [ ],
-      "retryCount" : 10,
-      "runDurationMillis" : 0,
-      "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 sec",
-      "schedulingStrategy" : "TIMER_DRIVEN",
-      "style" : { },
-      "type" : "org.apache.nifi.processors.standard.PutEmail",
-      "yieldDuration" : "1 sec"
-    }, {
       "autoTerminatedRelationships" : [ "activity.restored", "inactive", "success" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
@@ -3407,7 +3164,7 @@
       "type" : "org.apache.nifi.processors.standard.ConvertRecord",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ "No Retry", "Original", "Retry" ],
+      "autoTerminatedRelationships" : [ "Failure", "No Retry", "Original", "Retry" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
@@ -4098,6 +3855,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "LocationAPINewToken",
-    "timestamp" : 1765949970046
+    "timestamp" : 1766164332711
   }
 }
