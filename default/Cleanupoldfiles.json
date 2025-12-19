@@ -19,13 +19,13 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "2ef1ac55-3408-36a7-9705-b294451fdbc3",
-        "name" : "LogAttribute",
+        "id" : "34f21b8e-019b-1000-cf13-a19a3a9bab35",
+        "name" : "PutEmail",
         "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "6d0d73b7-ed02-3582-9eaa-8177e0d32684",
+      "identifier" : "5aa52835-667f-3841-82d4-c77bbc3ce455",
       "labelIndex" : 0,
       "loadBalanceCompression" : "DO_NOT_COMPRESS",
       "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -111,8 +111,8 @@
       "name" : "LogAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -208.0,
-        "y" : 144.0
+        "x" : -104.0,
+        "y" : 152.0
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -293,7 +293,7 @@
       "type" : "org.apache.nifi.processors.standard.ExecuteProcess",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ ],
+      "autoTerminatedRelationships" : [ "failure", "success" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
@@ -306,102 +306,204 @@
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "2ef1ac55-3408-36a7-9705-b294451fdbc3",
+      "identifier" : "34f21b8e-019b-1000-cf13-a19a3a9bab35",
       "maxBackoffPeriod" : "10 mins",
-      "name" : "LogAttribute",
+      "name" : "PutEmail",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 312.0,
-        "y" : 152.0
+        "x" : 400.0,
+        "y" : 160.0
       },
       "properties" : {
-        "character-set" : "UTF-8",
-        "Log FlowFile Properties" : "true",
-        "Log Level" : "info",
-        "attributes-to-log-regex" : ".*",
-        "Output Format" : "Line per Attribute",
-        "Log Payload" : "false"
+        "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
+        "Message" : "CleanUp process is compelted. Old File Cleanup",
+        "Attach File" : "false",
+        "input-character-set" : "UTF-8",
+        "SMTP Port" : "587",
+        "SMTP Auth" : "true",
+        "From" : "no-reply@aerowiseplatform.com",
+        "Include All Attributes In Message" : "false",
+        "SMTP Hostname" : "email-smtp.ap-south-1.amazonaws.com",
+        "Subject" : "CleanUp process is compelted.",
+        "SMTP X-Mailer Header" : "NiFi",
+        "Content Type" : "text/plain",
+        "SMTP Username" : "AKIAU6GDXI5XOIV64D62",
+        "To" : "support.aerowiseapp@waisldigital.com",
+        "email-ff-content-as-message" : "false",
+        "authorization-mode" : "password-based-authorization-mode",
+        "SMTP TLS" : "true"
       },
       "propertyDescriptors" : {
-        "Log prefix" : {
-          "displayName" : "Log prefix",
+        "CC" : {
+          "displayName" : "CC",
           "dynamic" : false,
           "identifiesControllerService" : false,
-          "name" : "Log prefix",
+          "name" : "CC",
           "sensitive" : false
         },
-        "character-set" : {
-          "displayName" : "Character Set",
+        "Reply-To" : {
+          "displayName" : "Reply-To",
           "dynamic" : false,
           "identifiesControllerService" : false,
-          "name" : "character-set",
+          "name" : "Reply-To",
           "sensitive" : false
         },
-        "Log FlowFile Properties" : {
-          "displayName" : "Log FlowFile Properties",
+        "SMTP Socket Factory" : {
+          "displayName" : "SMTP Socket Factory",
           "dynamic" : false,
           "identifiesControllerService" : false,
-          "name" : "Log FlowFile Properties",
+          "name" : "SMTP Socket Factory",
           "sensitive" : false
         },
-        "Log Level" : {
-          "displayName" : "Log Level",
+        "BCC" : {
+          "displayName" : "BCC",
           "dynamic" : false,
           "identifiesControllerService" : false,
-          "name" : "Log Level",
+          "name" : "BCC",
           "sensitive" : false
         },
-        "attributes-to-ignore-regex" : {
-          "displayName" : "Attributes to Ignore by Regular Expression",
+        "Message" : {
+          "displayName" : "Message",
           "dynamic" : false,
           "identifiesControllerService" : false,
-          "name" : "attributes-to-ignore-regex",
+          "name" : "Message",
           "sensitive" : false
         },
-        "Attributes to Ignore" : {
-          "displayName" : "Attributes to Ignore",
+        "Attach File" : {
+          "displayName" : "Attach File",
           "dynamic" : false,
           "identifiesControllerService" : false,
-          "name" : "Attributes to Ignore",
+          "name" : "Attach File",
           "sensitive" : false
         },
-        "Attributes to Log" : {
-          "displayName" : "Attributes to Log",
+        "attribute-name-regex" : {
+          "displayName" : "Attributes to Send as Headers (Regex)",
           "dynamic" : false,
           "identifiesControllerService" : false,
-          "name" : "Attributes to Log",
+          "name" : "attribute-name-regex",
           "sensitive" : false
         },
-        "attributes-to-log-regex" : {
-          "displayName" : "Attributes to Log by Regular Expression",
+        "input-character-set" : {
+          "displayName" : "Input Character Set",
           "dynamic" : false,
           "identifiesControllerService" : false,
-          "name" : "attributes-to-log-regex",
+          "name" : "input-character-set",
           "sensitive" : false
         },
-        "Output Format" : {
-          "displayName" : "Output Format",
+        "SMTP Port" : {
+          "displayName" : "SMTP Port",
           "dynamic" : false,
           "identifiesControllerService" : false,
-          "name" : "Output Format",
+          "name" : "SMTP Port",
           "sensitive" : false
         },
-        "Log Payload" : {
-          "displayName" : "Log Payload",
+        "SMTP Auth" : {
+          "displayName" : "SMTP Auth",
           "dynamic" : false,
           "identifiesControllerService" : false,
-          "name" : "Log Payload",
+          "name" : "SMTP Auth",
+          "sensitive" : false
+        },
+        "From" : {
+          "displayName" : "From",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "From",
+          "sensitive" : false
+        },
+        "Include All Attributes In Message" : {
+          "displayName" : "Include All Attributes In Message",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Include All Attributes In Message",
+          "sensitive" : false
+        },
+        "SMTP Hostname" : {
+          "displayName" : "SMTP Hostname",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "SMTP Hostname",
+          "sensitive" : false
+        },
+        "Subject" : {
+          "displayName" : "Subject",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Subject",
+          "sensitive" : false
+        },
+        "SMTP X-Mailer Header" : {
+          "displayName" : "SMTP X-Mailer Header",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "SMTP X-Mailer Header",
+          "sensitive" : false
+        },
+        "oauth2-access-token-provider" : {
+          "displayName" : "OAuth2 Access Token Provider",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "oauth2-access-token-provider",
+          "sensitive" : false
+        },
+        "Content Type" : {
+          "displayName" : "Content Type",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Content Type",
+          "sensitive" : false
+        },
+        "SMTP Username" : {
+          "displayName" : "SMTP Username",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "SMTP Username",
+          "sensitive" : false
+        },
+        "To" : {
+          "displayName" : "To",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "To",
+          "sensitive" : false
+        },
+        "SMTP Password" : {
+          "displayName" : "SMTP Password",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "SMTP Password",
+          "sensitive" : true
+        },
+        "email-ff-content-as-message" : {
+          "displayName" : "Flow file content as message",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "email-ff-content-as-message",
+          "sensitive" : false
+        },
+        "authorization-mode" : {
+          "displayName" : "Authorization Mode",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "authorization-mode",
+          "sensitive" : false
+        },
+        "SMTP TLS" : {
+          "displayName" : "SMTP STARTTLS",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "SMTP TLS",
           "sensitive" : false
         }
       },
       "retriedRelationships" : [ ],
       "retryCount" : 10,
-      "runDurationMillis" : 25,
+      "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
       "schedulingPeriod" : "0 sec",
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
-      "type" : "org.apache.nifi.processors.standard.LogAttribute",
+      "type" : "org.apache.nifi.processors.standard.PutEmail",
       "yieldDuration" : "1 sec"
     } ],
     "remoteProcessGroups" : [ ],
@@ -415,6 +517,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "Cleanupoldfiles",
-    "timestamp" : 1765366060089
+    "timestamp" : 1766121119651
   }
 }
