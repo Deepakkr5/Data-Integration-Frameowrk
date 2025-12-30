@@ -287,7 +287,7 @@
       "retryCount" : 10,
       "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 0 8 * * ?",
+      "schedulingPeriod" : "0 30 0 * * ?",
       "schedulingStrategy" : "CRON_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.ExecuteProcess",
@@ -316,7 +316,8 @@
       },
       "properties" : {
         "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
-        "Message" : "CleanUp process is compelted. Old File Cleanup",
+        "BCC" : "Deepak.Kumar1@waisldigital.com",
+        "Message" : "CleanUp process is compelted. Old File Cleanup. \nDeleted DB records older than 7 days from flight_service.queue_info",
         "Attach File" : "false",
         "input-character-set" : "UTF-8",
         "SMTP Port" : "587",
@@ -517,6 +518,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "Cleanupoldfiles",
-    "timestamp" : 1766121119651
+    "timestamp" : 1767094292751
   }
 }
