@@ -206,7 +206,7 @@
       "properties" : {
         "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
         "BCC" : "Deepak.Kumar1@waisldigital.com",
-        "Message" : "Datwise filecount",
+        "Message" : "Datewise filecount for all tables with Attachment of file.",
         "Attach File" : "true",
         "input-character-set" : "UTF-8",
         "SMTP Port" : "587",
@@ -214,7 +214,7 @@
         "From" : "no-reply@aerowiseplatform.com",
         "Include All Attributes In Message" : "false",
         "SMTP Hostname" : "email-smtp.ap-south-1.amazonaws.com",
-        "Subject" : "Datwise filecount",
+        "Subject" : "Datewise filecount for all tables with Attachment of file.",
         "SMTP X-Mailer Header" : "NiFi",
         "Content Type" : "text/plain",
         "SMTP Username" : "AKIAU6GDXI5XOIV64D62",
@@ -518,6 +518,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "Datewisefilecnt",
-    "timestamp" : 1767614245052
+    "timestamp" : 1767618735180
   }
 }
