@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1767614028144,
+    "description" : "Datewise folder's file counts",
+    "identifier" : "Datewise-folders-file-counts",
+    "lastModifiedTimestamp" : 1767614028144,
+    "name" : "Datewise folder's file counts",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
