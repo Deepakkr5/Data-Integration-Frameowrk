@@ -227,7 +227,7 @@
       },
       "properties" : {
         "Command" : "/bin/bash",
-        "Redirect Error Stream" : "false",
+        "Redirect Error Stream" : "true",
         "Working Directory" : "/home/ubuntu",
         "Argument Delimiter" : " ",
         "Command Arguments" : "/home/ubuntu/old_file.sh"
@@ -318,7 +318,7 @@
         "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
         "BCC" : "Deepak.Kumar1@waisldigital.com",
         "Message" : "CleanUp process is compelted. Old File Cleanup. \nDeleted DB records older than 7 days from flight_service.queue_info",
-        "Attach File" : "false",
+        "Attach File" : "true",
         "input-character-set" : "UTF-8",
         "SMTP Port" : "587",
         "SMTP Auth" : "true",
@@ -518,6 +518,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "Cleanupoldfiles",
-    "timestamp" : 1767094292751
+    "timestamp" : 1767694739589
   }
 }
