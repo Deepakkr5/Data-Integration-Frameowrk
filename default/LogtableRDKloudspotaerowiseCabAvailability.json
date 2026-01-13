@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1768308465031,
+    "description" : "Log table implementation",
+    "identifier" : "LogtableRDKloudspotaerowiseCabAvailability",
+    "lastModifiedTimestamp" : 1768308465031,
+    "name" : "Log_table_R&D_Kloudspot_aerowise_Cab_Availability",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
