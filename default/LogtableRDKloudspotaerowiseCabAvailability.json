@@ -19,6 +19,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c11fa3d9-019b-1000-5974-634d4d20c3a9",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "040f1674-b8e9-3081-839f-c14eb3c85f1e",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc21b-019b-1000-d309-c5d8e9abc734",
+        "name" : "Null_Response_Filter_ExecuteScript",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 342
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "3187476c-019b-1000-84a8-77649639ba99",
         "name" : "PutSQL",
         "type" : "PROCESSOR"
@@ -199,6 +229,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c107f3d1-019b-1000-9262-ec653f1f25fe",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "11531823-9945-3a49-a90d-262cba37eedc",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc248-019b-1000-78e3-33ebef75acf2",
+        "name" : "ReplaceText",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 333
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "b0dfc22e-019b-1000-c06c-1453b6e3718f",
         "name" : "PutSQL",
         "type" : "PROCESSOR"
@@ -229,6 +289,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c0a9e320-019b-1000-a60c-acc3465d7343",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "12da5c16-e474-31f8-a948-229ab7292686",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc212-019b-1000-669b-06c0467fc282",
+        "name" : "EvaluateJsonPath",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 321
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "b0dfc1f9-019b-1000-5bb6-9d38afdbc452",
         "name" : "EvaluateJsonPath",
         "type" : "PROCESSOR"
@@ -251,6 +341,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 304
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c11fa3d7-019b-1000-9811-527836860f4d",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "158dbdc1-caf5-32e2-b01d-ee90e23bdbdf",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc21b-019b-1000-d309-c5d8e9abc734",
+        "name" : "Null_Response_Filter_ExecuteScript",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 343
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -349,6 +469,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c11fa3d8-019b-1000-8980-034848e45abe",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "1a820cae-e123-3d72-b846-8d4c2ad78167",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c11fa3d7-019b-1000-9811-527836860f4d",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 344
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "d9d57891-019a-1000-7095-1cdf91c8fd4e",
         "name" : "PutSQL",
         "type" : "PROCESSOR"
@@ -401,6 +551,96 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 161
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc205-019b-1000-60c6-0c0fe290e53b",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "1fc7c458-a31c-3f15-9afc-d6227a35952a",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc23a-019b-1000-ca82-25c3b7505cd2",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 341
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c115b703-019b-1000-e6e2-861e803d7903",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "1fd1624a-8bd8-3741-8721-317235d03439",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "Failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc231-019b-1000-619c-adfe86a45f1a",
+        "name" : "cabs_InvokeHTTP",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 340
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc240-019b-1000-a80c-dad45a1bd88d",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "2299f97c-7ce6-3734-a812-99ab58419552",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0b947c0-019b-1000-7975-2329fd72a30c",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 328
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -640,6 +880,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 198
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc214-019b-1000-deca-fc7faf35b217",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "2a0e2281-b93d-3115-9dcd-501115aed543",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0a9e320-019b-1000-a60c-acc3465d7343",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 322
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -1008,6 +1278,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c0be7f5b-019b-1000-aca9-07c20784aa1a",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "315a9929-5b9b-37d6-af98-fbfa1d8ccb4a",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0b9812b-019b-1000-28d0-3f6006d38743",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 330
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "316f1dff-019b-1000-ed58-132bf8a4268f",
         "name" : "LogAttribute",
         "type" : "PROCESSOR"
@@ -1120,6 +1420,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 142
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0b6956a-019b-1000-096a-297d56029072",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "39ce2a2e-8def-35ae-9360-ccd3bfa539b0",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc20f-019b-1000-1d9f-f2f3395c0460",
+        "name" : "Null_Response_Filter_ExecuteScript",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 325
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -1308,6 +1638,66 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c129b7fb-019b-1000-24f6-cb580bc7147b",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "46c56054-6b34-37f3-9a8b-ffde0c3470c6",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc1f9-019b-1000-5bb6-9d38afdbc452",
+        "name" : "EvaluateJsonPath",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 347
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c11fa3d6-019b-1000-9da3-d03e72c7849f",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "481e7aee-c360-37a7-ad1f-9f75168b2771",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c11fa3d9-019b-1000-5974-634d4d20c3a9",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 345
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "3187476b-019b-1000-a73b-2c46ac46f2f5",
         "name" : "PutSQL",
         "type" : "PROCESSOR"
@@ -1368,6 +1758,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "b0dfc21c-019b-1000-d0ea-149db0488130",
+        "name" : "PutFile",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "4c54c843-aa66-3ca9-a247-d518e3734302",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc1fe-019b-1000-d835-f39c51939a52",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 348
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "b0dfc211-019b-1000-3240-73e22a86a47f",
         "name" : "PutFile",
         "type" : "PROCESSOR"
@@ -1420,6 +1840,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 293
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0b9812b-019b-1000-28d0-3f6006d38743",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "5533375d-902b-3209-b502-824f459dceed",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc208-019b-1000-dbc8-fa990247cfcb",
+        "name" : "ReplaceText",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 329
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -2178,13 +2628,13 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "b0dfc240-019b-1000-a80c-dad45a1bd88d",
-        "name" : "PutSQL",
+        "id" : "c1089d25-019b-1000-488c-8c464c98a6b3",
+        "name" : "UpdateAttribute",
         "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "7bcab103-f7f8-3792-a4f8-e2ede939c62a",
+      "identifier" : "7c20b537-f3ba-3851-949c-9e8b574b303f",
       "labelIndex" : 0,
       "loadBalanceCompression" : "DO_NOT_COMPRESS",
       "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -2195,11 +2645,11 @@
       "source" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "b0dfc208-019b-1000-dbc8-fa990247cfcb",
+        "id" : "b0dfc248-019b-1000-78e3-33ebef75acf2",
         "name" : "ReplaceText",
         "type" : "PROCESSOR"
       },
-      "zIndex" : 269
+      "zIndex" : 335
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -2260,6 +2710,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 232
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc1f2-019b-1000-c0e3-1c880d9968cc",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "88b9de42-b3c7-3434-84e1-b9017d309989",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0b44e61-019b-1000-ea49-3123256e6604",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 324
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -2440,6 +2920,66 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 296
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c129b7fc-019b-1000-1127-04b5e3aa29cd",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "95b4e9ba-4686-3798-8e05-07170e09a831",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc1f9-019b-1000-5bb6-9d38afdbc452",
+        "name" : "EvaluateJsonPath",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 346
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0b947c0-019b-1000-7975-2329fd72a30c",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "97124d3c-313e-35fa-a702-27c4a5c4ece3",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc208-019b-1000-dbc8-fa990247cfcb",
+        "name" : "ReplaceText",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 327
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -2748,6 +3288,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c113394d-019b-1000-6af2-276bc6980135",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "a4c7dc08-af04-36b2-b6de-cfc4494889f6",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c113394c-019b-1000-749f-360cafe625fb",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 337
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "31b9fb9d-019b-1000-385b-4ec7396ae16d",
         "name" : "PutSQL",
         "type" : "PROCESSOR"
@@ -2868,6 +3438,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c0b44e61-019b-1000-ea49-3123256e6604",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "aa620e02-846c-3392-b9d3-cfc748c87f67",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc20f-019b-1000-1d9f-f2f3395c0460",
+        "name" : "Null_Response_Filter_ExecuteScript",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 323
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "b0dfc217-019b-1000-4d75-ca6ce17aaf7d",
         "name" : "UpdateAttribute",
         "type" : "PROCESSOR"
@@ -2890,6 +3490,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 282
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c115c8ae-019b-1000-376c-8e6a44343f20",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "abc9efde-1ebc-3dac-bf6b-16144b863eb8",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c115b703-019b-1000-e6e2-861e803d7903",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 339
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -2980,36 +3610,6 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 142
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "b0dfc223-019b-1000-75d9-663ac75574fd",
-        "name" : "PutSQL",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "b0dfc251-019b-1000-26fc-7e6c54146dc7",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "b0dfc1f9-019b-1000-5bb6-9d38afdbc452",
-        "name" : "EvaluateJsonPath",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 252
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -3160,36 +3760,6 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 164
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "b0dfc21f-019b-1000-de87-4f4d5fb73fe3",
-        "name" : "PutSQL",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "b0dfc25c-019b-1000-68c2-e22809f5a2ea",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "b0dfc248-019b-1000-78e3-33ebef75acf2",
-        "name" : "ReplaceText",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 236
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -3528,36 +4098,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "b0dfc205-019b-1000-60c6-0c0fe290e53b",
-        "name" : "PutSQL",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "b0dfc26a-019b-1000-49e4-03d6f013dde9",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "success" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "b0dfc23a-019b-1000-ca82-25c3b7505cd2",
-        "name" : "UpdateAttribute",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 242
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "b0dfc207-019b-1000-e185-9ef15974c5bd",
         "name" : "UpdateAttribute",
         "type" : "PROCESSOR"
@@ -3790,36 +4330,6 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 167
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "b0dfc221-019b-1000-e978-1475c746b36f",
-        "name" : "PutSQL",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "b0dfc277-019b-1000-573a-d2229e3c6e29",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "b0dfc21b-019b-1000-d309-c5d8e9abc734",
-        "name" : "Null_Response_Filter_ExecuteScript",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 244
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -4428,36 +4938,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "b0dfc214-019b-1000-deca-fc7faf35b217",
-        "name" : "PutSQL",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "b0dfc297-019b-1000-2c78-00d656aa7ff6",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "b0dfc212-019b-1000-669b-06c0467fc282",
-        "name" : "EvaluateJsonPath",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 226
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "b0dfc200-019b-1000-fafe-8baaa80b34ac",
         "name" : "UpdateAttribute",
         "type" : "PROCESSOR"
@@ -4878,6 +5358,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c107f3d0-019b-1000-8d81-a030fa4323d7",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "b5a6cd54-1f5b-35df-950e-9c15d7cd376d",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c107f3d1-019b-1000-9262-ec653f1f25fe",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 334
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "361f3a6a-019b-1000-208c-43ac14eca79d",
         "name" : "UpdateAttribute",
         "type" : "PROCESSOR"
@@ -4900,6 +5410,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 255
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c113394c-019b-1000-749f-360cafe625fb",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "b82cdb7a-b834-30d3-a3cc-20cfc7964ddf",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "Failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc231-019b-1000-619c-adfe86a45f1a",
+        "name" : "cabs_InvokeHTTP",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 338
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -5058,6 +5598,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c0b69569-019b-1000-76ee-369a00603fca",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "be684df0-14b2-37f5-a9e4-9386cee1e57a",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0b6956a-019b-1000-096a-297d56029072",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 326
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "2c7bf303-019b-1000-39d1-fad8959652e5",
         "name" : "UpdateAttribute",
         "type" : "PROCESSOR"
@@ -5140,6 +5710,66 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 241
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c129b7fa-019b-1000-2225-bf5595987108",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c129b7fe-019b-1000-e24a-cb120e61e62c",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c129b7fc-019b-1000-1127-04b5e3aa29cd",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 322
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c129b7fd-019b-1000-8cda-2fe2e9c0dbb7",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c129b7ff-019b-1000-0ac2-b363226ee803",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c129b7fb-019b-1000-24f6-cb580bc7147b",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 331
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -5298,36 +5928,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "b0dfc1f2-019b-1000-c0e3-1c880d9968cc",
-        "name" : "PutSQL",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "c80e5102-b88f-31ba-b2b8-d19b7677bfab",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "b0dfc20f-019b-1000-1d9f-f2f3395c0460",
-        "name" : "Null_Response_Filter_ExecuteScript",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 267
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "3180174b-019b-1000-8480-a6f145021158",
         "name" : "PutSQL",
         "type" : "PROCESSOR"
@@ -5350,6 +5950,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 236
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c1089d26-019b-1000-3b7b-f7dd94e856f2",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "cd1c9c1a-7bfd-3969-94e8-b4d0d292dcab",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c1089d25-019b-1000-488c-8c464c98a6b3",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 336
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -5590,6 +6220,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 301
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0c0fe69-019b-1000-7871-19c5cf1821fe",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "e5a95e40-1113-3687-824a-ead152c39045",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0c0fe6a-019b-1000-e458-d5d67d88defd",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 331
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -5860,6 +6520,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 164
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0c0fe6a-019b-1000-e458-d5d67d88defd",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "feb16f52-931a-3577-a61f-9be8444c8cf1",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc212-019b-1000-669b-06c0467fc282",
+        "name" : "EvaluateJsonPath",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 332
     } ],
     "controllerServices" : [ {
       "bulletinLevel" : "WARN",
@@ -27734,8 +28424,8 @@
       "name" : "Json_Split_Location_ExecuteScript",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 12728.0,
-        "y" : -3944.0
+        "x" : 12352.0,
+        "y" : -3976.0
       },
       "properties" : {
         "Script Engine" : "Groovy",
@@ -28430,8 +29120,8 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 13600.0,
-        "y" : -2240.0
+        "x" : 12688.0,
+        "y" : -2152.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
@@ -28626,8 +29316,8 @@
       "name" : "MonitorActivity",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 11184.0,
-        "y" : -3160.0
+        "x" : 9320.0,
+        "y" : -3368.0
       },
       "properties" : {
         "Continually Send Messages" : "false",
@@ -29460,8 +30150,8 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 15375.244644128366,
-        "y" : -3202.2934909050064
+        "x" : 15376.0,
+        "y" : -3184.0
       },
       "properties" : {
         "filename" : "ola_uber_cab_details_InvokeHTTP_api_${now():format(\"yyyyMMdd_HHmmss_SSS\")}_${UUID()}.json",
@@ -30281,8 +30971,8 @@
       "name" : "Unmatched LogAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 9791.244644128366,
-        "y" : -1170.2934909050064
+        "x" : 9776.0,
+        "y" : -1104.0
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -30392,8 +31082,8 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 9840.0,
-        "y" : -2824.0
+        "x" : 10496.0,
+        "y" : -2800.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
@@ -30765,8 +31455,8 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 12864.0,
-        "y" : -3680.0
+        "x" : 12344.0,
+        "y" : -3672.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
@@ -30863,8 +31553,8 @@
       "name" : "MonitorActivity",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 13239.244644128366,
-        "y" : -3170.2934909050064
+        "x" : 13248.0,
+        "y" : -3184.0
       },
       "properties" : {
         "Continually Send Messages" : "false",
@@ -31529,8 +32219,8 @@
       "name" : "PutFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 8191.244644128366,
-        "y" : -3154.2934909050064
+        "x" : 12304.0,
+        "y" : -3136.0
       },
       "properties" : {
         "Create Missing Directories" : "true",
@@ -31885,12 +32575,12 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 15071.244644128366,
-        "y" : -1514.2934909050064
+        "x" : 15616.0,
+        "y" : -1520.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -32731,8 +33421,8 @@
       "name" : "Null_Response_Filter_ExecuteScript",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 10463.244644128366,
-        "y" : -2490.2934909050064
+        "x" : 10464.0,
+        "y" : -2496.0
       },
       "properties" : {
         "Script Engine" : "Groovy",
@@ -32804,12 +33494,12 @@
       "name" : "PutFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 16119.244644128366,
-        "y" : -3202.2934909050064
+        "x" : 16128.0,
+        "y" : -3184.0
       },
       "properties" : {
         "Create Missing Directories" : "true",
-        "Directory" : "output/cabs/ola_uber_InvokeHTTP",
+        "Directory" : "output/dev/cabs/cabs_InvokeHTTP",
         "Conflict Resolution Strategy" : "fail"
       },
       "propertyDescriptors" : {
@@ -33094,8 +33784,8 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 9808.0,
-        "y" : -4104.0
+        "x" : 9264.0,
+        "y" : -4656.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
@@ -33273,8 +33963,8 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 9671.244644128366,
-        "y" : -2154.2934909050064
+        "x" : 10056.0,
+        "y" : -2104.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
@@ -33469,8 +34159,8 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 11567.244644128366,
-        "y" : -1498.2934909050064
+        "x" : 11816.0,
+        "y" : -1816.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
@@ -34897,7 +35587,7 @@
       "type" : "org.apache.nifi.processors.standard.PutSQL",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ "Failure", "No Retry", "Original", "Retry" ],
+      "autoTerminatedRelationships" : [ "No Retry", "Original", "Retry" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
@@ -35869,7 +36559,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\tnull,\n    'SplitJson FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n    '${filename}',\n    'SplitJson FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -36402,8 +37092,8 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 9143.244644128366,
-        "y" : -3146.2934909050064
+        "x" : 11528.0,
+        "y" : -3136.0
       },
       "properties" : {
         "filename" : "commercial_cab_details_InvokeHTTP_api_${now():format(\"yyyyMMdd_HHmmss_SSS\")}_${UUID()}.json",
@@ -36987,12 +37677,12 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 13655.244644128366,
-        "y" : -4106.293490905006
+        "x" : 12728.0,
+        "y" : -4320.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'ReplaceText FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\tnull,\n    'ReplaceText FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -37196,8 +37886,8 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 10528.0,
-        "y" : -3984.0
+        "x" : 10560.0,
+        "y" : -3880.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
@@ -37392,8 +38082,8 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 11223.244644128366,
-        "y" : -1186.2934909050064
+        "x" : 11152.0,
+        "y" : -1104.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "false",
@@ -37490,8 +38180,8 @@
       "name" : "LogAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 8199.244644128366,
-        "y" : -3378.2934909050064
+        "x" : 12304.0,
+        "y" : -3392.0
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -37699,8 +38389,8 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 12024.0,
-        "y" : -3952.0
+        "x" : 11576.0,
+        "y" : -3960.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
@@ -38013,8 +38703,8 @@
       "name" : "Null_Response_Identifier_ExecuteScript",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 8904.0,
-        "y" : -2496.0
+        "x" : 11240.0,
+        "y" : -2792.0
       },
       "properties" : {
         "Script Engine" : "Groovy",
@@ -38086,8 +38776,8 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 8904.0,
-        "y" : -2200.0
+        "x" : 11240.0,
+        "y" : -2496.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
@@ -38615,8 +39305,8 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 13064.0,
-        "y" : -2376.0
+        "x" : 12648.0,
+        "y" : -2448.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
@@ -38720,7 +39410,7 @@
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "flow.table" : "cab_details_entry",
-        "flow.b2bapp_err_desc" : "${invokehttp.failure.reason:replace(\"'\", \"''\"):escapeJson()}"
+        "flow.b2bapp_err_desc" : "${splitjson.error:replace(\"'\", \"''\"):escapeJson()}"
       },
       "propertyDescriptors" : {
         "Delete Attributes Expression" : {
@@ -38799,7 +39489,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\tnull,\n    'SplitJson FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n    '${filename}',\n    'SplitJson FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -38899,6 +39589,428 @@
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "flow.table" : "cab_details_exit",
+        "flow.b2bapp_err_desc" : "${splitjson.error:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0a9e320-019b-1000-a60c-acc3465d7343",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 14920.0,
+        "y" : -1528.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_entry",
+        "flow.b2bapp_err_desc" : "${evaluated.json.path.error:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0b44e61-019b-1000-ea49-3123256e6604",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 13336.0,
+        "y" : -2376.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_entry",
+        "flow.b2bapp_err_desc" : "${splitjson.error:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0b69569-019b-1000-76ee-369a00603fca",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 12704.0,
+        "y" : -1944.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'Null_Response_Filter_ExecuteScript FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0b6956a-019b-1000-096a-297d56029072",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 13488.0,
+        "y" : -2184.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_exit",
+        "flow.b2bapp_err_desc" : "${splitjson.error:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0b947c0-019b-1000-7975-2329fd72a30c",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 13368.0,
+        "y" : -4456.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_entry",
         "flow.b2bapp_err_desc" : "${invokehttp.failure.reason:replace(\"'\", \"''\"):escapeJson()}"
       },
       "propertyDescriptors" : {
@@ -38953,6 +40065,1796 @@
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0b9812b-019b-1000-28d0-3f6006d38743",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 13464.0,
+        "y" : -4192.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_exit",
+        "flow.b2bapp_err_desc" : "${invokehttp.failure.reason:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0be7f5b-019b-1000-aca9-07c20784aa1a",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 13360.0,
+        "y" : -3864.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\tnull,\n    'ReplaceText FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0c0fe69-019b-1000-7871-19c5cf1821fe",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 15608.0,
+        "y" : -1328.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0c0fe6a-019b-1000-e458-d5d67d88defd",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 14912.0,
+        "y" : -1336.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_exit",
+        "flow.b2bapp_err_desc" : "${evaluated.json.path.error:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c107f3d0-019b-1000-8d81-a030fa4323d7",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 8968.0,
+        "y" : -4416.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\tnull,\n    'ReplaceText FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c107f3d1-019b-1000-9262-ec653f1f25fe",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 9648.0,
+        "y" : -4424.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_entry",
+        "flow.b2bapp_err_desc" : "${invokehttp.failure.reason:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c1089d25-019b-1000-488c-8c464c98a6b3",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 9904.0,
+        "y" : -4176.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_exit",
+        "flow.b2bapp_err_desc" : "${invokehttp.failure.reason:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c1089d26-019b-1000-3b7b-f7dd94e856f2",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 9176.0,
+        "y" : -4176.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\tnull,\n    'ReplaceText FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c113394c-019b-1000-749f-360cafe625fb",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 9416.0,
+        "y" : -3176.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_entry",
+        "flow.b2bapp_err_desc" : "${invokehttp.failure.reason:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c113394d-019b-1000-6af2-276bc6980135",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 8528.0,
+        "y" : -3000.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\tnull,\n    'cabs_InvokeHTTP FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c115b703-019b-1000-e6e2-861e803d7903",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 9400.0,
+        "y" : -2896.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_exit",
+        "flow.b2bapp_err_desc" : "${invokehttp.failure.reason:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c115c8ae-019b-1000-376c-8e6a44343f20",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 8784.0,
+        "y" : -2632.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\tnull,\n    'cabs_InvokeHTTP FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c11fa3d6-019b-1000-9da3-d03e72c7849f",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 8592.0,
+        "y" : -2120.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'Null_Response_Filter_ExecuteScript FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c11fa3d7-019b-1000-9811-527836860f4d",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 9536.0,
+        "y" : -2168.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_exit",
+        "flow.b2bapp_err_desc" : "${splitjson.error:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c11fa3d8-019b-1000-8980-034848e45abe",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 9000.0,
+        "y" : -1872.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'Null_Response_Filter_ExecuteScript FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c11fa3d9-019b-1000-5974-634d4d20c3a9",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 9512.0,
+        "y" : -2432.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_entry",
+        "flow.b2bapp_err_desc" : "${splitjson.error:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c129b7fa-019b-1000-2225-bf5595987108",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 12040.0,
+        "y" : -1496.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c129b7fb-019b-1000-24f6-cb580bc7147b",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 11336.0,
+        "y" : -1312.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_exit",
+        "flow.b2bapp_err_desc" : "${evaluated.json.path.error:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c129b7fc-019b-1000-1127-04b5e3aa29cd",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 11344.0,
+        "y" : -1504.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_entry",
+        "flow.b2bapp_err_desc" : "${evaluated.json.path.error:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c129b7fd-019b-1000-8cda-2fe2e9c0dbb7",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 12032.0,
+        "y" : -1304.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
       "yieldDuration" : "1 sec"
     }, {
       "autoTerminatedRelationships" : [ ],
@@ -40484,6 +43386,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "LogtableRDKloudspotaerowiseCabAvailability",
-    "timestamp" : 1768463752801
+    "timestamp" : 1768473803640
   }
 }
