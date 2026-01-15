@@ -319,6 +319,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c066e4d1-019b-1000-d4c1-d72151036931",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "19f5523b-78f1-39ad-9339-046467197914",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "Failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc1f1-019b-1000-2a49-51635fd419cf",
+        "name" : "ola_uber_InvokeHTTP",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 313
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "d9d57891-019a-1000-7095-1cdf91c8fd4e",
         "name" : "PutSQL",
         "type" : "PROCESSOR"
@@ -1128,6 +1158,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c0780dbf-019b-1000-93f5-5aea79d9dd7f",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "3f361ed4-f382-3516-9103-20e7425d82c6",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0780dc0-019b-1000-2535-9b25cca2c7d8",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 320
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "b0dfc1fd-019b-1000-38e6-32e3e71bf117",
         "name" : "SplitJson",
         "type" : "PROCESSOR"
@@ -1420,6 +1480,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 294
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc236-019b-1000-0d8a-cb308b2d255d",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "5da557bb-3e60-3901-9fb9-23e97f74779d",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0773e1b-019b-1000-1aaf-b05d661a28c5",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 318
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -2418,6 +2508,66 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c06870af-019b-1000-8661-12b59c59e51d",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "9a3afd10-82ba-341a-a780-255441998e18",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c06870ae-019b-1000-dca1-bbe3b0865f71",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 316
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0780dc0-019b-1000-2535-9b25cca2c7d8",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "9b306dd7-f77d-31b8-89ae-8c4c15cc7f1c",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc22c-019b-1000-de24-9b0b2ea3fede",
+        "name" : "SplitJson",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 319
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "b1cbcb0c-019b-1000-8b35-df0cfe35a769",
         "name" : "PutSQL",
         "type" : "PROCESSOR"
@@ -2560,6 +2710,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 289
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c0773e1b-019b-1000-1aaf-b05d661a28c5",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "a44530d5-02e0-3a8a-a79f-ac325c33031d",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b0dfc22c-019b-1000-de24-9b0b2ea3fede",
+        "name" : "SplitJson",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 317
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -4668,6 +4848,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "c062ccb3-019b-1000-4fad-6ef9959af360",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "b2e94d2c-6a6e-3fc5-b67f-9a9e4e126a8c",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "c066e4d1-019b-1000-d4c1-d72151036931",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 314
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "361f3a6a-019b-1000-208c-43ac14eca79d",
         "name" : "UpdateAttribute",
         "type" : "PROCESSOR"
@@ -4698,28 +4908,28 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "b0dfc236-019b-1000-0d8a-cb308b2d255d",
-        "name" : "PutSQL",
+        "id" : "c06870ae-019b-1000-dca1-bbe3b0865f71",
+        "name" : "UpdateAttribute",
         "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "b82c224b-dbc0-37d2-b318-cb3fc53151f8",
+      "identifier" : "b8653746-b04b-3efa-83fa-b863534f2307",
       "labelIndex" : 0,
       "loadBalanceCompression" : "DO_NOT_COMPRESS",
       "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
       "name" : "",
       "partitioningAttribute" : "",
       "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure" ],
+      "selectedRelationships" : [ "Failure" ],
       "source" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "b0dfc22c-019b-1000-de24-9b0b2ea3fede",
-        "name" : "SplitJson",
+        "id" : "b0dfc1f1-019b-1000-2a49-51635fd419cf",
+        "name" : "ola_uber_InvokeHTTP",
         "type" : "PROCESSOR"
       },
-      "zIndex" : 266
+      "zIndex" : 315
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -26893,7 +27103,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "false",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n    d.b2bapp_api_status,\n    '${filename}',\n    'Entry PutDatabaseRecord FAILED',\n    d.b2bapp_ingestion_freq,\n    null,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n    null,\n    null,\n    null\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n    d.b2bapp_api_status,\n    '${filename}',\n    'Entry PutDatabaseRecord FAILED',\n    d.b2bapp_ingestion_freq,\n    null,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n    null,\n    null,\n    null\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
         "Batch Size" : "1",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -26991,7 +27201,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "false",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n    '${filename}',\n    'Entry PutDatabaseRecord COMPLETED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n    '${filename}',\n    'Entry PutDatabaseRecord COMPLETED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "de2d894f-798a-3c32-80a3-49f8ffdd8866",
@@ -27089,7 +27299,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "false",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n    d.b2bapp_api_status,\n    '${filename}',\n    'Entry PutDatabaseRecord FAILED',\n    d.b2bapp_ingestion_freq,\n    null,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n    null,\n    null,\n    null\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n    d.b2bapp_api_status,\n    '${filename}',\n    'Entry PutDatabaseRecord FAILED',\n    d.b2bapp_ingestion_freq,\n    null,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n    null,\n    null,\n    null\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
         "Batch Size" : "1",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -27431,7 +27641,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'SplitJson FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'SplitJson FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -27798,7 +28008,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "false",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n    '${filename}',\n    'Exit PutDatabaseRecord COMPLETED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;\n",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n    '${filename}',\n    'Exit PutDatabaseRecord COMPLETED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;\n",
         "Batch Size" : "1",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -27873,7 +28083,7 @@
       "type" : "org.apache.nifi.processors.standard.PutSQL",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ "Failure", "No Retry", "Original", "Retry" ],
+      "autoTerminatedRelationships" : [ "No Retry", "Original", "Retry" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "ERROR",
       "bundle" : {
@@ -28220,12 +28430,12 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 13775.244644128366,
-        "y" : -2234.2934909050064
+        "x" : 13600.0,
+        "y" : -2240.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'Null_Response_Filter_ExecuteScript FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'Null_Response_Filter_ExecuteScript FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -28323,7 +28533,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'UpdateAttribute IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'UpdateAttribute IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -29328,7 +29538,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\tnull,\n    'GetFile UpdateAttribute IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}';",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\tnull,\n    'GetFile UpdateAttribute IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}';",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -30187,7 +30397,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'ola_uber_InvokeHTTP IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n\tb2bapp_file_name = EXCLUDED.b2bapp_file_name;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'ola_uber_InvokeHTTP IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n\tb2bapp_file_name = EXCLUDED.b2bapp_file_name;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -30765,7 +30975,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "false",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n    '${filename}',\n    'Exit PutDatabaseRecord COMPLETED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;\n",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n    '${filename}',\n    'Exit PutDatabaseRecord COMPLETED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;\n",
         "Batch Size" : "1",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -30944,7 +31154,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'ExtractText IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'ExtractText IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -31226,7 +31436,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'ola_uber_InvokeHTTP IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n\tb2bapp_file_name = EXCLUDED.b2bapp_file_name;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'ola_uber_InvokeHTTP IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n\tb2bapp_file_name = EXCLUDED.b2bapp_file_name;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -31680,7 +31890,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -31778,7 +31988,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'Null_Response_Filter_ExecuteScript IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'Null_Response_Filter_ExecuteScript IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -32693,7 +32903,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'SplitJson IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'SplitJson IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -32791,7 +33001,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'SplitJson IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'SplitJson IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -32889,7 +33099,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'ReplaceText FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'ReplaceText FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -33068,7 +33278,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'Null_Response_Filter_ExecuteScript FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'Null_Response_Filter_ExecuteScript FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -33264,7 +33474,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -33362,7 +33572,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "false",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n    d.b2bapp_api_status,\n    '${filename}',\n    'Exit PutDatabaseRecord FAILED',\n    d.b2bapp_ingestion_freq,\n    null,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n    null,\n    null,\n    null\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n    d.b2bapp_api_status,\n    '${filename}',\n    'Exit PutDatabaseRecord FAILED',\n    d.b2bapp_ingestion_freq,\n    null,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n    null,\n    null,\n    null\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc;",
         "Batch Size" : "1",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -34027,7 +34237,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'UpdateAttribute IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'UpdateAttribute IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -34403,7 +34613,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'ExtractText IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'ExtractText IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -34612,7 +34822,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "false",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n    d.b2bapp_api_status,\n    '${filename}',\n    'Exit PutDatabaseRecord FAILED',\n    d.b2bapp_ingestion_freq,\n    null,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n    null,\n    null,\n    null\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n    d.b2bapp_api_status,\n    '${filename}',\n    'Exit PutDatabaseRecord FAILED',\n    d.b2bapp_ingestion_freq,\n    null,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\n    null,\n    null,\n    null\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc;",
         "Batch Size" : "1",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -35654,12 +35864,12 @@
       "name" : "PutSQL",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 13647.244644128366,
-        "y" : -1738.2934909050064
+        "x" : 12440.0,
+        "y" : -1664.0
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'SplitJson FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\tnull,\n    'SplitJson FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -36001,7 +36211,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'Null_Response_Filter_ExecuteScript IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'Null_Response_Filter_ExecuteScript IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -36099,7 +36309,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "false",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -36684,7 +36894,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'ReplaceText IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'ReplaceText IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -36782,7 +36992,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'ReplaceText FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'ReplaceText FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -36991,7 +37201,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'ReplaceText IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${flow.filename}',\n    'ReplaceText IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -37089,7 +37299,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "false",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n    '${filename}',\n    'Entry PutDatabaseRecord COMPLETED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n    '${filename}',\n    'Entry PutDatabaseRecord COMPLETED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
         "Batch Size" : "1",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "de2d894f-798a-3c32-80a3-49f8ffdd8866",
@@ -37187,7 +37397,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "false",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\t'${filename}',\n    'EvaluateJsonPath IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -37396,7 +37606,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\tnull,\n    'GetFile UpdateAttribute IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}';",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tnull,\n\td.b2bapp_api_status,\n\tnull,\n    'GetFile UpdateAttribute IN PROGRESS',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}';",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -37881,7 +38091,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'InvokeHTTP RETURNS NULL SO FLOW IS TERMINATED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n\tb2bapp_file_name = EXCLUDED.b2bapp_file_name;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'InvokeHTTP RETURNS NULL SO FLOW IS TERMINATED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n\tb2bapp_file_name = EXCLUDED.b2bapp_file_name;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -37979,7 +38189,7 @@
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
-        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    brbapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.brbapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'InvokeHTTP RETURNS NULL SO FLOW IS TERMINATED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n\tb2bapp_file_name = EXCLUDED.b2bapp_file_name;",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n\tdate_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\t'${filename}',\n    'InvokeHTTP RETURNS NULL SO FLOW IS TERMINATED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n\tnull,\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n\tb2bapp_file_name = EXCLUDED.b2bapp_file_name;",
         "Batch Size" : "100",
         "Obtain Generated Keys" : "false",
         "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
@@ -38125,6 +38335,624 @@
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.script.ExecuteScript",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c062ccb3-019b-1000-4fad-6ef9959af360",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 12624.0,
+        "y" : -2680.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\tnull,\n    'ola_uber_InvokeHTTP FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c066e4d1-019b-1000-d4c1-d72151036931",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 13272.0,
+        "y" : -2928.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_entry",
+        "flow.b2bapp_err_desc" : "${invokehttp.failure.reason:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c06870ae-019b-1000-dca1-bbe3b0865f71",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 13528.0,
+        "y" : -2688.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_exit",
+        "flow.b2bapp_err_desc" : "${invokehttp.failure.reason:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c06870af-019b-1000-8661-12b59c59e51d",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 13064.0,
+        "y" : -2376.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\tnull,\n    'ola_uber_InvokeHTTP FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0773e1b-019b-1000-1aaf-b05d661a28c5",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 13288.0,
+        "y" : -1880.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_entry",
+        "flow.b2bapp_err_desc" : "${invokehttp.failure.reason:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0780dbf-019b-1000-93f5-5aea79d9dd7f",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 12576.0,
+        "y" : -1392.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nSELECT\n    d.b2bapp_api_id,\n    d.b2bapp_src,\n    d.b2bapp_apiname,\n    '${flow.b2bapp_process_start_tm}'::timestamp,\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n\td.b2bapp_api_status,\n\tnull,\n    'SplitJson FAILED',\n    d.b2bapp_ingestion_freq,\n\tnull,\n    '${flow.b2bapp_err_desc}',\n    d.b2bapp_tbl_name,\t\n\tnull,\n\tnull,\n\tnull\nFROM assets.b2bappapidetails d\nWHERE d.b2bapp_src = '${flow.src}'\n  AND d.b2bapp_tbl_name = '${flow.table}'\n\nON CONFLICT (b2bapp_src, b2bapp_tbl_name, b2bapp_process_start_tm)\nDO UPDATE SET\n    b2bapp_ingestion_status = EXCLUDED.b2bapp_ingestion_status,\n    b2bapp_err_desc = EXCLUDED.b2bapp_err_desc,\n\tb2bapp_process_end_tm = EXCLUDED.b2bapp_process_end_tm;",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c0780dc0-019b-1000-2535-9b25cca2c7d8",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 13424.0,
+        "y" : -1608.0
+      },
+      "properties" : {
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100",
+        "flow.table" : "cab_details_exit",
+        "flow.b2bapp_err_desc" : "${invokehttp.failure.reason:replace(\"'\", \"''\"):escapeJson()}"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "flow.table" : {
+          "displayName" : "flow.table",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.table",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        },
+        "flow.b2bapp_err_desc" : {
+          "displayName" : "flow.b2bapp_err_desc",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "flow.b2bapp_err_desc",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
       "yieldDuration" : "1 sec"
     }, {
       "autoTerminatedRelationships" : [ ],
@@ -39656,6 +40484,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "LogtableRDKloudspotaerowiseCabAvailability",
-    "timestamp" : 1768308466194
+    "timestamp" : 1768463752801
   }
 }
