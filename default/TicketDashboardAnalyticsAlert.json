@@ -1,4 +1,5 @@
 {
+  "externalControllerServices" : { },
   "flow" : {
     "createdTimestamp" : 1769517630293,
     "description" : "Ticket, Dashboard Analytics, Alert details",
@@ -7,5 +8,3153 @@
     "name" : "Ticket_Dashboard_Analytics_Alert",
     "versionCount" : 0
   },
-  "latest" : false
+  "flowContents" : {
+    "comments" : "",
+    "componentType" : "PROCESS_GROUP",
+    "connections" : [ {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "dc13ed8d-019b-1000-ce30-2b4c1fc5f798",
+        "name" : "PutFile",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "3e0d69e8-f157-3c83-8191-e3e071a24aac",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "dc13ed8c-019b-1000-0f79-bfdadd4e0be8",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 2
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "dc13ed8d-019b-1000-ce30-2b4c1fc5f798",
+        "name" : "PutFile",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "4ee1aebf-a049-3fb6-b214-dd34ec48a00f",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "dc1786bd-019b-1000-757e-f9d3e3deac8e",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 4
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "dc13ed8c-019b-1000-0f79-bfdadd4e0be8",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "97e2f16a-b823-324b-89f7-3ef892552370",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "ac076985-434a-397e-b6f1-a8ce3dc2a74c",
+        "name" : "GenerateFlowFile",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 1
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "dc1786bd-019b-1000-757e-f9d3e3deac8e",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "9c01304e-7aba-3ff8-8d0f-ebaf0294187e",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "dc17932f-019b-1000-8221-526b81eddd3e",
+        "name" : "GenerateFlowFile",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 3
+    } ],
+    "controllerServices" : [ ],
+    "defaultBackPressureDataSizeThreshold" : "1 GB",
+    "defaultBackPressureObjectThreshold" : 10000,
+    "defaultFlowFileExpiration" : "0 sec",
+    "executionEngine" : "INHERITED",
+    "externalControllerServiceReferences" : { },
+    "flowFileConcurrency" : "UNBOUNDED",
+    "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+    "funnels" : [ ],
+    "identifier" : "flow-contents-group",
+    "inputPorts" : [ ],
+    "labels" : [ ],
+    "maxConcurrentTasks" : 1,
+    "name" : "Alerts",
+    "outputPorts" : [ ],
+    "position" : {
+      "x" : 0.0,
+      "y" : 0.0
+    },
+    "processGroups" : [ {
+      "comments" : "",
+      "componentType" : "PROCESS_GROUP",
+      "connections" : [ {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "14777c8f-407e-33fb-b0db-88908997d195",
+          "name" : "Empty ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "0f984566-db7f-355e-a08f-e510f6c5a85b",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "c53fcf90-422c-3e15-a913-a61ae91782d5",
+          "name" : "GenerateFlowFile",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 8
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "70e0d194-74cc-376a-b2aa-5cee11a3529f",
+          "name" : "LogAttribute",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "19460641-626d-3fb7-8e11-1f83d70e2f0c",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "fec040d7-019b-1000-79f8-b176af1563cb",
+          "name" : "Escalation & SLA Table JoltTransformJSON ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 13
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "70e0d194-74cc-376a-b2aa-5cee11a3529f",
+          "name" : "LogAttribute",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "27d2567c-8a2a-3a2d-b58a-b7d6a83f4211",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "64aab483-793f-3824-aa96-370e88db4e20",
+          "name" : "Core Ticket Table JoltTransformJSON",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 3
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "70e0d194-74cc-376a-b2aa-5cee11a3529f",
+          "name" : "LogAttribute",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "807caec5-84f8-3db7-b600-5d941a4d00e2",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "e0803dae-019b-1000-d138-44ba85effc7f",
+          "name" : "Wrong Escalation & SLA Table JoltTransformJSON",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 6
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "e0803dae-019b-1000-d138-44ba85effc7f",
+          "name" : "Wrong Escalation & SLA Table JoltTransformJSON",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "a8c49d5d-4a16-3f62-8faf-6111dc55ea6f",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "d6bb2602-0731-3399-af3b-67a86d98fe07",
+          "name" : "GetFile",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 5
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "14777c8f-407e-33fb-b0db-88908997d195",
+          "name" : "Empty ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "ab97d1a1-1a0a-327a-a841-2308c021a31d",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "d6bb2602-0731-3399-af3b-67a86d98fe07",
+          "name" : "GetFile",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 1
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "64aab483-793f-3824-aa96-370e88db4e20",
+          "name" : "Core Ticket Table JoltTransformJSON",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "bf1c89a8-9646-3b9c-8500-00eac193d6a4",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "c53fcf90-422c-3e15-a913-a61ae91782d5",
+          "name" : "GenerateFlowFile",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 9
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "e0803dae-019b-1000-d138-44ba85effc7f",
+          "name" : "Wrong Escalation & SLA Table JoltTransformJSON",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "d813c89a-091d-3a75-8fdf-7f4354bac019",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "c53fcf90-422c-3e15-a913-a61ae91782d5",
+          "name" : "GenerateFlowFile",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 7
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "70e0d194-74cc-376a-b2aa-5cee11a3529f",
+          "name" : "LogAttribute",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "e2e5685f-9a7e-3d6a-9835-1bd0a880c7ec",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "14777c8f-407e-33fb-b0db-88908997d195",
+          "name" : "Empty ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 2
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "64aab483-793f-3824-aa96-370e88db4e20",
+          "name" : "Core Ticket Table JoltTransformJSON",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "f968f858-7b50-38d4-a2b8-a5e9823d1649",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "d6bb2602-0731-3399-af3b-67a86d98fe07",
+          "name" : "GetFile",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 4
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "fec040d7-019b-1000-79f8-b176af1563cb",
+          "name" : "Escalation & SLA Table JoltTransformJSON ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "fa92ffeb-17aa-3442-9493-76a2d1e66609",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "54725e2a-3633-382b-bc96-bd948b208cef",
+          "id" : "c53fcf90-422c-3e15-a913-a61ae91782d5",
+          "name" : "GenerateFlowFile",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 12
+      } ],
+      "controllerServices" : [ ],
+      "defaultBackPressureDataSizeThreshold" : "1 GB",
+      "defaultBackPressureObjectThreshold" : 10000,
+      "defaultFlowFileExpiration" : "0 sec",
+      "executionEngine" : "INHERITED",
+      "flowFileConcurrency" : "UNBOUNDED",
+      "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+      "funnels" : [ ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+      "inputPorts" : [ ],
+      "labels" : [ ],
+      "maxConcurrentTasks" : 1,
+      "name" : "ticket",
+      "outputPorts" : [ ],
+      "position" : {
+        "x" : -448.0,
+        "y" : 312.0
+      },
+      "processGroups" : [ ],
+      "processors" : [ {
+        "autoTerminatedRelationships" : [ "failure" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-scripting-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "14777c8f-407e-33fb-b0db-88908997d195",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "Empty ExecuteScript",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 352.0,
+          "y" : -480.0
+        },
+        "properties" : {
+          "Script Engine" : "Groovy",
+          "Script Body" : "import groovy.json.JsonOutput\nimport java.util.*"
+        },
+        "propertyDescriptors" : {
+          "Script File" : {
+            "displayName" : "Script File",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script File",
+            "resourceDefinition" : {
+              "cardinality" : "SINGLE",
+              "resourceTypes" : [ "FILE" ]
+            },
+            "sensitive" : false
+          },
+          "Script Engine" : {
+            "displayName" : "Script Engine",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script Engine",
+            "sensitive" : false
+          },
+          "Script Body" : {
+            "displayName" : "Script Body",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script Body",
+            "sensitive" : false
+          },
+          "Module Directory" : {
+            "displayName" : "Module Directory",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Module Directory",
+            "resourceDefinition" : {
+              "cardinality" : "MULTIPLE",
+              "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            },
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.script.ExecuteScript",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ "failure" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-jolt-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "64aab483-793f-3824-aa96-370e88db4e20",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "Core Ticket Table JoltTransformJSON",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 400.0,
+          "y" : -896.0
+        },
+        "properties" : {
+          "JSON Source" : "FLOW_FILE",
+          "Jolt Transform" : "jolt-transform-chain",
+          "Max String Length" : "20 MB",
+          "Transform Cache Size" : "1",
+          "Pretty Print" : "false",
+          "Jolt Specification" : "[\n  {\n    \"operation\": \"shift\",\n    \"spec\": {\n      \"content\": {\n        \"*\": {\n          \"ticketId\": \"[&1].ticket_id\",\n          \"ticket\": {\n            \"alertId\": \"[&2].alert_id\",\n            \"ruleId\": \"[&2].rule_id\",\n            \"priority\": \"[&2].priority\",\n            \"status\": \"[&2].status\",\n            \"department\": \"[&2].department\",\n            \"assignee\": \"[&2].assignee\",\n            \"locationId\": \"[&2].location_id\",\n            \"parameter\": \"[&2].parameter\",\n            \"comment\": \"[&2].comment\",\n            \"currentLevel\": \"[&2].current_level\",\n            \"sent_notification\": \"[&2].sent_notification\",\n            \"createdBy\": \"[&2].created_by\",\n            \"updatedBy\": \"[&2].updated_by\",\n            \"createdAt\": \"[&2].created_at\",\n            \"updatedAt\": \"[&2].updated_at\"\n          }\n        }\n      }\n    }\n  }\n]"
+        },
+        "propertyDescriptors" : {
+          "JSON Source" : {
+            "displayName" : "JSON Source",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "JSON Source",
+            "sensitive" : false
+          },
+          "Jolt Transform" : {
+            "displayName" : "Jolt Transform",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Jolt Transform",
+            "sensitive" : false
+          },
+          "JSON Source Attribute" : {
+            "displayName" : "JSON Source Attribute",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "JSON Source Attribute",
+            "sensitive" : false
+          },
+          "Max String Length" : {
+            "displayName" : "Max String Length",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Max String Length",
+            "sensitive" : false
+          },
+          "Transform Cache Size" : {
+            "displayName" : "Transform Cache Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Transform Cache Size",
+            "sensitive" : false
+          },
+          "Custom Transformation Class Name" : {
+            "displayName" : "Custom Transformation Class Name",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Custom Transformation Class Name",
+            "sensitive" : false
+          },
+          "Custom Module Directory" : {
+            "displayName" : "Custom Module Directory",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Custom Module Directory",
+            "resourceDefinition" : {
+              "cardinality" : "MULTIPLE",
+              "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            },
+            "sensitive" : false
+          },
+          "Pretty Print" : {
+            "displayName" : "Pretty Print",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Pretty Print",
+            "sensitive" : false
+          },
+          "Jolt Specification" : {
+            "displayName" : "Jolt Specification",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Jolt Specification",
+            "resourceDefinition" : {
+              "cardinality" : "SINGLE",
+              "resourceTypes" : [ "FILE", "TEXT" ]
+            },
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.jolt.JoltTransformJSON",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ "success" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-standard-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "70e0d194-74cc-376a-b2aa-5cee11a3529f",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "LogAttribute",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 1448.0,
+          "y" : -88.0
+        },
+        "properties" : {
+          "character-set" : "UTF-8",
+          "Log FlowFile Properties" : "true",
+          "Log Level" : "info",
+          "attributes-to-log-regex" : ".*",
+          "Output Format" : "Line per Attribute",
+          "Log Payload" : "false"
+        },
+        "propertyDescriptors" : {
+          "Log prefix" : {
+            "displayName" : "Log prefix",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log prefix",
+            "sensitive" : false
+          },
+          "character-set" : {
+            "displayName" : "Character Set",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "character-set",
+            "sensitive" : false
+          },
+          "Log FlowFile Properties" : {
+            "displayName" : "Log FlowFile Properties",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log FlowFile Properties",
+            "sensitive" : false
+          },
+          "Log Level" : {
+            "displayName" : "Log Level",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log Level",
+            "sensitive" : false
+          },
+          "attributes-to-ignore-regex" : {
+            "displayName" : "Attributes to Ignore by Regular Expression",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "attributes-to-ignore-regex",
+            "sensitive" : false
+          },
+          "Attributes to Ignore" : {
+            "displayName" : "Attributes to Ignore",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Attributes to Ignore",
+            "sensitive" : false
+          },
+          "Attributes to Log" : {
+            "displayName" : "Attributes to Log",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Attributes to Log",
+            "sensitive" : false
+          },
+          "attributes-to-log-regex" : {
+            "displayName" : "Attributes to Log by Regular Expression",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "attributes-to-log-regex",
+            "sensitive" : false
+          },
+          "Output Format" : {
+            "displayName" : "Output Format",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Output Format",
+            "sensitive" : false
+          },
+          "Log Payload" : {
+            "displayName" : "Log Payload",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log Payload",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 25,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.standard.LogAttribute",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-standard-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "c53fcf90-422c-3e15-a913-a61ae91782d5",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "GenerateFlowFile",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : -1144.0,
+          "y" : 304.0
+        },
+        "properties" : {
+          "character-set" : "UTF-8",
+          "File Size" : "0B",
+          "generate-ff-custom-text" : "{\n    \"content\": [\n        {\n            \"ticketId\": \"APOC-AA-036161\",\n            \"ticket\": {\n                \"updatedBy\": \"System\",\n                \"priority\": \"LOW\",\n                \"sent_notification\": \"\",\n                \"currentLevel\": 3,\n                \"createdAt\": \"2026-01-13T10:47:00.236+00:00\",\n                \"escalationInfo\": {\n                    \"1\": \"priyamvada.yadav@kloudspot.com\",\n                    \"2\": \"keerthana.p@kloudspot.com\",\n                    \"ACKNOWLEDGED\": \"PT1M\",\n                    \"NOT_ACKNOWLEDGED\": \"PT1M\",\n                    \"ON_HOLD\": \"PT1M\"\n                },\n                \"createdBy\": \"system\",\n                \"locationId\": \"660411fedce65e2478c031ed\",\n                \"parameter\": \"dummy rule test 1\",\n                \"comment\": \"An escalation email has been sent to keerthana.p@kloudspot.com because this ticket was not resolved within the expected time frame by keerthana.p@kloudspot.com.\",\n                \"alertId\": \"696622a429aa764993551081\",\n                \"assignee\": \"keerthana.p@kloudspot.com\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"6932da4ee55cac27a58bcadc\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:49:02.476+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036160\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:44:41.410+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"66fbfe841d07ee345de18b63\",\n                \"parameter\": \"Parking Two wheeler helmet violation\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"6966221929aa76499355104d\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"660a7845b5c609142edc9e31\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:44:41.410+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036165\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"createdAt\": \"2026-01-13T10:49:14.767+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"639f655bb7bb6a75c0a3f645\",\n                \"parameter\": \"Congestion at Parking Main Entry Lane 6\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"6966232a29aa7649935510e2\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"66309aaa98d5de1b36f48abc\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:49:14.767+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036164\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"createdAt\": \"2026-01-13T10:48:18.564+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"66f2b3e9e3f3d624a5e6ce3b\",\n                \"parameter\": \"Main exit Two wheeler helmet violation\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"696622f229aa7649935510ae\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"660fee66fcf1274b4e747523\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:48:18.564+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036163\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"createdAt\": \"2026-01-13T10:47:07.805+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"639f655bb7bb6a75c0a3f645\",\n                \"parameter\": \"High Wait Time Arrival down Ramp\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"696622ab29aa764993551096\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"6638823dfaa19e78a7d4482f\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:47:07.805+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036162\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"createdAt\": \"2026-01-13T10:47:00.825+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"639f655bb7bb6a75c0a3f645\",\n                \"parameter\": \"Hight Wait Time At Departure Down Ramp\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"696622a429aa764993551086\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"6638830efaa19e78a7d44873\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:47:00.825+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036159\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:39:50.676+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"660bba28b5c609142edcbad2\",\n                \"parameter\": \"GH2 Two Wheeler High Occupancy\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"696620f629aa764993550ff9\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"6706284a760a5c120cec6c6b\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:39:50.676+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036158\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:38:56.772+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"639f655bb7bb6a75c0a3f645\",\n                \"parameter\": \"Congestion at Parking Main Exit2 lane 2\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"696620c029aa764993550fdf\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"6630a00098d5de1b36f48b27\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:38:56.772+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036157\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:37:04.801+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"65f413540faba501961d5675\",\n                \"parameter\": \"Departure new ramps High Occupancy\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"6966205029aa764993550fa6\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"660e5c1695d0521c3440f04e\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:37:04.801+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036156\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:36:36.838+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"689b2f2894659214ff60a7fa\",\n                \"parameter\": \" Public transport bus not available at arrival ramp\",\n                \"comment\": \"Incident reported by GHIAL_APOC\",\n                \"alertId\": \"6966203429aa764993550f9c\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"663c720dccbadc545a579985\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:36:36.838+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036155\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:35:40.786+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"660562c800474f3972c3b8d7\",\n                \"parameter\": \"Paybooth6 staff not present\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"69661ffc29aa764993550f7d\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"66069e0fd35ccc3c5235bf54\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:35:40.786+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036154\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:35:10.766+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"6915c3c18ea5686574ad8d53\",\n                \"parameter\": \"Arrival Down Ramp pay booth 5 Not manned\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"69661fde29aa764993550f67\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"6915c7d18ea5686574ad8fe3\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:35:10.766+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036153\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:23:10.569+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"67722503d9f65f09888d35b8\",\n                \"parameter\": \"Speed violation at SRC Apron\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"69661d0e29aa764993550e35\",\n                \"assignee\": \"apoc.airside@gmrgroup.in\",\n                \"department\": \"Airside\",\n                \"ruleId\": \"6791fca08421f81b6f82c7b2\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:23:10.569+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036071\",\n            \"ticket\": {\n                \"updatedBy\": \"System\",\n                \"priority\": \"LOW\",\n                \"sent_notification\": \"\",\n                \"currentLevel\": 3,\n                \"createdAt\": \"2026-01-13T03:19:16.876+00:00\",\n                \"escalationInfo\": {\n                    \"1\": \"priyamvada.yadav@kloudspot.com\",\n                    \"2\": \"keerthana.p@kloudspot.com\",\n                    \"ACKNOWLEDGED\": \"PT1M\",\n                    \"NOT_ACKNOWLEDGED\": \"PT1M\",\n                    \"ON_HOLD\": \"PT1M\"\n                },\n                \"createdBy\": \"system\",\n                \"locationId\": \"63a2b899811a3c66b2e1656e\",\n                \"parameter\": \"dummy rule test 3\",\n                \"comment\": \"An escalation email has been sent to keerthana.p@kloudspot.com because this ticket was not resolved within the expected time frame by keerthana.p@kloudspot.com.\",\n                \"alertId\": \"6965b9b429aa76499354cae2\",\n                \"assignee\": \"keerthana.p@kloudspot.com\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"695fa54c29aa76499351570c\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T03:21:24.008+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036070\",\n            \"ticket\": {\n                \"updatedBy\": \"System\",\n                \"priority\": \"LOW\",\n                \"sent_notification\": \"\",\n                \"currentLevel\": 3,\n                \"createdAt\": \"2026-01-13T03:19:18.842+00:00\",\n                \"escalationInfo\": {\n                    \"1\": \"priyamvada.yadav@kloudspot.com\",\n                    \"2\": \"keerthana.p@kloudspot.com\",\n                    \"ACKNOWLEDGED\": \"PT1M\",\n                    \"NOT_ACKNOWLEDGED\": \"PT1M\",\n                    \"ON_HOLD\": \"PT1M\"\n                },\n                \"createdBy\": \"system\",\n                \"locationId\": \"63a2b899811a3c66b2e1656e\",\n                \"parameter\": \"dummy rule test 2\",\n                \"comment\": \"An escalation email has been sent to keerthana.p@kloudspot.com because this ticket was not resolved within the expected time frame by keerthana.p@kloudspot.com.\",\n                \"alertId\": \"6965b9b429aa76499354cae4\",\n                \"assignee\": \"keerthana.p@kloudspot.com\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"695fa4be29aa7649935156ba\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T03:21:23.988+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036068\",\n            \"ticket\": {\n                \"updatedBy\": \"System\",\n                \"priority\": \"LOW\",\n                \"sent_notification\": \"\",\n                \"currentLevel\": 3,\n                \"createdAt\": \"2026-01-13T03:18:46.861+00:00\",\n                \"escalationInfo\": {\n                    \"1\": \"priyamvada.yadav@kloudspot.com\",\n                    \"2\": \"keerthana.p@kloudspot.com\",\n                    \"ACKNOWLEDGED\": \"PT1M\",\n                    \"NOT_ACKNOWLEDGED\": \"PT1M\",\n                    \"ON_HOLD\": \"PT1M\"\n                },\n                \"createdBy\": \"system\",\n                \"locationId\": \"63a1c2da811a3c66b2e15e0a\",\n                \"parameter\": \"dummy rule test 2\",\n                \"comment\": \"An escalation email has been sent to keerthana.p@kloudspot.com because this ticket was not resolved within the expected time frame by keerthana.p@kloudspot.com.\",\n                \"alertId\": \"6965b99629aa76499354cadd\",\n                \"assignee\": \"keerthana.p@kloudspot.com\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"695fa4be29aa7649935156ba\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T03:20:53.951+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036067\",\n            \"ticket\": {\n                \"updatedBy\": \"System\",\n                \"priority\": \"LOW\",\n                \"sent_notification\": \"\",\n                \"currentLevel\": 3,\n                \"createdAt\": \"2026-01-13T03:18:38.795+00:00\",\n                \"escalationInfo\": {\n                    \"1\": \"priyamvada.yadav@kloudspot.com\",\n                    \"2\": \"keerthana.p@kloudspot.com\",\n                    \"ACKNOWLEDGED\": \"PT1M\",\n                    \"NOT_ACKNOWLEDGED\": \"PT1M\",\n                    \"ON_HOLD\": \"PT1M\"\n                },\n                \"createdBy\": \"system\",\n                \"locationId\": \"63a2b87d811a3c66b2e16566\",\n                \"parameter\": \"dummy rule test 2\",\n                \"comment\": \"An escalation email has been sent to keerthana.p@kloudspot.com because this ticket was not resolved within the expected time frame by keerthana.p@kloudspot.com.\",\n                \"alertId\": \"6965b98e29aa76499354cad8\",\n                \"assignee\": \"keerthana.p@kloudspot.com\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"695fa4be29aa7649935156ba\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T03:20:43.922+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036066\",\n            \"ticket\": {\n                \"updatedBy\": \"System\",\n                \"priority\": \"LOW\",\n                \"sent_notification\": \"\",\n                \"currentLevel\": 3,\n                \"createdAt\": \"2026-01-13T03:17:32.925+00:00\",\n                \"escalationInfo\": {\n                    \"1\": \"priyamvada.yadav@kloudspot.com\",\n                    \"2\": \"keerthana.p@kloudspot.com\",\n                    \"ACKNOWLEDGED\": \"PT1M\",\n                    \"NOT_ACKNOWLEDGED\": \"PT1M\",\n                    \"ON_HOLD\": \"PT1M\"\n                },\n                \"createdBy\": \"system\",\n                \"locationId\": \"63a1c320811a3c66b2e15e17\",\n                \"parameter\": \"dummy rule test 2\",\n                \"comment\": \"An escalation email has been sent to keerthana.p@kloudspot.com because this ticket was not resolved within the expected time frame by keerthana.p@kloudspot.com.\",\n                \"alertId\": \"6965b94c29aa76499354cab6\",\n                \"assignee\": \"keerthana.p@kloudspot.com\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"695fa4be29aa7649935156ba\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T03:19:43.806+00:00\"\n            }\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 20,\n        \"sort\": {\n            \"empty\": false,\n            \"sorted\": true,\n            \"unsorted\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"last\": true,\n    \"totalPages\": 1,\n    \"totalElements\": 18,\n    \"size\": 20,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": false,\n        \"sorted\": true,\n        \"unsorted\": false\n    },\n    \"first\": true,\n    \"numberOfElements\": 18,\n    \"empty\": false\n}",
+          "Batch Size" : "1",
+          "Unique FlowFiles" : "false",
+          "Data Format" : "Text"
+        },
+        "propertyDescriptors" : {
+          "character-set" : {
+            "displayName" : "Character Set",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "character-set",
+            "sensitive" : false
+          },
+          "File Size" : {
+            "displayName" : "File Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "File Size",
+            "sensitive" : false
+          },
+          "mime-type" : {
+            "displayName" : "Mime Type",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "mime-type",
+            "sensitive" : false
+          },
+          "generate-ff-custom-text" : {
+            "displayName" : "Custom Text",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "generate-ff-custom-text",
+            "sensitive" : false
+          },
+          "Batch Size" : {
+            "displayName" : "Batch Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Batch Size",
+            "sensitive" : false
+          },
+          "Unique FlowFiles" : {
+            "displayName" : "Unique FlowFiles",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Unique FlowFiles",
+            "sensitive" : false
+          },
+          "Data Format" : {
+            "displayName" : "Data Format",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Data Format",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "1 min",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-standard-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "d6bb2602-0731-3399-af3b-67a86d98fe07",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "GetFile",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : -1128.0,
+          "y" : -600.0
+        },
+        "properties" : {
+          "Keep Source File" : "false",
+          "Minimum File Age" : "0 sec",
+          "Polling Interval" : "0 sec",
+          "Input Directory" : "/opt/nifi-2.6.0/output/alert",
+          "Batch Size" : "10",
+          "Minimum File Size" : "0 B",
+          "Ignore Hidden Files" : "true",
+          "Recurse Subdirectories" : "true",
+          "File Filter" : "ticket.json"
+        },
+        "propertyDescriptors" : {
+          "Keep Source File" : {
+            "displayName" : "Keep Source File",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Keep Source File",
+            "sensitive" : false
+          },
+          "Minimum File Age" : {
+            "displayName" : "Minimum File Age",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Minimum File Age",
+            "sensitive" : false
+          },
+          "Polling Interval" : {
+            "displayName" : "Polling Interval",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Polling Interval",
+            "sensitive" : false
+          },
+          "Input Directory" : {
+            "displayName" : "Input Directory",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Input Directory",
+            "sensitive" : false
+          },
+          "Maximum File Age" : {
+            "displayName" : "Maximum File Age",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Maximum File Age",
+            "sensitive" : false
+          },
+          "Batch Size" : {
+            "displayName" : "Batch Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Batch Size",
+            "sensitive" : false
+          },
+          "Maximum File Size" : {
+            "displayName" : "Maximum File Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Maximum File Size",
+            "sensitive" : false
+          },
+          "Minimum File Size" : {
+            "displayName" : "Minimum File Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Minimum File Size",
+            "sensitive" : false
+          },
+          "Ignore Hidden Files" : {
+            "displayName" : "Ignore Hidden Files",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Ignore Hidden Files",
+            "sensitive" : false
+          },
+          "Recurse Subdirectories" : {
+            "displayName" : "Recurse Subdirectories",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Recurse Subdirectories",
+            "sensitive" : false
+          },
+          "File Filter" : {
+            "displayName" : "File Filter",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "File Filter",
+            "sensitive" : false
+          },
+          "Path Filter" : {
+            "displayName" : "Path Filter",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Path Filter",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.standard.GetFile",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ "failure" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-jolt-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "e0803dae-019b-1000-d138-44ba85effc7f",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "Wrong Escalation & SLA Table JoltTransformJSON",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 832.0,
+          "y" : 200.0
+        },
+        "properties" : {
+          "JSON Source" : "FLOW_FILE",
+          "Jolt Transform" : "jolt-transform-shift",
+          "Max String Length" : "20 MB",
+          "Transform Cache Size" : "1",
+          "Pretty Print" : "false",
+          "Jolt Specification" : "{\n  \"content\": {\n    \"*\": {\n      \"ticketId\": \"rows[&1].ticket_id\",\n      \"ticket\": {\n        \"createdBy\": \"rows[&2].created_by\",\n        \"updatedBy\": \"rows[&2].updated_by\",\n        \"createdAt\": \"rows[&2].created_at\",\n        \"updatedAt\": \"rows[&2].updated_at\",\n        \"escalationInfo\": {\n          \"*\": {\n            \"$\": \"rows[&4].escalation_key\",\n            \"@\": \"rows[&4].escalation_value\"\n          }\n        }\n      }\n    }\n  }\n}"
+        },
+        "propertyDescriptors" : {
+          "JSON Source" : {
+            "displayName" : "JSON Source",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "JSON Source",
+            "sensitive" : false
+          },
+          "Jolt Transform" : {
+            "displayName" : "Jolt Transform",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Jolt Transform",
+            "sensitive" : false
+          },
+          "JSON Source Attribute" : {
+            "displayName" : "JSON Source Attribute",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "JSON Source Attribute",
+            "sensitive" : false
+          },
+          "Max String Length" : {
+            "displayName" : "Max String Length",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Max String Length",
+            "sensitive" : false
+          },
+          "Transform Cache Size" : {
+            "displayName" : "Transform Cache Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Transform Cache Size",
+            "sensitive" : false
+          },
+          "Custom Transformation Class Name" : {
+            "displayName" : "Custom Transformation Class Name",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Custom Transformation Class Name",
+            "sensitive" : false
+          },
+          "Custom Module Directory" : {
+            "displayName" : "Custom Module Directory",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Custom Module Directory",
+            "resourceDefinition" : {
+              "cardinality" : "MULTIPLE",
+              "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            },
+            "sensitive" : false
+          },
+          "Pretty Print" : {
+            "displayName" : "Pretty Print",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Pretty Print",
+            "sensitive" : false
+          },
+          "Jolt Specification" : {
+            "displayName" : "Jolt Specification",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Jolt Specification",
+            "resourceDefinition" : {
+              "cardinality" : "SINGLE",
+              "resourceTypes" : [ "FILE", "TEXT" ]
+            },
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.jolt.JoltTransformJSON",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ "failure" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-scripting-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "54725e2a-3633-382b-bc96-bd948b208cef",
+        "identifier" : "fec040d7-019b-1000-79f8-b176af1563cb",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "Escalation & SLA Table JoltTransformJSON ExecuteScript",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 848.0,
+          "y" : 848.0
+        },
+        "properties" : {
+          "Script Engine" : "Groovy",
+          "Script Body" : "import groovy.json.*\nimport org.apache.nifi.processor.io.OutputStreamCallback\n\ndef flowFile = session.get()\nif (!flowFile) return\n\ntry {\n\n    def input = new JsonSlurper().parse(session.read(flowFile))\n    def output = []\n\n    input.content.each { item ->\n        def ticketId = item.ticketId\n        def t = item.ticket\n\n        // If escalationInfo is empty, create one row with null key/value\n        if (!t.escalationInfo || t.escalationInfo.isEmpty()) {\n            output << [\n                ticket_id        : ticketId,\n                created_by       : t.createdBy,\n                updated_by       : t.updatedBy,\n                created_at       : t.createdAt,\n                updated_at       : t.updatedAt,\n                escalation_key  : null,\n                escalation_value: null\n            ]\n        } else {\n            // Otherwise explode each escalation entry\n            t.escalationInfo.each { k, v ->\n                output << [\n                    ticket_id        : ticketId,\n                    created_by       : t.createdBy,\n                    updated_by       : t.updatedBy,\n                    created_at       : t.createdAt,\n                    updated_at       : t.updatedAt,\n                    escalation_key  : k.toString(),\n                    escalation_value: v.toString()\n                ]\n            }\n        }\n    }\n\n    flowFile = session.write(flowFile, { out ->\n        out.write(JsonOutput.prettyPrint(JsonOutput.toJson(output)).getBytes(\"UTF-8\"))\n    } as OutputStreamCallback)\n\n    session.transfer(flowFile, REL_SUCCESS)\n\n} catch (Exception e) {\n\n    // Create failure FlowFile\n    def errorFlowFile = session.create(flowFile)\n\n    def errorPayload = [\n        error_type : e.getClass().getName(),\n        error_message : e.getMessage(),\n        processor : \"ExecuteScript - Escalation Transform\",\n        timestamp : new Date().toString()\n    ]\n\n    errorFlowFile = session.write(errorFlowFile, { out ->\n        out.write(JsonOutput.prettyPrint(JsonOutput.toJson(errorPayload)).getBytes(\"UTF-8\"))\n    } as OutputStreamCallback)\n\n    session.transfer(errorFlowFile, REL_FAILURE)\n    session.remove(flowFile)\n}\n"
+        },
+        "propertyDescriptors" : {
+          "Script File" : {
+            "displayName" : "Script File",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script File",
+            "resourceDefinition" : {
+              "cardinality" : "SINGLE",
+              "resourceTypes" : [ "FILE" ]
+            },
+            "sensitive" : false
+          },
+          "Script Engine" : {
+            "displayName" : "Script Engine",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script Engine",
+            "sensitive" : false
+          },
+          "Script Body" : {
+            "displayName" : "Script Body",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script Body",
+            "sensitive" : false
+          },
+          "Module Directory" : {
+            "displayName" : "Module Directory",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Module Directory",
+            "resourceDefinition" : {
+              "cardinality" : "MULTIPLE",
+              "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            },
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.script.ExecuteScript",
+        "yieldDuration" : "1 sec"
+      } ],
+      "remoteProcessGroups" : [ ],
+      "scheduledState" : "ENABLED",
+      "statelessFlowTimeout" : "1 min"
+    }, {
+      "comments" : "",
+      "componentType" : "PROCESS_GROUP",
+      "connections" : [ {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "ff086c03-019b-1000-2884-833e203aac00",
+          "name" : "ticket_resolution_time_group ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "24ce95f6-e94d-3787-84c7-66817d93594d",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "ff07b29a-019b-1000-6b79-54c37fff280b",
+          "name" : "LogAttribute",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 12
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "e02f19a1-019b-1000-4fc1-2a4c28bcebda",
+          "name" : "JoltTransformJSON",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "280393c1-d742-307c-8396-d69a4677cf87",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "5379da3c-e86b-39db-9546-0d3667587b97",
+          "name" : "GenerateFlowFile",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 5
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "ff08723f-019b-1000-ac65-ddaf023dfb00",
+          "name" : "ticket_summary_report ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "4799d7c3-53da-3c8c-a5fb-8771e79aa81a",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "ff079ffc-019b-1000-4972-5821fb42bc56",
+          "name" : "GenerateFlowFile",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 6
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "dc1eada0-019b-1000-6454-f69b394a6120",
+          "name" : "LogAttribute",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "7984350a-5c80-394f-878f-068005ce54bb",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "e02f19a1-019b-1000-4fc1-2a4c28bcebda",
+          "name" : "JoltTransformJSON",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 4
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "e02f19a1-019b-1000-4fc1-2a4c28bcebda",
+          "name" : "JoltTransformJSON",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "7bb0827c-e9d4-3d43-96fc-450ee81f4dd0",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "dc1ead9f-019b-1000-491a-a12d79edcce9",
+          "name" : "GetFile",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 3
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "ff08772f-019b-1000-de1a-d673fa3a61e3",
+          "name" : "ticket_status_group_count ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "923e8234-a7a4-3a82-be40-767db278a104",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "ff1e6169-019b-1000-8abd-157c0b6f981f",
+          "name" : "LogAttribute",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 14
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "ff07b29a-019b-1000-6b79-54c37fff280b",
+          "name" : "LogAttribute",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "b88e2c5b-1c7f-3f3d-8342-99f661ae712c",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "ff08723f-019b-1000-ac65-ddaf023dfb00",
+          "name" : "ticket_summary_report ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 9
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "ff1e9dc8-019b-1000-4228-6c02bb027b12",
+          "name" : "LogAttribute",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "beaafeb4-8cb5-3d81-97d9-adbf2d0cd440",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "ff08772f-019b-1000-de1a-d673fa3a61e3",
+          "name" : "ticket_status_group_count ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 15
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "dc1eada0-019b-1000-6454-f69b394a6120",
+          "name" : "LogAttribute",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "dc1eada1-019b-1000-9c99-1e72a81c4150",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "dc1ead9e-019b-1000-a315-51b85c13dd2a",
+          "name" : "ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 2
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "dc1ead9e-019b-1000-a315-51b85c13dd2a",
+          "name" : "ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "dc1eada2-019b-1000-b508-d74cf171ddcd",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "dc1ead9f-019b-1000-491a-a12d79edcce9",
+          "name" : "GetFile",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 1
+      }, {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "ff1e6169-019b-1000-8abd-157c0b6f981f",
+          "name" : "LogAttribute",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "ffdc7dec-8df7-36c1-8600-fb55421d7d28",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+          "id" : "ff086c03-019b-1000-2884-833e203aac00",
+          "name" : "ticket_resolution_time_group ExecuteScript",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 13
+      } ],
+      "controllerServices" : [ ],
+      "defaultBackPressureDataSizeThreshold" : "1 GB",
+      "defaultBackPressureObjectThreshold" : 10000,
+      "defaultFlowFileExpiration" : "0 sec",
+      "executionEngine" : "INHERITED",
+      "flowFileConcurrency" : "UNBOUNDED",
+      "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+      "funnels" : [ ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+      "inputPorts" : [ ],
+      "labels" : [ ],
+      "maxConcurrentTasks" : 1,
+      "name" : "dashboard",
+      "outputPorts" : [ ],
+      "position" : {
+        "x" : 216.0,
+        "y" : 312.0
+      },
+      "processGroups" : [ ],
+      "processors" : [ {
+        "autoTerminatedRelationships" : [ ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-standard-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "5379da3c-e86b-39db-9546-0d3667587b97",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "GenerateFlowFile",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : -632.0,
+          "y" : -624.0
+        },
+        "properties" : {
+          "character-set" : "UTF-8",
+          "File Size" : "0B",
+          "generate-ff-custom-text" : "{\n    \"total\": 277,\n    \"resolutionTimeGroup\": {\n        \"5-10min\": 14,\n        \"<5min\": 37,\n        \">10min\": 170\n    },\n    \"statusGroupCount\": {\n        \"ACKNOWLEDGED\": 26,\n        \"CLOSED\": 73,\n        \"NOT_ACKNOWLEDGED\": 17,\n        \"ON_HOLD\": 13,\n        \"RESOLVED\": 148\n    }\n}",
+          "Batch Size" : "1",
+          "Unique FlowFiles" : "false",
+          "Data Format" : "Text"
+        },
+        "propertyDescriptors" : {
+          "character-set" : {
+            "displayName" : "Character Set",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "character-set",
+            "sensitive" : false
+          },
+          "File Size" : {
+            "displayName" : "File Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "File Size",
+            "sensitive" : false
+          },
+          "mime-type" : {
+            "displayName" : "Mime Type",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "mime-type",
+            "sensitive" : false
+          },
+          "generate-ff-custom-text" : {
+            "displayName" : "Custom Text",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "generate-ff-custom-text",
+            "sensitive" : false
+          },
+          "Batch Size" : {
+            "displayName" : "Batch Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Batch Size",
+            "sensitive" : false
+          },
+          "Unique FlowFiles" : {
+            "displayName" : "Unique FlowFiles",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Unique FlowFiles",
+            "sensitive" : false
+          },
+          "Data Format" : {
+            "displayName" : "Data Format",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Data Format",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "1 min",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ "failure" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-scripting-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "dc1ead9e-019b-1000-a315-51b85c13dd2a",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "ExecuteScript",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 148.0000134597708,
+          "y" : -232.1666688097539
+        },
+        "properties" : {
+          "Script Engine" : "Groovy",
+          "Script Body" : "import groovy.json.JsonOutput\nimport java.util.*"
+        },
+        "propertyDescriptors" : {
+          "Script File" : {
+            "displayName" : "Script File",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script File",
+            "resourceDefinition" : {
+              "cardinality" : "SINGLE",
+              "resourceTypes" : [ "FILE" ]
+            },
+            "sensitive" : false
+          },
+          "Script Engine" : {
+            "displayName" : "Script Engine",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script Engine",
+            "sensitive" : false
+          },
+          "Script Body" : {
+            "displayName" : "Script Body",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script Body",
+            "sensitive" : false
+          },
+          "Module Directory" : {
+            "displayName" : "Module Directory",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Module Directory",
+            "resourceDefinition" : {
+              "cardinality" : "MULTIPLE",
+              "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            },
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.script.ExecuteScript",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-standard-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "dc1ead9f-019b-1000-491a-a12d79edcce9",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "GetFile",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : -507.9999865402292,
+          "y" : -224.1666688097539
+        },
+        "properties" : {
+          "Keep Source File" : "false",
+          "Minimum File Age" : "0 sec",
+          "Polling Interval" : "0 sec",
+          "Input Directory" : "/opt/nifi-2.6.0/output/alert",
+          "Batch Size" : "10",
+          "Minimum File Size" : "0 B",
+          "Ignore Hidden Files" : "true",
+          "Recurse Subdirectories" : "true",
+          "File Filter" : "dashboard.json"
+        },
+        "propertyDescriptors" : {
+          "Keep Source File" : {
+            "displayName" : "Keep Source File",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Keep Source File",
+            "sensitive" : false
+          },
+          "Minimum File Age" : {
+            "displayName" : "Minimum File Age",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Minimum File Age",
+            "sensitive" : false
+          },
+          "Polling Interval" : {
+            "displayName" : "Polling Interval",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Polling Interval",
+            "sensitive" : false
+          },
+          "Input Directory" : {
+            "displayName" : "Input Directory",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Input Directory",
+            "sensitive" : false
+          },
+          "Maximum File Age" : {
+            "displayName" : "Maximum File Age",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Maximum File Age",
+            "sensitive" : false
+          },
+          "Batch Size" : {
+            "displayName" : "Batch Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Batch Size",
+            "sensitive" : false
+          },
+          "Maximum File Size" : {
+            "displayName" : "Maximum File Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Maximum File Size",
+            "sensitive" : false
+          },
+          "Minimum File Size" : {
+            "displayName" : "Minimum File Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Minimum File Size",
+            "sensitive" : false
+          },
+          "Ignore Hidden Files" : {
+            "displayName" : "Ignore Hidden Files",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Ignore Hidden Files",
+            "sensitive" : false
+          },
+          "Recurse Subdirectories" : {
+            "displayName" : "Recurse Subdirectories",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Recurse Subdirectories",
+            "sensitive" : false
+          },
+          "File Filter" : {
+            "displayName" : "File Filter",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "File Filter",
+            "sensitive" : false
+          },
+          "Path Filter" : {
+            "displayName" : "Path Filter",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Path Filter",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.standard.GetFile",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ "success" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-standard-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "dc1eada0-019b-1000-6454-f69b394a6120",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "LogAttribute",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 808.0,
+          "y" : -232.0
+        },
+        "properties" : {
+          "character-set" : "UTF-8",
+          "Log FlowFile Properties" : "true",
+          "Log Level" : "info",
+          "attributes-to-log-regex" : ".*",
+          "Output Format" : "Line per Attribute",
+          "Log Payload" : "false"
+        },
+        "propertyDescriptors" : {
+          "Log prefix" : {
+            "displayName" : "Log prefix",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log prefix",
+            "sensitive" : false
+          },
+          "character-set" : {
+            "displayName" : "Character Set",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "character-set",
+            "sensitive" : false
+          },
+          "Log FlowFile Properties" : {
+            "displayName" : "Log FlowFile Properties",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log FlowFile Properties",
+            "sensitive" : false
+          },
+          "Log Level" : {
+            "displayName" : "Log Level",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log Level",
+            "sensitive" : false
+          },
+          "attributes-to-ignore-regex" : {
+            "displayName" : "Attributes to Ignore by Regular Expression",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "attributes-to-ignore-regex",
+            "sensitive" : false
+          },
+          "Attributes to Ignore" : {
+            "displayName" : "Attributes to Ignore",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Attributes to Ignore",
+            "sensitive" : false
+          },
+          "Attributes to Log" : {
+            "displayName" : "Attributes to Log",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Attributes to Log",
+            "sensitive" : false
+          },
+          "attributes-to-log-regex" : {
+            "displayName" : "Attributes to Log by Regular Expression",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "attributes-to-log-regex",
+            "sensitive" : false
+          },
+          "Output Format" : {
+            "displayName" : "Output Format",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Output Format",
+            "sensitive" : false
+          },
+          "Log Payload" : {
+            "displayName" : "Log Payload",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log Payload",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 25,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.standard.LogAttribute",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ "failure" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-jolt-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "e02f19a1-019b-1000-4fc1-2a4c28bcebda",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "JoltTransformJSON",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 144.0,
+          "y" : -472.0
+        },
+        "properties" : {
+          "JSON Source" : "FLOW_FILE",
+          "Jolt Transform" : "jolt-transform-chain",
+          "Max String Length" : "20 MB",
+          "Transform Cache Size" : "1",
+          "Pretty Print" : "false",
+          "Jolt Specification" : "[\n  {\n    \"operation\": \"shift\",\n    \"spec\": {\n      \"content\": {\n        \"*\": {\n          \"ticketId\": \"tmp[&1].ticket_id\",\n          \"ticket\": {\n            \"createdBy\": \"tmp[&2].created_by\",\n            \"updatedBy\": \"tmp[&2].updated_by\",\n            \"createdAt\": \"tmp[&2].created_at\",\n            \"updatedAt\": \"tmp[&2].updated_at\",\n            \"escalationInfo\": {\n              \"*\": {\n                \"$\": \"rows[&3].escalation_key\",\n                \"@\": \"rows[&3].escalation_value\",\n                \"#\": \"rows[&3].ticket_id\"\n              }\n            }\n          }\n        }\n      }\n    }\n  },\n  {\n    \"operation\": \"shift\",\n    \"spec\": {\n      \"rows\": {\n        \"*\": {\n          \"escalation_key\": \"[&1].escalation_key\",\n          \"escalation_value\": \"[&1].escalation_value\",\n          \"ticket_id\": \"[&1].ticket_id\"\n        }\n      },\n      \"tmp\": {\n        \"*\": {\n          \"created_by\": \"[&1].created_by\",\n          \"updated_by\": \"[&1].updated_by\",\n          \"created_at\": \"[&1].created_at\",\n          \"updated_at\": \"[&1].updated_at\"\n        }\n      }\n    }\n  }\n]"
+        },
+        "propertyDescriptors" : {
+          "JSON Source" : {
+            "displayName" : "JSON Source",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "JSON Source",
+            "sensitive" : false
+          },
+          "Jolt Transform" : {
+            "displayName" : "Jolt Transform",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Jolt Transform",
+            "sensitive" : false
+          },
+          "JSON Source Attribute" : {
+            "displayName" : "JSON Source Attribute",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "JSON Source Attribute",
+            "sensitive" : false
+          },
+          "Max String Length" : {
+            "displayName" : "Max String Length",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Max String Length",
+            "sensitive" : false
+          },
+          "Transform Cache Size" : {
+            "displayName" : "Transform Cache Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Transform Cache Size",
+            "sensitive" : false
+          },
+          "Custom Transformation Class Name" : {
+            "displayName" : "Custom Transformation Class Name",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Custom Transformation Class Name",
+            "sensitive" : false
+          },
+          "Custom Module Directory" : {
+            "displayName" : "Custom Module Directory",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Custom Module Directory",
+            "resourceDefinition" : {
+              "cardinality" : "MULTIPLE",
+              "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            },
+            "sensitive" : false
+          },
+          "Pretty Print" : {
+            "displayName" : "Pretty Print",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Pretty Print",
+            "sensitive" : false
+          },
+          "Jolt Specification" : {
+            "displayName" : "Jolt Specification",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Jolt Specification",
+            "resourceDefinition" : {
+              "cardinality" : "SINGLE",
+              "resourceTypes" : [ "FILE", "TEXT" ]
+            },
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.jolt.JoltTransformJSON",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-standard-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "ff079ffc-019b-1000-4972-5821fb42bc56",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "GenerateFlowFile",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : -688.0,
+          "y" : -1320.0
+        },
+        "properties" : {
+          "character-set" : "UTF-8",
+          "File Size" : "0B",
+          "generate-ff-custom-text" : "{\n    \"total\": 277,\n    \"resolutionTimeGroup\": {\n        \"5-10min\": 14,\n        \"<5min\": 37,\n        \">10min\": 170\n    },\n    \"statusGroupCount\": {\n        \"ACKNOWLEDGED\": 26,\n        \"CLOSED\": 73,\n        \"NOT_ACKNOWLEDGED\": 17,\n        \"ON_HOLD\": 13,\n        \"RESOLVED\": 148\n    }\n}",
+          "Batch Size" : "1",
+          "Unique FlowFiles" : "false",
+          "Data Format" : "Text"
+        },
+        "propertyDescriptors" : {
+          "character-set" : {
+            "displayName" : "Character Set",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "character-set",
+            "sensitive" : false
+          },
+          "File Size" : {
+            "displayName" : "File Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "File Size",
+            "sensitive" : false
+          },
+          "mime-type" : {
+            "displayName" : "Mime Type",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "mime-type",
+            "sensitive" : false
+          },
+          "generate-ff-custom-text" : {
+            "displayName" : "Custom Text",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "generate-ff-custom-text",
+            "sensitive" : false
+          },
+          "Batch Size" : {
+            "displayName" : "Batch Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Batch Size",
+            "sensitive" : false
+          },
+          "Unique FlowFiles" : {
+            "displayName" : "Unique FlowFiles",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Unique FlowFiles",
+            "sensitive" : false
+          },
+          "Data Format" : {
+            "displayName" : "Data Format",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Data Format",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "1 min",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-standard-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "ff07b29a-019b-1000-6b79-54c37fff280b",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "LogAttribute",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 1032.0,
+          "y" : -1328.0
+        },
+        "properties" : {
+          "character-set" : "UTF-8",
+          "Log FlowFile Properties" : "true",
+          "Log Level" : "info",
+          "attributes-to-log-regex" : ".*",
+          "Output Format" : "Line per Attribute",
+          "Log Payload" : "false"
+        },
+        "propertyDescriptors" : {
+          "Log prefix" : {
+            "displayName" : "Log prefix",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log prefix",
+            "sensitive" : false
+          },
+          "character-set" : {
+            "displayName" : "Character Set",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "character-set",
+            "sensitive" : false
+          },
+          "Log FlowFile Properties" : {
+            "displayName" : "Log FlowFile Properties",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log FlowFile Properties",
+            "sensitive" : false
+          },
+          "Log Level" : {
+            "displayName" : "Log Level",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log Level",
+            "sensitive" : false
+          },
+          "attributes-to-ignore-regex" : {
+            "displayName" : "Attributes to Ignore by Regular Expression",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "attributes-to-ignore-regex",
+            "sensitive" : false
+          },
+          "Attributes to Ignore" : {
+            "displayName" : "Attributes to Ignore",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Attributes to Ignore",
+            "sensitive" : false
+          },
+          "Attributes to Log" : {
+            "displayName" : "Attributes to Log",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Attributes to Log",
+            "sensitive" : false
+          },
+          "attributes-to-log-regex" : {
+            "displayName" : "Attributes to Log by Regular Expression",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "attributes-to-log-regex",
+            "sensitive" : false
+          },
+          "Output Format" : {
+            "displayName" : "Output Format",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Output Format",
+            "sensitive" : false
+          },
+          "Log Payload" : {
+            "displayName" : "Log Payload",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log Payload",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 25,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.standard.LogAttribute",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ "failure" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-scripting-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "ff086c03-019b-1000-2884-833e203aac00",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "ticket_resolution_time_group ExecuteScript",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 1856.0,
+          "y" : -1328.0
+        },
+        "properties" : {
+          "Script Engine" : "Groovy",
+          "Script Body" : "import groovy.json.*\nimport org.apache.nifi.processor.io.OutputStreamCallback\n\ndef ff = session.get()\nif (!ff) return\n\ntry {\n    def json = new JsonSlurper().parse(session.read(ff))\n    def reportId = ff.getAttribute(\"report_id\")  // fetch from PutDatabaseRecord\n\n    def rows = []\n    json.resolutionTimeGroup.each { k, v ->\n        rows << [\n            report_id   : reportId.toLong(),\n            time_bucket : k,\n            ticket_count: v as Integer\n        ]\n    }\n\n    ff = session.write(ff, { os ->\n        os.write(JsonOutput.toJson(rows).getBytes(\"UTF-8\"))\n    } as OutputStreamCallback)\n\n    session.transfer(ff, REL_SUCCESS)\n\n} catch (Exception e) {\n    def err = session.create(ff)\n    def payload = [\n        error_type: e.class.name,\n        error_message: e.message,\n        processor: \"ticket_resolution_time_group\",\n        timestamp: new Date().toString()\n    ]\n    err = session.write(err, { os ->\n        os.write(JsonOutput.toJson(payload).getBytes(\"UTF-8\"))\n    } as OutputStreamCallback)\n    session.transfer(err, REL_FAILURE)\n    session.remove(ff)\n}\n"
+        },
+        "propertyDescriptors" : {
+          "Script File" : {
+            "displayName" : "Script File",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script File",
+            "resourceDefinition" : {
+              "cardinality" : "SINGLE",
+              "resourceTypes" : [ "FILE" ]
+            },
+            "sensitive" : false
+          },
+          "Script Engine" : {
+            "displayName" : "Script Engine",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script Engine",
+            "sensitive" : false
+          },
+          "Script Body" : {
+            "displayName" : "Script Body",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script Body",
+            "sensitive" : false
+          },
+          "Module Directory" : {
+            "displayName" : "Module Directory",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Module Directory",
+            "resourceDefinition" : {
+              "cardinality" : "MULTIPLE",
+              "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            },
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.script.ExecuteScript",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ "failure" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-scripting-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "ff08723f-019b-1000-ac65-ddaf023dfb00",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "ticket_summary_report ExecuteScript",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 160.0,
+          "y" : -1320.0
+        },
+        "properties" : {
+          "Script Engine" : "Groovy",
+          "Script Body" : "import groovy.json.*\nimport org.apache.nifi.processor.io.OutputStreamCallback\n\ndef ff = session.get()\nif (!ff) return\n\ntry {\n    def json = new JsonSlurper().parse(session.read(ff))\n\n    // Normally fetched from attributes / parameters\n    def reportType = \"TICKET_SUMMARY\"\n    def timeRange  = \"LAST_24_HOURS\"\n    def startTime  = null\n    def endTime    = null\n    def locationId = null\n    def department = null\n\n    def out = [[\n        report_type   : reportType,\n        time_range    : timeRange,\n        start_time    : startTime,\n        end_time      : endTime,\n        location_id   : locationId,\n        department    : department,\n        total_tickets : json.total,\n        generated_at  : new Date().format(\"yyyy-MM-dd'T'HH:mm:ssXXX\")\n    ]]\n\n    ff = session.write(ff, { os ->\n        os.write(JsonOutput.toJson(out).getBytes(\"UTF-8\"))\n    } as OutputStreamCallback)\n\n    session.transfer(ff, REL_SUCCESS)\n\n} catch (Exception e) {\n    def err = session.create(ff)\n    def payload = [\n        error_type: e.class.name,\n        error_message: e.message,\n        processor: \"ticket_summary_report\",\n        timestamp: new Date().toString()\n    ]\n    err = session.write(err, { os ->\n        os.write(JsonOutput.toJson(payload).getBytes(\"UTF-8\"))\n    } as OutputStreamCallback)\n    session.transfer(err, REL_FAILURE)\n    session.remove(ff)\n}\n"
+        },
+        "propertyDescriptors" : {
+          "Script File" : {
+            "displayName" : "Script File",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script File",
+            "resourceDefinition" : {
+              "cardinality" : "SINGLE",
+              "resourceTypes" : [ "FILE" ]
+            },
+            "sensitive" : false
+          },
+          "Script Engine" : {
+            "displayName" : "Script Engine",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script Engine",
+            "sensitive" : false
+          },
+          "Script Body" : {
+            "displayName" : "Script Body",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script Body",
+            "sensitive" : false
+          },
+          "Module Directory" : {
+            "displayName" : "Module Directory",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Module Directory",
+            "resourceDefinition" : {
+              "cardinality" : "MULTIPLE",
+              "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            },
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.script.ExecuteScript",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ "failure" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-scripting-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "ff08772f-019b-1000-de1a-d673fa3a61e3",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "ticket_status_group_count ExecuteScript",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 1040.0,
+          "y" : -1000.0
+        },
+        "properties" : {
+          "Script Engine" : "Groovy",
+          "Script Body" : "import groovy.json.*\nimport org.apache.nifi.processor.io.OutputStreamCallback\n\ndef ff = session.get()\nif (!ff) return\n\ntry {\n    def json = new JsonSlurper().parse(session.read(ff))\n    def reportId = ff.getAttribute(\"report_id\")\n\n    def rows = []\n    json.statusGroupCount.each { k, v ->\n        rows << [\n            report_id   : reportId.toLong(),\n            status      : k,\n            ticket_count: v as Integer\n        ]\n    }\n\n    ff = session.write(ff, { os ->\n        os.write(JsonOutput.toJson(rows).getBytes(\"UTF-8\"))\n    } as OutputStreamCallback)\n\n    session.transfer(ff, REL_SUCCESS)\n\n} catch (Exception e) {\n    def err = session.create(ff)\n    def payload = [\n        error_type: e.class.name,\n        error_message: e.message,\n        processor: \"ticket_status_group_count\",\n        timestamp: new Date().toString()\n    ]\n    err = session.write(err, { os ->\n        os.write(JsonOutput.toJson(payload).getBytes(\"UTF-8\"))\n    } as OutputStreamCallback)\n    session.transfer(err, REL_FAILURE)\n    session.remove(ff)\n}\n"
+        },
+        "propertyDescriptors" : {
+          "Script File" : {
+            "displayName" : "Script File",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script File",
+            "resourceDefinition" : {
+              "cardinality" : "SINGLE",
+              "resourceTypes" : [ "FILE" ]
+            },
+            "sensitive" : false
+          },
+          "Script Engine" : {
+            "displayName" : "Script Engine",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script Engine",
+            "sensitive" : false
+          },
+          "Script Body" : {
+            "displayName" : "Script Body",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Script Body",
+            "sensitive" : false
+          },
+          "Module Directory" : {
+            "displayName" : "Module Directory",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Module Directory",
+            "resourceDefinition" : {
+              "cardinality" : "MULTIPLE",
+              "resourceTypes" : [ "DIRECTORY", "FILE" ]
+            },
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.script.ExecuteScript",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-standard-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "ff1e6169-019b-1000-8abd-157c0b6f981f",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "LogAttribute",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 1856.0,
+          "y" : -1008.0
+        },
+        "properties" : {
+          "character-set" : "UTF-8",
+          "Log FlowFile Properties" : "true",
+          "Log Level" : "info",
+          "attributes-to-log-regex" : ".*",
+          "Output Format" : "Line per Attribute",
+          "Log Payload" : "false"
+        },
+        "propertyDescriptors" : {
+          "Log prefix" : {
+            "displayName" : "Log prefix",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log prefix",
+            "sensitive" : false
+          },
+          "character-set" : {
+            "displayName" : "Character Set",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "character-set",
+            "sensitive" : false
+          },
+          "Log FlowFile Properties" : {
+            "displayName" : "Log FlowFile Properties",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log FlowFile Properties",
+            "sensitive" : false
+          },
+          "Log Level" : {
+            "displayName" : "Log Level",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log Level",
+            "sensitive" : false
+          },
+          "attributes-to-ignore-regex" : {
+            "displayName" : "Attributes to Ignore by Regular Expression",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "attributes-to-ignore-regex",
+            "sensitive" : false
+          },
+          "Attributes to Ignore" : {
+            "displayName" : "Attributes to Ignore",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Attributes to Ignore",
+            "sensitive" : false
+          },
+          "Attributes to Log" : {
+            "displayName" : "Attributes to Log",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Attributes to Log",
+            "sensitive" : false
+          },
+          "attributes-to-log-regex" : {
+            "displayName" : "Attributes to Log by Regular Expression",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "attributes-to-log-regex",
+            "sensitive" : false
+          },
+          "Output Format" : {
+            "displayName" : "Output Format",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Output Format",
+            "sensitive" : false
+          },
+          "Log Payload" : {
+            "displayName" : "Log Payload",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log Payload",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 25,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.standard.LogAttribute",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-standard-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "9dafc130-5597-329c-bdec-eefd822eaa93",
+        "identifier" : "ff1e9dc8-019b-1000-4228-6c02bb027b12",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "LogAttribute",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : 168.0,
+          "y" : -992.0
+        },
+        "properties" : {
+          "character-set" : "UTF-8",
+          "Log FlowFile Properties" : "true",
+          "Log Level" : "info",
+          "attributes-to-log-regex" : ".*",
+          "Output Format" : "Line per Attribute",
+          "Log Payload" : "false"
+        },
+        "propertyDescriptors" : {
+          "Log prefix" : {
+            "displayName" : "Log prefix",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log prefix",
+            "sensitive" : false
+          },
+          "character-set" : {
+            "displayName" : "Character Set",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "character-set",
+            "sensitive" : false
+          },
+          "Log FlowFile Properties" : {
+            "displayName" : "Log FlowFile Properties",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log FlowFile Properties",
+            "sensitive" : false
+          },
+          "Log Level" : {
+            "displayName" : "Log Level",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log Level",
+            "sensitive" : false
+          },
+          "attributes-to-ignore-regex" : {
+            "displayName" : "Attributes to Ignore by Regular Expression",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "attributes-to-ignore-regex",
+            "sensitive" : false
+          },
+          "Attributes to Ignore" : {
+            "displayName" : "Attributes to Ignore",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Attributes to Ignore",
+            "sensitive" : false
+          },
+          "Attributes to Log" : {
+            "displayName" : "Attributes to Log",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Attributes to Log",
+            "sensitive" : false
+          },
+          "attributes-to-log-regex" : {
+            "displayName" : "Attributes to Log by Regular Expression",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "attributes-to-log-regex",
+            "sensitive" : false
+          },
+          "Output Format" : {
+            "displayName" : "Output Format",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Output Format",
+            "sensitive" : false
+          },
+          "Log Payload" : {
+            "displayName" : "Log Payload",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Log Payload",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 25,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.standard.LogAttribute",
+        "yieldDuration" : "1 sec"
+      } ],
+      "remoteProcessGroups" : [ ],
+      "scheduledState" : "ENABLED",
+      "statelessFlowTimeout" : "1 min"
+    } ],
+    "processors" : [ {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "ac076985-434a-397e-b6f1-a8ce3dc2a74c",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "GenerateFlowFile",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -552.0,
+        "y" : -224.0
+      },
+      "properties" : {
+        "character-set" : "UTF-8",
+        "File Size" : "0B",
+        "generate-ff-custom-text" : "{\n    \"total\": 277,\n    \"resolutionTimeGroup\": {\n        \"5-10min\": 14,\n        \"<5min\": 37,\n        \">10min\": 170\n    },\n    \"statusGroupCount\": {\n        \"ACKNOWLEDGED\": 26,\n        \"CLOSED\": 73,\n        \"NOT_ACKNOWLEDGED\": 17,\n        \"ON_HOLD\": 13,\n        \"RESOLVED\": 148\n    }\n}",
+        "Batch Size" : "1",
+        "Unique FlowFiles" : "false",
+        "Data Format" : "Text"
+      },
+      "propertyDescriptors" : {
+        "character-set" : {
+          "displayName" : "Character Set",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "character-set",
+          "sensitive" : false
+        },
+        "File Size" : {
+          "displayName" : "File Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "File Size",
+          "sensitive" : false
+        },
+        "mime-type" : {
+          "displayName" : "Mime Type",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "mime-type",
+          "sensitive" : false
+        },
+        "generate-ff-custom-text" : {
+          "displayName" : "Custom Text",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "generate-ff-custom-text",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Unique FlowFiles" : {
+          "displayName" : "Unique FlowFiles",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Unique FlowFiles",
+          "sensitive" : false
+        },
+        "Data Format" : {
+          "displayName" : "Data Format",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Data Format",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "1 min",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "dc13ed8c-019b-1000-0f79-bfdadd4e0be8",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 144.0,
+        "y" : -224.0
+      },
+      "properties" : {
+        "filename" : "dashboard.json",
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "filename" : {
+          "displayName" : "filename",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "filename",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "dc13ed8d-019b-1000-ce30-2b4c1fc5f798",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutFile",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 864.0,
+        "y" : -216.0
+      },
+      "properties" : {
+        "Create Missing Directories" : "true",
+        "Directory" : "output/alert",
+        "Conflict Resolution Strategy" : "fail"
+      },
+      "propertyDescriptors" : {
+        "Group" : {
+          "displayName" : "Group",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Group",
+          "sensitive" : false
+        },
+        "Owner" : {
+          "displayName" : "Owner",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Owner",
+          "sensitive" : false
+        },
+        "Create Missing Directories" : {
+          "displayName" : "Create Missing Directories",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Create Missing Directories",
+          "sensitive" : false
+        },
+        "Permissions" : {
+          "displayName" : "Permissions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Permissions",
+          "sensitive" : false
+        },
+        "Maximum File Count" : {
+          "displayName" : "Maximum File Count",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Maximum File Count",
+          "sensitive" : false
+        },
+        "Last Modified Time" : {
+          "displayName" : "Last Modified Time",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Last Modified Time",
+          "sensitive" : false
+        },
+        "Directory" : {
+          "displayName" : "Directory",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Directory",
+          "sensitive" : false
+        },
+        "Conflict Resolution Strategy" : {
+          "displayName" : "Conflict Resolution Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Conflict Resolution Strategy",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutFile",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "dc1786bd-019b-1000-757e-f9d3e3deac8e",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 152.0,
+        "y" : 0.0
+      },
+      "properties" : {
+        "filename" : "ticket.json",
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "filename" : {
+          "displayName" : "filename",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "filename",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "dc17932f-019b-1000-8221-526b81eddd3e",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "GenerateFlowFile",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -552.0,
+        "y" : 0.0
+      },
+      "properties" : {
+        "character-set" : "UTF-8",
+        "File Size" : "0B",
+        "generate-ff-custom-text" : "{\n    \"content\": [\n        {\n            \"ticketId\": \"APOC-AA-036161\",\n            \"ticket\": {\n                \"updatedBy\": \"System\",\n                \"priority\": \"LOW\",\n                \"sent_notification\": \"\",\n                \"currentLevel\": 3,\n                \"createdAt\": \"2026-01-13T10:47:00.236+00:00\",\n                \"escalationInfo\": {\n                    \"1\": \"priyamvada.yadav@kloudspot.com\",\n                    \"2\": \"keerthana.p@kloudspot.com\",\n                    \"ACKNOWLEDGED\": \"PT1M\",\n                    \"NOT_ACKNOWLEDGED\": \"PT1M\",\n                    \"ON_HOLD\": \"PT1M\"\n                },\n                \"createdBy\": \"system\",\n                \"locationId\": \"660411fedce65e2478c031ed\",\n                \"parameter\": \"dummy rule test 1\",\n                \"comment\": \"An escalation email has been sent to keerthana.p@kloudspot.com because this ticket was not resolved within the expected time frame by keerthana.p@kloudspot.com.\",\n                \"alertId\": \"696622a429aa764993551081\",\n                \"assignee\": \"keerthana.p@kloudspot.com\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"6932da4ee55cac27a58bcadc\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:49:02.476+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036160\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:44:41.410+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"66fbfe841d07ee345de18b63\",\n                \"parameter\": \"Parking Two wheeler helmet violation\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"6966221929aa76499355104d\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"660a7845b5c609142edc9e31\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:44:41.410+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036165\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"createdAt\": \"2026-01-13T10:49:14.767+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"639f655bb7bb6a75c0a3f645\",\n                \"parameter\": \"Congestion at Parking Main Entry Lane 6\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"6966232a29aa7649935510e2\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"66309aaa98d5de1b36f48abc\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:49:14.767+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036164\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"createdAt\": \"2026-01-13T10:48:18.564+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"66f2b3e9e3f3d624a5e6ce3b\",\n                \"parameter\": \"Main exit Two wheeler helmet violation\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"696622f229aa7649935510ae\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"660fee66fcf1274b4e747523\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:48:18.564+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036163\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"createdAt\": \"2026-01-13T10:47:07.805+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"639f655bb7bb6a75c0a3f645\",\n                \"parameter\": \"High Wait Time Arrival down Ramp\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"696622ab29aa764993551096\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"6638823dfaa19e78a7d4482f\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:47:07.805+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036162\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"createdAt\": \"2026-01-13T10:47:00.825+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"639f655bb7bb6a75c0a3f645\",\n                \"parameter\": \"Hight Wait Time At Departure Down Ramp\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"696622a429aa764993551086\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"6638830efaa19e78a7d44873\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:47:00.825+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036159\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:39:50.676+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"660bba28b5c609142edcbad2\",\n                \"parameter\": \"GH2 Two Wheeler High Occupancy\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"696620f629aa764993550ff9\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"6706284a760a5c120cec6c6b\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:39:50.676+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036158\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:38:56.772+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"639f655bb7bb6a75c0a3f645\",\n                \"parameter\": \"Congestion at Parking Main Exit2 lane 2\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"696620c029aa764993550fdf\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"6630a00098d5de1b36f48b27\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:38:56.772+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036157\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:37:04.801+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"65f413540faba501961d5675\",\n                \"parameter\": \"Departure new ramps High Occupancy\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"6966205029aa764993550fa6\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"660e5c1695d0521c3440f04e\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:37:04.801+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036156\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:36:36.838+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"689b2f2894659214ff60a7fa\",\n                \"parameter\": \" Public transport bus not available at arrival ramp\",\n                \"comment\": \"Incident reported by GHIAL_APOC\",\n                \"alertId\": \"6966203429aa764993550f9c\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"663c720dccbadc545a579985\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:36:36.838+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036155\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:35:40.786+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"660562c800474f3972c3b8d7\",\n                \"parameter\": \"Paybooth6 staff not present\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"69661ffc29aa764993550f7d\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"66069e0fd35ccc3c5235bf54\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:35:40.786+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036154\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:35:10.766+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"6915c3c18ea5686574ad8d53\",\n                \"parameter\": \"Arrival Down Ramp pay booth 5 Not manned\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"69661fde29aa764993550f67\",\n                \"assignee\": \"ghialapoc.landside@gmrgroup.in\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"6915c7d18ea5686574ad8fe3\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:35:10.766+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036153\",\n            \"ticket\": {\n                \"updatedBy\": \"system\",\n                \"priority\": \"HIGH\",\n                \"sent_notification\": \"\",\n                \"createdAt\": \"2026-01-13T10:23:10.569+00:00\",\n                \"escalationInfo\": {},\n                \"createdBy\": \"system\",\n                \"locationId\": \"67722503d9f65f09888d35b8\",\n                \"parameter\": \"Speed violation at SRC Apron\",\n                \"comment\": \"Incident reported by GHIAL APOC\",\n                \"alertId\": \"69661d0e29aa764993550e35\",\n                \"assignee\": \"apoc.airside@gmrgroup.in\",\n                \"department\": \"Airside\",\n                \"ruleId\": \"6791fca08421f81b6f82c7b2\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T10:23:10.569+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036071\",\n            \"ticket\": {\n                \"updatedBy\": \"System\",\n                \"priority\": \"LOW\",\n                \"sent_notification\": \"\",\n                \"currentLevel\": 3,\n                \"createdAt\": \"2026-01-13T03:19:16.876+00:00\",\n                \"escalationInfo\": {\n                    \"1\": \"priyamvada.yadav@kloudspot.com\",\n                    \"2\": \"keerthana.p@kloudspot.com\",\n                    \"ACKNOWLEDGED\": \"PT1M\",\n                    \"NOT_ACKNOWLEDGED\": \"PT1M\",\n                    \"ON_HOLD\": \"PT1M\"\n                },\n                \"createdBy\": \"system\",\n                \"locationId\": \"63a2b899811a3c66b2e1656e\",\n                \"parameter\": \"dummy rule test 3\",\n                \"comment\": \"An escalation email has been sent to keerthana.p@kloudspot.com because this ticket was not resolved within the expected time frame by keerthana.p@kloudspot.com.\",\n                \"alertId\": \"6965b9b429aa76499354cae2\",\n                \"assignee\": \"keerthana.p@kloudspot.com\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"695fa54c29aa76499351570c\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T03:21:24.008+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036070\",\n            \"ticket\": {\n                \"updatedBy\": \"System\",\n                \"priority\": \"LOW\",\n                \"sent_notification\": \"\",\n                \"currentLevel\": 3,\n                \"createdAt\": \"2026-01-13T03:19:18.842+00:00\",\n                \"escalationInfo\": {\n                    \"1\": \"priyamvada.yadav@kloudspot.com\",\n                    \"2\": \"keerthana.p@kloudspot.com\",\n                    \"ACKNOWLEDGED\": \"PT1M\",\n                    \"NOT_ACKNOWLEDGED\": \"PT1M\",\n                    \"ON_HOLD\": \"PT1M\"\n                },\n                \"createdBy\": \"system\",\n                \"locationId\": \"63a2b899811a3c66b2e1656e\",\n                \"parameter\": \"dummy rule test 2\",\n                \"comment\": \"An escalation email has been sent to keerthana.p@kloudspot.com because this ticket was not resolved within the expected time frame by keerthana.p@kloudspot.com.\",\n                \"alertId\": \"6965b9b429aa76499354cae4\",\n                \"assignee\": \"keerthana.p@kloudspot.com\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"695fa4be29aa7649935156ba\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T03:21:23.988+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036068\",\n            \"ticket\": {\n                \"updatedBy\": \"System\",\n                \"priority\": \"LOW\",\n                \"sent_notification\": \"\",\n                \"currentLevel\": 3,\n                \"createdAt\": \"2026-01-13T03:18:46.861+00:00\",\n                \"escalationInfo\": {\n                    \"1\": \"priyamvada.yadav@kloudspot.com\",\n                    \"2\": \"keerthana.p@kloudspot.com\",\n                    \"ACKNOWLEDGED\": \"PT1M\",\n                    \"NOT_ACKNOWLEDGED\": \"PT1M\",\n                    \"ON_HOLD\": \"PT1M\"\n                },\n                \"createdBy\": \"system\",\n                \"locationId\": \"63a1c2da811a3c66b2e15e0a\",\n                \"parameter\": \"dummy rule test 2\",\n                \"comment\": \"An escalation email has been sent to keerthana.p@kloudspot.com because this ticket was not resolved within the expected time frame by keerthana.p@kloudspot.com.\",\n                \"alertId\": \"6965b99629aa76499354cadd\",\n                \"assignee\": \"keerthana.p@kloudspot.com\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"695fa4be29aa7649935156ba\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T03:20:53.951+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036067\",\n            \"ticket\": {\n                \"updatedBy\": \"System\",\n                \"priority\": \"LOW\",\n                \"sent_notification\": \"\",\n                \"currentLevel\": 3,\n                \"createdAt\": \"2026-01-13T03:18:38.795+00:00\",\n                \"escalationInfo\": {\n                    \"1\": \"priyamvada.yadav@kloudspot.com\",\n                    \"2\": \"keerthana.p@kloudspot.com\",\n                    \"ACKNOWLEDGED\": \"PT1M\",\n                    \"NOT_ACKNOWLEDGED\": \"PT1M\",\n                    \"ON_HOLD\": \"PT1M\"\n                },\n                \"createdBy\": \"system\",\n                \"locationId\": \"63a2b87d811a3c66b2e16566\",\n                \"parameter\": \"dummy rule test 2\",\n                \"comment\": \"An escalation email has been sent to keerthana.p@kloudspot.com because this ticket was not resolved within the expected time frame by keerthana.p@kloudspot.com.\",\n                \"alertId\": \"6965b98e29aa76499354cad8\",\n                \"assignee\": \"keerthana.p@kloudspot.com\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"695fa4be29aa7649935156ba\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T03:20:43.922+00:00\"\n            }\n        },\n        {\n            \"ticketId\": \"APOC-AA-036066\",\n            \"ticket\": {\n                \"updatedBy\": \"System\",\n                \"priority\": \"LOW\",\n                \"sent_notification\": \"\",\n                \"currentLevel\": 3,\n                \"createdAt\": \"2026-01-13T03:17:32.925+00:00\",\n                \"escalationInfo\": {\n                    \"1\": \"priyamvada.yadav@kloudspot.com\",\n                    \"2\": \"keerthana.p@kloudspot.com\",\n                    \"ACKNOWLEDGED\": \"PT1M\",\n                    \"NOT_ACKNOWLEDGED\": \"PT1M\",\n                    \"ON_HOLD\": \"PT1M\"\n                },\n                \"createdBy\": \"system\",\n                \"locationId\": \"63a1c320811a3c66b2e15e17\",\n                \"parameter\": \"dummy rule test 2\",\n                \"comment\": \"An escalation email has been sent to keerthana.p@kloudspot.com because this ticket was not resolved within the expected time frame by keerthana.p@kloudspot.com.\",\n                \"alertId\": \"6965b94c29aa76499354cab6\",\n                \"assignee\": \"keerthana.p@kloudspot.com\",\n                \"department\": \"Landside\",\n                \"ruleId\": \"695fa4be29aa7649935156ba\",\n                \"status\": \"NOT_ACKNOWLEDGED\",\n                \"updatedAt\": \"2026-01-13T03:19:43.806+00:00\"\n            }\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 20,\n        \"sort\": {\n            \"empty\": false,\n            \"sorted\": true,\n            \"unsorted\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"last\": true,\n    \"totalPages\": 1,\n    \"totalElements\": 18,\n    \"size\": 20,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": false,\n        \"sorted\": true,\n        \"unsorted\": false\n    },\n    \"first\": true,\n    \"numberOfElements\": 18,\n    \"empty\": false\n}",
+        "Batch Size" : "1",
+        "Unique FlowFiles" : "false",
+        "Data Format" : "Text"
+      },
+      "propertyDescriptors" : {
+        "character-set" : {
+          "displayName" : "Character Set",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "character-set",
+          "sensitive" : false
+        },
+        "File Size" : {
+          "displayName" : "File Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "File Size",
+          "sensitive" : false
+        },
+        "mime-type" : {
+          "displayName" : "Mime Type",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "mime-type",
+          "sensitive" : false
+        },
+        "generate-ff-custom-text" : {
+          "displayName" : "Custom Text",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "generate-ff-custom-text",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Unique FlowFiles" : {
+          "displayName" : "Unique FlowFiles",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Unique FlowFiles",
+          "sensitive" : false
+        },
+        "Data Format" : {
+          "displayName" : "Data Format",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Data Format",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "1 min",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+      "yieldDuration" : "1 sec"
+    } ],
+    "remoteProcessGroups" : [ ],
+    "scheduledState" : "ENABLED",
+    "statelessFlowTimeout" : "1 min"
+  },
+  "flowEncodingVersion" : "1.0",
+  "latest" : false,
+  "parameterContexts" : { },
+  "parameterProviders" : { },
+  "snapshotMetadata" : {
+    "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
+    "flowIdentifier" : "TicketDashboardAnalyticsAlert",
+    "timestamp" : 1769517631223
+  }
 }
