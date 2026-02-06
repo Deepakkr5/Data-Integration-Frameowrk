@@ -1321,7 +1321,7 @@
       "properties" : {
         "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
         "Message" : "login api token Genrated in put file location.folder Name cred",
-        "Attach File" : "false",
+        "Attach File" : "true",
         "input-character-set" : "UTF-8",
         "SMTP Port" : "587",
         "SMTP Auth" : "true",
@@ -1734,6 +1734,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "LoginAPILoginAPI",
-    "timestamp" : 1765949949851
+    "timestamp" : 1770380078773
   }
 }
