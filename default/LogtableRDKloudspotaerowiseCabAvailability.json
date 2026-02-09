@@ -1027,7 +1027,7 @@
         "comments" : "",
         "groupId" : "flow-contents-group",
         "id" : "4fae1b59-4199-39ea-82a8-229c923379fb",
-        "name" : "GenerateFlowFile",
+        "name" : "Testing GenerateFlowFile",
         "type" : "PROCESSOR"
       },
       "zIndex" : 355
@@ -1211,6 +1211,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 296
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "4137e437-019c-1000-2378-646aa13b933c",
+        "name" : "PutSQL",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "94ca5394-4f95-3184-8cf4-bf16375b93ad",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "334c9bd9-019c-1000-2573-63a48a224be3",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 360
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -6363,7 +6393,7 @@
       },
       "properties" : {
         "Script Engine" : "Groovy",
-        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\nimport java.time.ZonedDateTime\nimport java.time.format.DateTimeFormatter\nimport java.util.Date\n\ntry {\n    class TransformCallback implements StreamCallback {\n        def fromTime\n        def toTime\n        def hasData = true\n    \n        TransformCallback(fromTime, toTime) {\n            this.fromTime = fromTime\n            this.toTime = toTime\n        }\n    \n        @Override\n        void process(InputStream inputStream, OutputStream outputStream) throws IOException {\n            def parser = new JsonSlurper()\n            def parsed = parser.parse(inputStream)\n    \n            if (!parsed || (parsed instanceof List && parsed.isEmpty())) {\n                hasData = false\n                return\n            }\n    \n            def records = (parsed instanceof List) ? parsed : [parsed]\n            def transformed = []\n    \n            records.each { rec ->\n    \n                def cab = (rec.cab instanceof List && rec.cab) ? rec.cab[0] : [:]\n    \n                // --- FIX: LOOP THROUGH ALL entry_exit ELEMENTS ---\n                def entryExitList = (rec.entry_exit instanceof List) ? rec.entry_exit : []\n    \n                entryExitList.each { entryExit ->\n    \n                    def direction = entryExit.direction ?: \"unknown\"\n                    def timestamp = entryExit.timestamp\n    \n                    def newRec = [:]\n                    newRec[\"_id\"] = rec._id\n                    newRec[\"direction\"] = direction\n                    newRec[\"locationId\"] = entryExit.locationId\n                    newRec[\"objectType\"] = entryExit.objectType\n                    newRec[\"licensePlateNo\"] = rec._id\n    \n                    // cab details\n                    newRec[\"cab_type\"] = cab.cab_type\n                    newRec[\"service_provider\"] = cab.service_provider\n                    newRec[\"cab_sno\"] = cab.sno\n                    newRec[\"cab_status\"] = cab.status\n                    newRec[\"cab_updated_date\"] = cab.updated_date\n    \n                    // flowfile attributes\n                    newRec[\"start_time\"] = fromTime\n                    newRec[\"end_time\"] = toTime\n    \n                    // entry/exit timestamps\n                    if (direction == \"entry\" && timestamp) {\n                        newRec[\"entry_time\"] = timestamp\n                    } else if (direction == \"exit\" && timestamp) {\n                        newRec[\"exit_time\"] = timestamp\n                    }\n    \n                    transformed << newRec\n                }\n            }\n    \n            if (transformed.isEmpty()) {\n                hasData = false\n                return\n            }\n    \n            def jsonOut = JsonOutput.prettyPrint(JsonOutput.toJson(transformed))\n            outputStream.write(jsonOut.getBytes(StandardCharsets.UTF_8))\n        }\n    }\n    \n    // ===== MAIN NIFI FLOW =====\n    flowFile = session.get()\n    if (!flowFile) return\n    \n    def fromTime = flowFile.getAttribute('datetimerange-fromTime')\n    def toTime = flowFile.getAttribute('datetimerange-toTime')\n    \n    def transformCallback = new TransformCallback(fromTime, toTime)\n    flowFile = session.write(flowFile, transformCallback)\n    \n    if (!transformCallback.hasData) {\n        session.remove(flowFile)\n        return\n    }\n    \n    flowFile = session.putAttribute(flowFile, 'mime.type', 'application/json')\n    session.transfer(flowFile, REL_SUCCESS)\n\n} catch (Exception e) {\n\n    def errorFlowFile = session.create(flowFile)\n    errorFlowFile = session.putAttribute(errorFlowFile, \"error.type\", e.getClass().getName())\n    errorFlowFile = session.putAttribute(errorFlowFile, \"error.message\", e.getMessage())\n\n    def sw = new StringWriter()\n    e.printStackTrace(new PrintWriter(sw))\n    errorFlowFile = session.putAttribute(errorFlowFile, \"error.stacktrace\", sw.toString())\n\n    errorFlowFile = session.write(errorFlowFile, { out ->\n        out.write(JsonOutput.prettyPrint(JsonOutput.toJson([\n            errorType: e.getClass().getName(),\n            errorMessage: e.getMessage(),\n            stackTrace: sw.toString()\n        ])).getBytes(\"UTF-8\"))\n    } as OutputStreamCallback)\n\n    session.transfer(errorFlowFile, REL_FAILURE)\n    session.remove(flowFile)\n}\n"
+        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\nimport java.time.format.DateTimeFormatter\nimport java.time.ZonedDateTime\nimport java.time.ZoneId\nimport java.util.Date\n\nclass TransformCallback implements StreamCallback {\n    def fromTime\n    def toTime\n    def hasData = true  // <--- added flag\n\n    TransformCallback(fromTime, toTime) {\n        this.fromTime = fromTime\n        this.toTime = toTime\n    }\n\n    @Override\n    void process(InputStream inputStream, OutputStream outputStream) throws IOException {\n\n        def parser = new JsonSlurper()\n        def parsed = parser.parse(inputStream)\n        // If response is empty array or null -> skip writing and mark flag\n        if (!parsed || (parsed instanceof List && parsed.isEmpty())) {\n            hasData = false\n            return\n        }\n\n        // Ensure parsed is always a list\n        def records = (parsed instanceof List) ? parsed : [parsed]\n\t\tdef transformed = []\n\n        // Current timestamp (for inserted_at, updated_at)\n\t\t\n        // def now = LocalDateTime.now().format(DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\"))\n\t\t// def now = ZonedDateTime.now(ZoneId.of(\"Asia/Kolkata\")).format(DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\"))\n\n        records.collect { rec ->\n            def entryExit = (rec.entry_exit instanceof List && rec.entry_exit) ? rec.entry_exit[0] : [:]\n            def direction = entryExit.direction ?: \"unknown\"\n            def timestamp = entryExit.timestamp\n            def newRec = [:]\n\n            // Flatten entry_exit data\n            newRec[\"_id\"] = rec._id\n            newRec[\"cameraId\"] = entryExit.cameraId\n            newRec[\"objectType\"] = entryExit.objectType\n            newRec[\"licensePlateNo\"] = entryExit.licensePlateNo\n            newRec[\"locationId\"] = entryExit.locationId\n            newRec[\"locationType\"] = entryExit.locationType\n            newRec[\"direction\"] = direction\n            newRec[\"lpCountry\"] = entryExit.lpCountry\n\n            // Add cab/provider details\n            def provider = rec.provider\n            newRec[\"cab_type\"] = provider\n            newRec[\"service_provider\"] = provider\n\n            // Add timestamp field based on direction\n            if (direction == \"entry\" && timestamp) {\n                newRec[\"entry_time\"] = timestamp\n            } else if (direction == \"exit\" && timestamp) {\n                newRec[\"exit_time\"] = timestamp\n            }\n\n            // Add audit timestamps\n            // newRec[\"inserted_at\"] = now\n            // newRec[\"updated_at\"] = now\n\t\t\t\n            // Add start_time and end_time from FlowFile attributes\n\t\t\t\t\t\t\t\t\t   \n            newRec[\"start_time\"] = fromTime\n            newRec[\"end_time\"] = toTime\n\t\t\t\n            // Add available field\n            // newRec[\"available\"] = null\n\n            // Remove nulls\n            // return newRec.findAll { k, v -> v != null }\n\t\t\t\n\t\t\ttransformed << newRec\n        }\n\n        // If no valid records\n        if (transformed.isEmpty()) {\n            hasData = false\n            return\n        }\n\n        // Output as pretty JSON\n        def jsonOut = JsonOutput.prettyPrint(JsonOutput.toJson(transformed))\n        outputStream.write(jsonOut.getBytes(StandardCharsets.UTF_8))\n    }\n}\n\n// --- Main NiFi Section ---\ntry {\n\tflowFile = session.get()\n\tif (!flowFile) return\n\n\t// Read time range attributes from FlowFile (set in UpdateAttribute)\n\tdef fromTime = flowFile.getAttribute('datetimerange-fromTime')\n\tdef toTime = flowFile.getAttribute('datetimerange-toTime')\n\n\t// Inject them into the transformation\n\tdef transformCallback = new TransformCallback(fromTime, toTime)\n\tflowFile = session.write(flowFile, transformCallback)\n\n\t// If no data was written, remove FlowFile\n\tif (!transformCallback.hasData) {\n\t\tlog.info(\"No data found in JSON response — removing FlowFile.\")\n\t\tsession.remove(flowFile)\n\t\treturn\n\t}\n\n\t// Continue normally\n\tflowFile = session.putAttribute(flowFile, 'mime.type', 'application/json')\n\tsession.transfer(flowFile, REL_SUCCESS)\n\n} catch (Exception e) {\n\n    def errorFlowFile = session.create(flowFile)\n    errorFlowFile = session.putAttribute(errorFlowFile, \"error.type\", e.getClass().getName())\n    errorFlowFile = session.putAttribute(errorFlowFile, \"error.message\", e.getMessage())\n\n    def sw = new StringWriter()\n    e.printStackTrace(new PrintWriter(sw))\n\n    errorFlowFile = session.putAttribute(errorFlowFile, \"error.stacktrace\", sw.toString())\n\n    errorFlowFile = session.write(errorFlowFile, { out ->\n        out.write(JsonOutput.prettyPrint(JsonOutput.toJson([\n            errorType: e.getClass().getName(),\n            errorMessage: e.getMessage(),\n            stackTrace: sw.toString()\n        ])).getBytes(\"UTF-8\"))\n    } as OutputStreamCallback)\n\n    session.transfer(errorFlowFile, REL_FAILURE)\n    session.remove(flowFile)\n}"
       },
       "propertyDescriptors" : {
         "Script File" : {
@@ -6758,7 +6788,7 @@
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "flow.table" : "cab_details_exit",
-        "flow.b2bapp_err_desc" : "${splitjson.error:replace(\"'\", \"''\"):escapeJson()}"
+        "flow.b2bapp_err_desc" : "${error.message:replace(\"'\", \"''\"):escapeJson()}"
       },
       "propertyDescriptors" : {
         "Delete Attributes Expression" : {
@@ -6814,6 +6844,104 @@
       "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
       "yieldDuration" : "1 sec"
     }, {
+      "autoTerminatedRelationships" : [ "failure", "retry", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.6.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "4137e437-019c-1000-2378-646aa13b933c",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "PutSQL",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 10920.0,
+        "y" : -7080.0
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "INSERT INTO assets.b2bapplogdetailscabdetails_bkp (\n    b2bapp_api_id,\n    b2bapp_src,\n    b2bapp_apiname,\n    b2bapp_process_start_tm,\n    b2bapp_process_end_tm,\n    b2bapp_api_status,\n    b2bapp_file_name,\n    b2bapp_ingestion_status,\n    b2bapp_ingestion_freq,\n    b2bapp_api_record_cnt,\n    b2bapp_err_desc,\n    b2bapp_tbl_name,\n    b2bapp_tbl_record_cnt,\n    b2bapp_cnt_apivstbl,\n    b2bapp_sanity_chk_staus\n)\nVALUES (\n    'b2bapp_api_id',\n    'b2bapp_src',\n    'b2bapp_apiname',\n    now(),\n    date_trunc('second', now() AT TIME ZONE 'Asia/Kolkata'),\n    'b2bapp_api_status',\n    'b2bapp_file_name',\n    'Null_Response_Filter_ExecuteScript FAILED',\n    'b2bapp_ingestion_freq',\n    123,\n    '${flow.b2bapp_err_desc}',\n    'b2bapp_tbl_name',\n    123,\n    456,\n    'b2bapp_sanity_chk_staus'\n);",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "78f2d332-019a-1000-8419-94d3e861ec72",
+        "database-session-autocommit" : "false",
+        "rollback-on-failure" : "false"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "database-session-autocommit" : {
+          "displayName" : "Database Session AutoCommit",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "database-session-autocommit",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
       "autoTerminatedRelationships" : [ ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
@@ -6829,7 +6957,7 @@
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "4fae1b59-4199-39ea-82a8-229c923379fb",
       "maxBackoffPeriod" : "10 mins",
-      "name" : "GenerateFlowFile",
+      "name" : "Testing GenerateFlowFile",
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : 10560.0,
@@ -6838,6 +6966,7 @@
       "properties" : {
         "character-set" : "UTF-8",
         "File Size" : "0B",
+        "generate-ff-custom-text" : "[ {\n  \"_id\" : \"TS00F4046\",\n  \"entry_exit\" : [ {\n    \"cameraId\" : \"dolaexit\",\n    \"timestamp\" : 1770642813047,\n    \"objectType\" : \"vehicle\",\n    \"licensePlateNo\" : \"TS00F4046\",\n    \"locationId\" : \"6687c2b4a406546ac5a1f7cb\",\n    \"locationType\" : \"zone\",\n    \"direction\" : \"entry\",\n    \"lpCountry\" : \"IN\"\n  } ],\n  \"provider\" : \"ola\"\n}, {\n  \"_id\" : \"TS24E3478\",\n  \"entry_exit\" : [ {\n    \"cameraId\" : \"dolaexit\",\n    \"timestamp\" : 1770642668969,\n    \"objectType\" : \"vehicle\",\n    \"licensePlateNo\" : \"TS24E3478\",\n    \"locationId\" : \"6687c2b4a406546ac5a1f7cb\",\n    \"locationType\" : \"zone\",\n    \"direction\" : \"entry\",\n    \"lpCountry\" : \"IN\"\n  } ],\n  \"provider\" : \"ola\"\n}, {\n  \"_id\" : \"TS07UL9084\",\n  \"entry_exit\" : [ {\n    \"cameraId\" : \"dolaexit\",\n    \"timestamp\" : 1770640758985,\n    \"objectType\" : \"vehicle\",\n    \"licensePlateNo\" : \"TS07UL9084\",\n    \"locationId\" : \"6687c2b4a406546ac5a1f7cb\",\n    \"locationType\" : \"zone\",\n    \"direction\" : \"entry\",\n    \"lpCountry\" : \"IN\"\n  } ],\n  \"provider\" : \"ola\"\n} ]",
         "Batch Size" : "1",
         "Unique FlowFiles" : "false",
         "Data Format" : "Text"
@@ -9989,7 +10118,7 @@
       },
       "properties" : {
         "Script Engine" : "Groovy",
-        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\nimport java.time.format.DateTimeFormatter\nimport java.time.ZonedDateTime\nimport java.time.ZoneId\nimport java.util.Date\n\nclass TransformCallback implements StreamCallback {\n    def fromTime\n    def toTime\n    def hasData = true  // <--- added flag\n\n    TransformCallback(fromTime, toTime) {\n        this.fromTime = fromTime\n        this.toTime = toTime\n    }\n\n    @Override\n    void process(InputStream inputStream, OutputStream outputStream) throws IOException {\n\n        def parser = new JsonSlurper()\n        def parsed = parser.parse(inputStream)\n        // If response is empty array or null -> skip writing and mark flag\n        if (!parsed || (parsed instanceof List && parsed.isEmpty())) {\n            hasData = false\n            return\n        }\n\n        // Ensure parsed is always a list\n        def records = (parsed instanceof List) ? parsed : [parsed]\n\t\tdef transformed = []\n\n        // Current timestamp (for inserted_at, updated_at)\n\t\t\n        // def now = LocalDateTime.now().format(DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\"))\n\t\t// def now = ZonedDateTime.now(ZoneId.of(\"Asia/Kolkata\")).format(DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\"))\n\n        records.collect { rec ->\n            def entryExit = (rec.entry_exit instanceof List && rec.entry_exit) ? rec.entry_exit[0] : [:]\n            def direction = entryExit.direction ?: \"unknown\"\n            def timestamp = entryExit.timestamp\n            def newRec = [:]\n\n            // Flatten entry_exit data\n            newRec[\"_id\"] = rec._id\n            newRec[\"cameraId\"] = entryExit.cameraId\n            newRec[\"objectType\"] = entryExit.objectType\n            newRec[\"licensePlateNo\"] = entryExit.licensePlateNo\n            newRec[\"locationId\"] = entryExit.locationId\n            newRec[\"locationType\"] = entryExit.locationType\n            newRec[\"direction\"] = direction\n            newRec[\"lpCountry\"] = entryExit.lpCountry\n\n            // Add cab/provider details\n            def provider = rec.provider\n            newRec[\"cab_type\"] = provider\n            newRec[\"service_provider\"] = provider\n\n            // Add timestamp field based on direction\n            if (direction == \"entry\" && timestamp) {\n                newRec[\"entry_time\"] = timestamp\n            } else if (direction == \"exit\" && timestamp) {\n                newRec[\"exit_time\"] = timestamp\n            }\n\n            // Add audit timestamps\n            // newRec[\"inserted_at\"] = now\n            // newRec[\"updated_at\"] = now\n\t\t\t\n            // Add start_time and end_time from FlowFile attributes\n\t\t\t\t\t\t\t\t\t   \n            newRec[\"start_time\"] = fromTime\n            newRec[\"end_time\"] = toTime\n\t\t\t\n            // Add available field\n            // newRec[\"available\"] = null\n\n            // Remove nulls\n            // return newRec.findAll { k, v -> v != null }\n\t\t\t\n\t\t\ttransformed << newRec\n        }\n\n        // If no valid records\n        if (transformed.isEmpty()) {\n            hasData = false\n            return\n        }\n\n        // Output as pretty JSON\n        def jsonOut = JsonOutput.prettyPrint(JsonOutput.toJson(transformed))\n        outputStream.write(jsonOut.getBytes(StandardCharsets.UTF_8))\n    }\n}\n\n// --- Main NiFi Section ---\nflowFile = session.get()\nif (!flowFile) return\n\n// Read time range attributes from FlowFile (set in UpdateAttribute)\ndef fromTime = flowFile.getAttribute('datetimerange-fromTime')\ndef toTime = flowFile.getAttribute('datetimerange-toTime')\n\n// Inject them into the transformation\ndef transformCallback = new TransformCallback(fromTime, toTime)\nflowFile = session.write(flowFile, transformCallback)\n\n// If no data was written, remove FlowFile\nif (!transformCallback.hasData) {\n    log.info(\"No data found in JSON response — removing FlowFile.\")\n    session.remove(flowFile)\n    return\n}\n\n// Continue normally\nflowFile = session.putAttribute(flowFile, 'mime.type', 'application/json')\nsession.transfer(flowFile, REL_SUCCESS)"
+        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\nimport java.time.format.DateTimeFormatter\nimport java.time.ZonedDateTime\nimport java.time.ZoneId\nimport java.util.Date\n\nclass TransformCallback implements StreamCallback {\n    def fromTime\n    def toTime\n    def hasData = true  // <--- added flag\n\n    TransformCallback(fromTime, toTime) {\n        this.fromTime = fromTime\n        this.toTime = toTime\n    }\n\n    @Override\n    void process(InputStream inputStream, OutputStream outputStream) throws IOException {\n\n        def parser = new JsonSlurper()\n        def parsed = parser.parse(inputStream)\n        // If response is empty array or null -> skip writing and mark flag\n        if (!parsed || (parsed instanceof List && parsed.isEmpty())) {\n            hasData = false\n            return\n        }\n\n        // Ensure parsed is always a list\n        def records = (parsed instanceof List) ? parsed : [parsed]\n\t\tdef transformed = []\n\n        // Current timestamp (for inserted_at, updated_at)\n\t\t\n        // def now = LocalDateTime.now().format(DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\"))\n\t\t// def now = ZonedDateTime.now(ZoneId.of(\"Asia/Kolkata\")).format(DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\"))\n\n        records.collect { rec ->\n            def entryExit = (rec.entry_exit instanceof List && rec.entry_exit) ? rec.entry_exit[0] : [:]\n            def direction = entryExit.direction ?: \"unknown\"\n            def timestamp = entryExit.timestamp\n            def newRec = [:]\n\n            // Flatten entry_exit data\n            newRec[\"_id\"] = rec._id\n            newRec[\"cameraId\"] = entryExit.cameraId\n            newRec[\"objectType\"] = entryExit.objectType\n            newRec[\"licensePlateNo\"] = entryExit.licensePlateNo\n            newRec[\"locationId\"] = entryExit.locationId\n            newRec[\"locationType\"] = entryExit.locationType\n            newRec[\"direction\"] = direction\n            newRec[\"lpCountry\"] = entryExit.lpCountry\n\n            // Add cab/provider details\n            def provider = rec.provider\n            newRec[\"cab_type\"] = provider\n            newRec[\"service_provider\"] = provider\n\n            // Add timestamp field based on direction\n            if (direction == \"entry\" && timestamp) {\n                newRec[\"entry_time\"] = timestamp\n            } else if (direction == \"exit\" && timestamp) {\n                newRec[\"exit_time\"] = timestamp\n            }\n\n            // Add audit timestamps\n            // newRec[\"inserted_at\"] = now\n            // newRec[\"updated_at\"] = now\n\t\t\t\n            // Add start_time and end_time from FlowFile attributes\n\t\t\t\t\t\t\t\t\t   \n            newRec[\"start_time\"] = fromTime\n            newRec[\"end_time\"] = toTime\n\t\t\t\n            // Add available field\n            // newRec[\"available\"] = null\n\n            // Remove nulls\n            // return newRec.findAll { k, v -> v != null }\n\t\t\t\n\t\t\ttransformed << newRec\n        }\n\n        // If no valid records\n        if (transformed.isEmpty()) {\n            hasData = false\n            return\n        }\n\n        // Output as pretty JSON\n        def jsonOut = JsonOutput.prettyPrint(JsonOutput.toJson(transformed))\n        outputStream.write(jsonOut.getBytes(StandardCharsets.UTF_8))\n    }\n}\n\n// --- Main NiFi Section ---\ntry {\n\tflowFile = session.get()\n\tif (!flowFile) return\n\n\t// Read time range attributes from FlowFile (set in UpdateAttribute)\n\tdef fromTime = flowFile.getAttribute('datetimerange-fromTime')\n\tdef toTime = flowFile.getAttribute('datetimerange-toTime')\n\n\t// Inject them into the transformation\n\tdef transformCallback = new TransformCallback(fromTime, toTime)\n\tflowFile = session.write(flowFile, transformCallback)\n\n\t// If no data was written, remove FlowFile\n\tif (!transformCallback.hasData) {\n\t\tlog.info(\"No data found in JSON response — removing FlowFile.\")\n\t\tsession.remove(flowFile)\n\t\treturn\n\t}\n\n\t// Continue normally\n\tflowFile = session.putAttribute(flowFile, 'mime.type', 'application/json')\n\tsession.transfer(flowFile, REL_SUCCESS)\n\n} catch (Exception e) {\n\n    def errorFlowFile = session.create(flowFile)\n    errorFlowFile = session.putAttribute(errorFlowFile, \"error.type\", e.getClass().getName())\n    errorFlowFile = session.putAttribute(errorFlowFile, \"error.message\", e.getMessage())\n\n    def sw = new StringWriter()\n    e.printStackTrace(new PrintWriter(sw))\n\n    errorFlowFile = session.putAttribute(errorFlowFile, \"error.stacktrace\", sw.toString())\n\n    errorFlowFile = session.write(errorFlowFile, { out ->\n        out.write(JsonOutput.prettyPrint(JsonOutput.toJson([\n            errorType: e.getClass().getName(),\n            errorMessage: e.getMessage(),\n            stackTrace: sw.toString()\n        ])).getBytes(\"UTF-8\"))\n    } as OutputStreamCallback)\n\n    session.transfer(errorFlowFile, REL_FAILURE)\n    session.remove(flowFile)\n}"
       },
       "propertyDescriptors" : {
         "Script File" : {
@@ -11362,7 +11491,7 @@
       },
       "properties" : {
         "Script Engine" : "Groovy",
-        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\nimport java.time.ZonedDateTime\nimport java.time.format.DateTimeFormatter\nimport java.util.Date\n\nclass TransformCallback implements StreamCallback {\n    def fromTime\n    def toTime\n    def hasData = true\n\n    TransformCallback(fromTime, toTime) {\n        this.fromTime = fromTime\n        this.toTime = toTime\n    }\n\n    @Override\n    void process(InputStream inputStream, OutputStream outputStream) throws IOException {\n        def parser = new JsonSlurper()\n        def parsed = parser.parse(inputStream)\n\n        if (!parsed || (parsed instanceof List && parsed.isEmpty())) {\n            hasData = false\n            return\n        }\n\n        def records = (parsed instanceof List) ? parsed : [parsed]\n        def transformed = []\n\n        records.each { rec ->\n\n            def cab = (rec.cab instanceof List && rec.cab) ? rec.cab[0] : [:]\n\n            // --- FIX: LOOP THROUGH ALL entry_exit ELEMENTS ---\n            def entryExitList = (rec.entry_exit instanceof List) ? rec.entry_exit : []\n\n            entryExitList.each { entryExit ->\n\n                def direction = entryExit.direction ?: \"unknown\"\n                def timestamp = entryExit.timestamp\n\n                def newRec = [:]\n                newRec[\"_id\"] = rec._id\n                newRec[\"direction\"] = direction\n                newRec[\"locationId\"] = entryExit.locationId\n                newRec[\"objectType\"] = entryExit.objectType\n                newRec[\"licensePlateNo\"] = rec._id\n\n                // cab details\n                newRec[\"cab_type\"] = cab.cab_type\n                newRec[\"service_provider\"] = cab.service_provider\n                newRec[\"cab_sno\"] = cab.sno\n                newRec[\"cab_status\"] = cab.status\n                newRec[\"cab_updated_date\"] = cab.updated_date\n\n                // flowfile attributes\n                newRec[\"start_time\"] = fromTime\n                newRec[\"end_time\"] = toTime\n\n                // entry/exit timestamps\n                if (direction == \"entry\" && timestamp) {\n                    newRec[\"entry_time\"] = timestamp\n                } else if (direction == \"exit\" && timestamp) {\n                    newRec[\"exit_time\"] = timestamp\n                }\n\n                transformed << newRec\n            }\n        }\n\n        if (transformed.isEmpty()) {\n            hasData = false\n            return\n        }\n\n        def jsonOut = JsonOutput.prettyPrint(JsonOutput.toJson(transformed))\n        outputStream.write(jsonOut.getBytes(StandardCharsets.UTF_8))\n    }\n}\n\n// ===== MAIN NIFI FLOW =====\nflowFile = session.get()\nif (!flowFile) return\n\ndef fromTime = flowFile.getAttribute('datetimerange-fromTime')\ndef toTime = flowFile.getAttribute('datetimerange-toTime')\n\ndef transformCallback = new TransformCallback(fromTime, toTime)\nflowFile = session.write(flowFile, transformCallback)\n\nif (!transformCallback.hasData) {\n    session.remove(flowFile)\n    return\n}\n\nflowFile = session.putAttribute(flowFile, 'mime.type', 'application/json')\nsession.transfer(flowFile, REL_SUCCESS)"
+        "Script Body" : "import org.apache.nifi.processor.io.StreamCallback\nimport org.apache.nifi.processor.io.OutputStreamCallback\nimport groovy.json.JsonSlurper\nimport groovy.json.JsonOutput\nimport java.nio.charset.StandardCharsets\n\n// ===== CLASS MUST BE OUTSIDE try/catch =====\nclass TransformCallback implements StreamCallback {\n    def fromTime\n    def toTime\n    def hasData = true\n\n    TransformCallback(fromTime, toTime) {\n        this.fromTime = fromTime\n        this.toTime = toTime\n    }\n\n    @Override\n    void process(InputStream inputStream, OutputStream outputStream) throws IOException {\n        def parser = new JsonSlurper()\n        def parsed = parser.parse(inputStream)\n\n        if (!parsed || (parsed instanceof List && parsed.isEmpty())) {\n            hasData = false\n            return\n        }\n\n        def records = (parsed instanceof List) ? parsed : [parsed]\n        def transformed = []\n\n        records.each { rec ->\n\n            def cab = (rec.cab instanceof List && rec.cab) ? rec.cab[0] : [:]\n            def entryExitList = (rec.entry_exit instanceof List) ? rec.entry_exit : []\n\n            entryExitList.each { entryExit ->\n\n                def direction = entryExit.direction ?: \"unknown\"\n                def timestamp = entryExit.timestamp\n\n                def newRec = [:]\n                newRec[\"_id\"] = rec._id\n                newRec[\"direction\"] = direction\n                newRec[\"locationId\"] = entryExit.locationId\n                newRec[\"objectType\"] = entryExit.objectType\n                newRec[\"licensePlateNo\"] = rec._id\n\n                newRec[\"cab_type\"] = cab.cab_type\n                newRec[\"service_provider\"] = cab.service_provider\n                newRec[\"cab_sno\"] = cab.sno\n                newRec[\"cab_status\"] = cab.status\n                newRec[\"cab_updated_date\"] = cab.updated_date\n\n                newRec[\"start_time\"] = fromTime\n                newRec[\"end_time\"] = toTime\n\n                if (direction == \"entry\" && timestamp) {\n                    newRec[\"entry_time\"] = timestamp\n                } else if (direction == \"exit\" && timestamp) {\n                    newRec[\"exit_time\"] = timestamp\n                }\n\n                transformed << newRec\n            }\n        }\n\n        if (transformed.isEmpty()) {\n            hasData = false\n            return\n        }\n\n        def jsonOut = JsonOutput.prettyPrint(JsonOutput.toJson(transformed))\n        outputStream.write(jsonOut.getBytes(StandardCharsets.UTF_8))\n    }\n}\n\n// ========== MAIN ==========\ntry {\n    flowFile = session.get()\n    if (!flowFile) return\n\n    def fromTime = flowFile.getAttribute('datetimerange-fromTime')\n    def toTime = flowFile.getAttribute('datetimerange-toTime')\n\n    def transformCallback = new TransformCallback(fromTime, toTime)\n    flowFile = session.write(flowFile, transformCallback)\n\n    if (!transformCallback.hasData) {\n        session.remove(flowFile)\n        return\n    }\n\n    flowFile = session.putAttribute(flowFile, 'mime.type', 'application/json')\n    session.transfer(flowFile, REL_SUCCESS)\n\n} catch (Exception e) {\n\n    def errorFlowFile = session.create(flowFile)\n    errorFlowFile = session.putAttribute(errorFlowFile, \"error.type\", e.getClass().getName())\n    errorFlowFile = session.putAttribute(errorFlowFile, \"error.message\", e.getMessage())\n\n    def sw = new StringWriter()\n    e.printStackTrace(new PrintWriter(sw))\n\n    errorFlowFile = session.putAttribute(errorFlowFile, \"error.stacktrace\", sw.toString())\n\n    errorFlowFile = session.write(errorFlowFile, { out ->\n        out.write(JsonOutput.prettyPrint(JsonOutput.toJson([\n            errorType: e.getClass().getName(),\n            errorMessage: e.getMessage(),\n            stackTrace: sw.toString()\n        ])).getBytes(\"UTF-8\"))\n    } as OutputStreamCallback)\n\n    session.transfer(errorFlowFile, REL_FAILURE)\n    session.remove(flowFile)\n}"
       },
       "propertyDescriptors" : {
         "Script File" : {
@@ -16835,7 +16964,7 @@
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "flow.table" : "cab_details_entry",
-        "flow.b2bapp_err_desc" : "${splitjson.error:replace(\"'\", \"''\"):escapeJson()}"
+        "flow.b2bapp_err_desc" : "${error.message:replace(\"'\", \"''\"):escapeJson()}"
       },
       "propertyDescriptors" : {
         "Delete Attributes Expression" : {
@@ -17014,7 +17143,7 @@
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "flow.table" : "cab_details_exit",
-        "flow.b2bapp_err_desc" : "${splitjson.error:replace(\"'\", \"''\"):escapeJson()}"
+        "flow.b2bapp_err_desc" : "${error.message:replace(\"'\", \"''\"):escapeJson()}"
       },
       "propertyDescriptors" : {
         "Delete Attributes Expression" : {
@@ -18348,7 +18477,7 @@
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "flow.table" : "cab_details_exit",
-        "flow.b2bapp_err_desc" : "${splitjson.error:replace(\"'\", \"''\"):escapeJson()}"
+        "flow.b2bapp_err_desc" : "${error.message:replace(\"'\", \"''\"):escapeJson()}"
       },
       "propertyDescriptors" : {
         "Delete Attributes Expression" : {
@@ -18527,7 +18656,7 @@
         "Store State" : "Do not store state",
         "canonical-value-lookup-cache-size" : "100",
         "flow.table" : "cab_details_entry",
-        "flow.b2bapp_err_desc" : "${splitjson.error:replace(\"'\", \"''\"):escapeJson()}"
+        "flow.b2bapp_err_desc" : "${error.message:replace(\"'\", \"''\"):escapeJson()}"
       },
       "propertyDescriptors" : {
         "Delete Attributes Expression" : {
@@ -19174,6 +19303,6 @@
   "snapshotMetadata" : {
     "author" : "b0134371-f506-4b06-addc-5225b6ca3196",
     "flowIdentifier" : "LogtableRDKloudspotaerowiseCabAvailability",
-    "timestamp" : 1770388129936
+    "timestamp" : 1770644589038
   }
 }
